@@ -6,7 +6,7 @@ export const makeUrlsClickable = (content: any) => {
     rulesRegex,
     (match: string) => {
         const ruleId = match.replace(/\s+/g, '-');
-        return `<a href="/${ruleId}" class="text-red-500 font-mono">${ruleId}</a>`;
+        return `<a href="/${ruleId}" class="font-mono">${ruleId}</a>`;
     }
 );
 

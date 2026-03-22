@@ -11,9 +11,9 @@ function Rules() {
                         <Link
                             to={`/${id}`}
                             key={index}
-                            className="flex flex-col w-1/6 py-2"
+                            className="flex flex-col w-1/6 py-2 px-2"
                         >
-                            <span className="font-mono text-red-500">
+                            <span className="font-mono">
                                 {id}
                             </span>
                         </Link>

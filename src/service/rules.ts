@@ -410,8 +410,8 @@ export const Rules = [
         title: 'Regari',
         content:
             '<p>Once a key center of industrial development, Regari is now a hint of its past glory. People live a poorer lifestyle, and the system has suffered a serious economic depression for years. There is little system defense, and breakdown of equipment is now commonplace.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E090</li><li>E091</li><li>E096</li><li>E100</li><li>E116</li><li>E093</li></ol>' +
-            'System Codes: wealth 0, tech 30.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E090</li><li>E091</li><li>E096</li><li>E100</li><li>E116</li><li>E093</li></ol>' +
+            '<p>System Codes: wealth 0, tech 30.<br />' +
             'Planet I: layout J-K, gravity 3, good air.</p>',
     },
     {
@@ -419,8 +419,8 @@ export const Rules = [
         title: 'Palatek',
         content:
             '<p>Palatek attempted to replace the technological preeminence of Regari, but went to such extremes that toxic effluents poisoned the atmosphere. Despite scientific efforts, respiratory diseases remain a common cause of death. System defense is largely under corporate control, and emphasizes protection against industrial espionage.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E092</li><li>E120</li><li>E105</li><li>E108</li><li>E097</li><li>E103</li></ol>' +
-            'System Codes: wealth 30, tech 50.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E092</li><li>E120</li><li>E105</li><li>E108</li><li>E097</li><li>E103</li></ol>' +
+            '<p>System Codes: wealth 30, tech 50.<br />' +
             'Planet I: layout A-C, gravity 7, bad air.</p>',
     },
     {
@@ -428,8 +428,8 @@ export const Rules = [
         title: 'Byzantium',
         content:
             '<p>A very old society exists here, noted for its political intrigue and complexity, its vigilant secret police, and underground dungeons that none are said to leave. It is known as a dangerous system to enter, unless one has the right connections.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E106</li><li>E102</li><li>E093</li><li>E117</li><li>E120</li><li>E104</li></ol>' +
-            'System Codes: wealth 50, tech 15.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E106</li><li>E102</li><li>E093</li><li>E117</li><li>E120</li><li>E104</li></ol>' +
+            '<p>System Codes: wealth 50, tech 15.<br />' +
             'Planet I: layout F-C, gravity 10, good air.<br />' +
             'Planet II: layout E-B, gravity 8, good air.</p>',
     },
@@ -438,8 +438,8 @@ export const Rules = [
         title: 'Imperia',
         content:
             '<p>The self-declared capital of a modest empire that includes Palatek, Byzantium, and Talitar. This system assumes the trappings of an imperial capital, but without the actual power. Showy buildings and ornate artwork everywhere conceal dire poverty and a mean existence. Imperia tends to waste its wealth on efforts of size and spectacle rather than quality, although some families possess valuable treasures.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E092</li><li>E100</li><li>E093</li><li>E114</li><li>E113</li><li>E105</li></ol>' +
-            'System Codes: wealth 100, tech 25.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E092</li><li>E100</li><li>E093</li><li>E114</li><li>E113</li><li>E105</li></ol>' +
+            '<p>System Codes: wealth 100, tech 25.<br />' +
             'Planet I: layout C-G, gravity 11, good air.<br />' +
             'System includes asteroids.</p>',
     },
@@ -448,8 +448,8 @@ export const Rules = [
         title: 'Talitar',
         content:
             '<p>Noted for its vicious and repressive government. Talitarians have few freedoms; the army is in firm control, and troopers vigorously patrol both the planets and the space lanes of the system. Careful bribery can be useful here, but it is exceedingly risky.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E120</li><li>E118</li><li>E096</li><li>E106</li><li>E093</li><li>E118</li></ol>' +
-            'System Codes: wealth 25, tech 30.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E120</li><li>E118</li><li>E096</li><li>E106</li><li>E093</li><li>E118</li></ol>' +
+            '<p>System Codes: wealth 25, tech 30.<br />' +
             'Planet I: layout F-I, gravity 13, good air.<br />' +
             'Planet II: layout E-H, gravity 4, good air.</p>',
     },
@@ -458,8 +458,8 @@ export const Rules = [
         title: 'Cubro',
         content:
             '<p>This system has been a rich source of metals, semiconductors, and crystals for centuries. Much of the planetary surface is now mined out, with extensive wastelands, acid drainage, and mine tailings. There are still valuable mineral finds, but they are relatively small, and depend more on luck than prospecting skill. Cubro now has become a center of industrial development using non-metallic materials, especially the still experimental “bio-plastic” alloys.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E121</li><li>E104</li><li>E117</li><li>E103</li><li>E105</li><li>E092</li></ol>' +
-            'System Codes: wealth 15, tech 70.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E121</li><li>E104</li><li>E117</li><li>E103</li><li>E105</li><li>E092</li></ol>' +
+            '<p>System Codes: wealth 15, tech 70.<br />' +
             'Planet I: layout K-A, gravity 7, good air.</p>',
     },
     {
@@ -467,8 +467,8 @@ export const Rules = [
         title: 'Uruskop',
         content:
             '<p>Throughout its long history, Uruskop has been very isolationist, having little trade with other systems and developing in its own unique way. It now has a moderately advanced technology, but its machines and devices tend to confuse outsiders. Foreigners also tend to make social errors, which offend or anger the residents. For these reasons, this system is avoided by wise travelers.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E119</li><li>E093</li><li>E119</li><li>E109</li><li>E119</li><li>E119</li></ol>' +
-            'System Codes: wealth 40, tech 40.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E119</li><li>E093</li><li>E119</li><li>E109</li><li>E119</li><li>E119</li></ol>' +
+            '<p>System Codes: wealth 40, tech 40.<br />' +
             'Planet I: layout G-B, gravity 6, bad air.<br />' +
             'System includes asteroids.</p>',
     },
@@ -477,8 +477,8 @@ export const Rules = [
         title: 'Nipna',
         content:
             '<p>This system seems to have a perpetual war with Mynkuria, with a history of battles for at least a thousand years. The system is preoccupied with developing its war machine, and attempts to annihilate life at Mynkuria. Nipna uses the long-range strategy of high-technology weapons, especially due to its population losses, and all industrial and scientific efforts are devoted to armaments.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E098</li><li>E110</li><li>E094</li><li>E098</li><li>E120</li><li>E112</li></ol>' +
-            'System Codes: wealth 60, tech 100.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E098</li><li>E110</li><li>E094</li><li>E098</li><li>E120</li><li>E112</li></ol>' +
+            '<p>System Codes: wealth 60, tech 100.<br />' +
             'Planet I: layout J-D, gravity 12, good air.<br />' +
             'Planet II: layout A-I, gravity 9, no air.</p>',
     },
@@ -487,8 +487,8 @@ export const Rules = [
         title: 'Mynkuria',
         content:
             '<p>This system seems to have a perpetual war with Nipna, with a history of battles for at least one thousand years. The system is preoccupied with destroying Nipna, with a long-range strategy centered on the fanatical dedication of its warriors. It tends to base weapons and armament designs on captured Nipnan equipment. Mynkurian troopers readily ignore wounds and pain, and are prepared to spend their lives willingly to damage Nipna. Mynkuria also trains highly efficient spies and saboteurs, notorious for their resistance to torture (despite the advanced techniques used by both sides).</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E095</li><li>E119</li><li>E113</li><li>E093</li><li>E107</li><li>E110</li></ol>' +
-            'System Codes: wealth 30, tech 60.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E095</li><li>E119</li><li>E113</li><li>E093</li><li>E107</li><li>E110</li></ol>' +
+            '<p>System Codes: wealth 30, tech 60.<br />' +
             'Planet I: layout H-A, gravity 5, no air.<br />' +
             'Planet II: layout C-K, gravity 9, good air.<br />' +
             'System includes asteroids.</p>',
@@ -498,8 +498,8 @@ export const Rules = [
         title: 'New Karma',
         content:
             '<p>This system emphasizes personal spiritual development over technology. There has been an increase in mental powers, including psionic abilities. Many unusual religious cults are centered here, as well as various arts and other creative activities. Individuality is encouraged, so often what other systems consider “insane” is tolerated as normal. Unfortunately, the wars between Nipna and Mynkuria have affected this system at times, so New Karma maintains a military force with simple equipment, but a combat record of high effectiveness. This is probably because talented psionicists are provided complete freedom and great luxury while in military service.</p>' +
-            '<p>System Entry 1d6 roll: <ol><li>E115</li><li>E101</li><li>E096</li><li>E099</li><li>E104</li><li>E111</li></ol>' +
-            'System Codes: wealth 70, tech 10.<br />' +
+            '<p>System Entry 1d6 roll:</p><ol><li>E115</li><li>E101</li><li>E096</li><li>E099</li><li>E104</li><li>E111</li></ol>' +
+            '<p>System Codes: wealth 70, tech 10.<br />' +
             'Planet I: layout K-D, gravity 9, good air.<br />' +
             'Planet II: layout B-J, gravity 14, good air.</p>',
     },

@@ -11,9 +11,9 @@ function Sheet() {
                     <Link
                         to={`/${tag.id}`}
                         key={index}
-                        className="flex flex-col py-2"
+                        className="flex flex-col py-2 px-3"
                     >
-                        <span className="font-mono text-red-500">
+                        <span className="font-mono">
                             {tag.id}
                         </span>
                         <span className="font-medium font-sans text-gray-400">
