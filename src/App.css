@@ -4,6 +4,10 @@
 
 body {
     background-color: #222;
+    background-image: url('/img/background_universe.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     color: #ddd;
