@@ -444,13 +444,13 @@ export const Events = [
         content:
             '<p>You hire a repairman who will work in whatever area you choose. He will repair any vehicles or equipment (R219) for a base price (R229A) of 5 S per day. If he must travel outside of his home area, for each area he must travel to the repair site the salary doubles (moving to a neighboring area will cost you 10 S per day, two areas away 20 S per day, etc.). He will not leave the planet, but will go up to a space station (but not to orbit). If he leaves his home area you must provide repair units for the work; if he works in his home area, you can provide them, or have him use his own, which cost you an extra 5 S each. Mobile repairmen will arrange for their own transportation, you need not provide it.</p>',
     },
-    {
-        id: 'E062-E069',
-        title: 'Hirelings Available',
-        time: '1 hour',
-        content:
-            '<p>One or more hirelings for your party are available. Consult the specific paragraph below for the type of hireling, his base price (R229A) weekly salary, and his death payment (R220B) if he dies in your service. Hirelings found in Slum areas have no death payments. Hirelings from slums will lack papers. All hirelings must be paid at the start of each 10-day week of work.</p>',
-    },
+    // {
+    //     id: 'E062-E069',
+    //     title: 'Hirelings Available',
+    //     time: '1 hour',
+    //     content:
+    //         '<p>One or more hirelings for your party are available. Consult the specific paragraph below for the type of hireling, his base price (R229A) weekly salary, and his death payment (R220B) if he dies in your service. Hirelings found in Slum areas have no death payments. Hirelings from slums will lack papers. All hirelings must be paid at the start of each 10-day week of work.</p>',
+    // },
     {
         id: 'E062',
         title: 'Skimmer Driver',

@@ -7,8 +7,8 @@ import './index.css'
 const Game = React.lazy(() => import('./pages/Game.tsx'))
 const Rules = React.lazy(() => import('./pages/Rules.tsx'))
 const Events = React.lazy(() => import('./pages/Events.tsx'))
-const Tag = React.lazy(() => import('./components/Tag'))
-const Sector = React.lazy(() => import('./components/Sector'))
+const Tag = React.lazy(() => import('./components/Tag.tsx'))
+const Helper = React.lazy(() => import('./pages/Helper.tsx'))
 const History = React.lazy(() => import('./pages/History.tsx'))
 
 const router = createBrowserRouter([
@@ -32,8 +32,8 @@ const router = createBrowserRouter([
                 element: <Tag />
             },
             {
-                path: '/sector',
-                element: <Sector />
+                path: '/helper',
+                element: <Helper />
             },
             {
                 path: '/history',

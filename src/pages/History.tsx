@@ -15,10 +15,14 @@ function History() {
                     <Link
                         to={`/${item.id}`}
                         key={index}
-                        className="flex flex-col py-2"
+                        className="flex flex-col py-2 px-2"
                     >
-                        <span className="font-mono">{item.id}</span>
-                        <span className="text-gray-300">{item.title}</span>
+                        <span className="font-mono">
+                            {item.id}
+                        </span>
+                        <span className="font-medium font-sans text-gray-400">
+                            {item.title}
+                        </span>
                     </Link>
                 ))}
             </Card>

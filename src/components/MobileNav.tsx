@@ -4,7 +4,7 @@ const links = [
     { to: '/', label: 'Game' },
     { to: '/rules', label: 'Rules' },
     { to: '/events', label: 'Events' },
-    { to: '/sector', label: 'Sector' },
+    { to: '/helper', label: 'Helper' },
     { to: '/history', label: 'History' },
 ]
 

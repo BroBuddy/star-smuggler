@@ -1,7 +1,13 @@
-import { sheetPlanets, sheetAreas } from '@/lib/data'
+import { sheetPlanets, sheetAreas, sheetTags } from '@/lib/data'
 import { TagSheet } from '@/lib/types'
 import { Link } from 'react-router-dom'
-import Card from './Card'
+import Card from '../components/Card'
+
+const sections = [
+    { title: 'Frequently Used', tags: sheetTags },
+    { title: 'Planets', tags: sheetPlanets },
+    { title: 'Area Types', tags: sheetAreas },
+]
 
 function TagList({ tags }: { tags: TagSheet[] }) {
     return (
@@ -10,7 +16,7 @@ function TagList({ tags }: { tags: TagSheet[] }) {
                 <Link
                     to={`/${tag.id}`}
                     key={index}
-                    className="flex flex-col w-1/3 py-2 px-2"
+                    className="flex flex-col w-1/2 py-2 px-2"
                 >
                     <span className="font-mono">
                         {tag.id}
@@ -24,17 +30,16 @@ function TagList({ tags }: { tags: TagSheet[] }) {
     )
 }
 
-function Sector() {
+function Helper() {
     return (
         <section className="flex flex-col py-2 w-full">
-            <Card title="Planets">
-                <TagList tags={sheetPlanets} />
-            </Card>
-            <Card title="Area Types">
-                <TagList tags={sheetAreas} />
-            </Card>
+            {sections.map(({ title, tags }) => (
+                <Card key={title} title={title}>
+                    <TagList tags={tags} />
+                </Card>
+            ))}
         </section>
     )
 }
 
-export default Sector
+export default Helper
