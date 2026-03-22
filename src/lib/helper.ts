@@ -3,9 +3,12 @@ export const makeUrlsClickable = (content: any) => {
 
     const rulesRegex = /[ER]\d{3}[A-Z]?/g
     const transformedText = content.replace(
-        rulesRegex,
-        '<strong class="text-gray-500">$&</strong>'
-    )
+    rulesRegex,
+    (match: string) => {
+        const ruleId = match.replace(/\s+/g, '-');
+        return `<a href="/${ruleId}" class="text-red-500 font-mono">${ruleId}</a>`;
+    }
+);
 
     return transformedText
 }

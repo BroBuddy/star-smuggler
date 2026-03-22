@@ -718,7 +718,7 @@ export const Rules = [
         id: 'R216B',
         title: 'Boat Guns',
         content:
-            '<p>These large weapons require 5 CU of space and are installed only in a ship’s boat. A qualified starship gunner is needed to fire them, and a boat pilot cannot also fire the guns. When purchased, boat guns are installed at that time if the boat is present; otherwise, a starship engineer can install them (R22lb) in one day of RRR (R203C) devoted to the task.</p>' +
+            '<p>These large weapons require 5 CU of space and are installed only in a ship’s boat. A qualified starship gunner is needed to fire them, and a boat pilot cannot also fire the guns. When purchased, boat guns are installed at that time if the boat is present; otherwise, a starship engineer can install them (R221B) in one day of RRR (R203C) devoted to the task.</p>' +
             '<p>A hit from boat guns may reduce an individual’s Endurance or disable him (R231), or inflict one hit on a vehicle (may be a critical hit, see R230K).</p>',
     },
     {
@@ -1549,3 +1549,5 @@ export const Rules = [
             '<p>You have a chance to sell any of the items listed below, for the base price indicated. Determine actual price using rule R229A and table R241. You may only sell, not purchase:</p><ul><li>Pallet(s) of rare wood, cut gem(s);</li><li>Antique sidearm(s);</li><li>Any one alien artifact;</li><li>Slave(s) only if on Palatek, Byzantium, Imperia, Talitar, Mynkuria.</li></ul>',
     },
 ]
+
+export const RuleIds = Rules.map(r => r.id)

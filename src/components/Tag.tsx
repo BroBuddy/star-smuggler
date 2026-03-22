@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { Rules as RulesData } from '@/service/rules'
 import { Events as EventsData } from '@/service/events'
 import { useEffect, useState } from 'react'
@@ -8,9 +8,8 @@ import Card from './Card'
 
 const Tag = () => {
     const { tagId } = useParams()
-    const tagsInRow = 7
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
-    const [linkTags, setLinkTags] = useState<string[]>([])
+    const [_, setLinkTags] = useState<string[]>([])
     const dataSet = RulesData.concat(EventsData)
     const transformedContent = makeUrlsClickable(activeTag?.content)
 
@@ -27,7 +26,7 @@ const Tag = () => {
     }, [tagId])
 
     return (
-        <>
+        <section className="flex flex-col py-2 w-full">
             {activeTag && (
                 <Card
                     id={activeTag.id}
@@ -41,25 +40,7 @@ const Tag = () => {
                     />
                 </Card>
             )}
-
-            {linkTags?.length >= 1 && (
-                <Card title="Links">
-                    <p>
-                        {linkTags?.map((tag: string, index: number) => {
-                            return (
-                                <span key={index}>
-                                    <Link to={`/${tag}`}>{tag}</Link>
-                                    {index + 1 < linkTags.length ? ', ' : null}
-                                    {(index + 1) % tagsInRow == 0 ? (
-                                        <br />
-                                    ) : null}
-                                </span>
-                            )
-                        })}
-                    </p>
-                </Card>
-            )}
-        </>
+        </section>
     )
 }
 

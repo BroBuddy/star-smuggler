@@ -7,17 +7,20 @@ function Sheet() {
     return (
         <section className="flex flex-col py-2 w-full">
             <Card title="Frequently Used">
-                {sheetTags &&
-                    sheetTags.map((tag: TagSheet, index: number) => {
-                        return (
-                            <div className="flex mb-2" key={index}>
-                                <span className="w-20">
-                                    <Link to={`/${tag.id}`}>{tag.id}</Link>
-                                </span>
-                                <span>{tag.title}</span>
-                            </div>
-                        )
-                    })}
+               {sheetTags && sheetTags.map((tag: TagSheet, index: number) => (
+                    <Link
+                        to={`/${tag.id}`}
+                        key={index}
+                        className="flex flex-col py-2"
+                    >
+                        <span className="font-mono text-red-500">
+                            {tag.id}
+                        </span>
+                        <span className="font-medium font-sans text-gray-400">
+                            {tag.title}
+                        </span>
+                    </Link>
+                ))}
             </Card>
         </section>
     )

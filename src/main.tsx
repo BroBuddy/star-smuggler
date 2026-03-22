@@ -1,12 +1,13 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 
-const Tag = React.lazy(() => import('./components/Tag'))
-const Booklet = React.lazy(() => import('./components/Booklet'))
+const Game = React.lazy(() => import('./components/Game'))
 const Rules = React.lazy(() => import('./components/Rules'))
+const Events = React.lazy(() => import('./components/Events'))
+const Tag = React.lazy(() => import('./components/Tag'))
 const Sector = React.lazy(() => import('./components/Sector'))
 const Sheet = React.lazy(() => import('./components/Sheet'))
 
@@ -14,47 +15,29 @@ const router = createBrowserRouter([
     {
         element: <App />,
         children: [
-            {
+         {
                 path: '/',
-                element: (
-                    <React.Suspense fallback={<>...</>}>
-                        <Booklet />
-                    </React.Suspense>
-                ),
-                children: [
-                    {
-                        path: '/:tagId',
-                        element: (
-                            <React.Suspense fallback={<>...</>}>
-                                <Tag />
-                            </React.Suspense>
-                        ),
-                    },
-                ],
+                element: <Game />
             },
             {
                 path: '/rules',
-                element: (
-                    <React.Suspense fallback={<>...</>}>
-                        <Rules />
-                    </React.Suspense>
-                ),
+                element: <Rules />
+            },
+            {
+                path: '/events',
+                element: <Events />
+            },
+            {
+                path: '/:tagId',
+                element: <Tag />
             },
             {
                 path: '/sector',
-                element: (
-                    <React.Suspense fallback={<>...</>}>
-                        <Sector />
-                    </React.Suspense>
-                ),
+                element: <Sector />
             },
             {
                 path: '/sheet',
-                element: (
-                    <React.Suspense fallback={<>...</>}>
-                        <Sheet />
-                    </React.Suspense>
-                ),
+                element: <Sheet />
             },
         ],
     },

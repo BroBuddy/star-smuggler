@@ -23,7 +23,7 @@ function Instructions() {
                 <Link to="/R212">R212</Link>,&nbsp;<Link to="/R221">R221</Link>
                 ,&nbsp;
                 <Link to="/R230">R230</Link> and <Link to="/R232">R232</Link>,
-                or if ambitious, read all the rules sections first (R201–R232).
+                or if ambitious, read all the rules sections first (<Link to="/R232">R201</Link>–R232).
             </p>
             <p>
                 A pencil and some paper is needed for this game — to keep track

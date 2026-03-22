@@ -12,7 +12,6 @@ function App() {
 
     return (
         <>
-            <h1 className="logo">Star Smuggler</h1>
             <Outlet />
             <MobileNav />
         </>
