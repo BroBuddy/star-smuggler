@@ -4,12 +4,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 
-const Game = React.lazy(() => import('./components/Game'))
-const Rules = React.lazy(() => import('./components/Rules'))
-const Events = React.lazy(() => import('./components/Events'))
+const Game = React.lazy(() => import('./pages/Game.tsx'))
+const Rules = React.lazy(() => import('./pages/Rules.tsx'))
+const Events = React.lazy(() => import('./pages/Events.tsx'))
 const Tag = React.lazy(() => import('./components/Tag'))
 const Sector = React.lazy(() => import('./components/Sector'))
-const Sheet = React.lazy(() => import('./components/Sheet'))
+const History = React.lazy(() => import('./pages/History.tsx'))
 
 const router = createBrowserRouter([
     {
@@ -36,8 +36,8 @@ const router = createBrowserRouter([
                 element: <Sector />
             },
             {
-                path: '/sheet',
-                element: <Sheet />
+                path: '/history',
+                element: <History />
             },
         ],
     },

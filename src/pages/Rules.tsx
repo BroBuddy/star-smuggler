@@ -1,17 +1,17 @@
-import { EventIds } from '@/service/events'
+import { RuleIds } from '@/services/rules'
 import { Link } from 'react-router-dom'
-import Card from './Card'
+import Card from '../components/Card'
 
-function Events() {
+function Rules() {
     return (
         <section className="flex flex-col py-2 w-full">
-            <Card title="Events">
+            <Card title="Rules">
                 <div className="flex flex-wrap">
-                    {EventIds.map((id, index) => (
+                    {RuleIds.map((id, index) => (
                         <Link
                             to={`/${id}`}
                             key={index}
-                            className="flex flex-col w-1/6 py-2 px-3"
+                            className="flex flex-col w-1/6 py-2 px-2"
                         >
                             <span className="font-mono">
                                 {id}
@@ -24,4 +24,4 @@ function Events() {
     )
 }
 
-export default Events
+export default Rules
