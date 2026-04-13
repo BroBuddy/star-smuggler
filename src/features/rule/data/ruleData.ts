@@ -2161,6 +2161,932 @@ const ruleData: Rule[] = [
             'When being transported to a medical center by this method, normal entry encounters are ignored. However, the medical aid group will only transport the person who needs healing, not his friends, vehicles, etc.',
         ],
     },
+    {
+        tag: 'r232',
+        title: 'Record Keeping',
+        desc: [
+            'You will need to keep various records during the play of Star Smuggler. In fact, use of metal miniatures, markers, play money, and other aids typical to role-playing games will greatly help. Feel free to make up markers as you need them during the game. Generally, the records should include:',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['No.', 'Record'],
+                rows: [
+                    [
+                        '1',
+                        'The current location of yourself, your vehicles, and your party (if isolated from you)',
+                    ],
+                    [
+                        '2',
+                        'Characteristics of yourself and your hirelings (R201), including hits from combat, etc.',
+                    ],
+                    [
+                        '3',
+                        'Cost of salaries (R220A), insurance (R220B), and personal property of hirelings',
+                    ],
+                    [
+                        '4',
+                        'Your money (R232A), and payment record on your starship loan (R203E). Also note any other special debts, money deposited (and which system the bank is located in), etc.',
+                    ],
+                    [
+                        '5',
+                        'Whether you or any of your party are “wanted” in any star system, and the identification papers (including forgeries) available for all (R228).',
+                    ],
+                    [
+                        '6',
+                        'Location and contents of each cache of items (R229C).',
+                    ],
+                    [
+                        '7',
+                        'List of each vehicle, and the equipment in it, including the location of each item, its tech level (R210), and whether it has any damage or is broken down. This should include fuel units (FUs), repair units (RUs), and life support units (LSUs), as well as number of hypercharges remaining in the starship itself. This should also include items in cargo.',
+                    ],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [['r232a', 'Monetary System']],
+            },
+        ],
+    },
+    {
+        tag: 'r232a',
+        title: 'Monetary System',
+        desc: [
+            'The entire Pavonis sector uses a standard currency, technically called Sector Exchange Units, commonly called “Secs” and normally abbreviated “S.” All prices are calculated in Secs unless an event specifically indicates you can trade or barter. Prices vary from system to system for the same item, normally the base price is given and the actual price must be computed (R229A, multiplier table R241).',
+            'Banks',
+            'Whenever you are in an area with banking facilities (R205) you can deposit or withdraw money in a bank account at no charge. However, each bank account is opened and used with a specific set of identification papers. Forged papers are not detected upon deposit, but will be detected upon withdrawal unless you succeed with a Cunning roll (R202). If you become “wanted” in a system, all accounts in that name are frozen and no withdrawals are possible.',
+            'You can have a bank pay certain fees or policies (starship loan payments, death insurance, etc.) at some specified future time However, a bank requires that money must be deposited into the account for this, plus a 10% extra charge paid for the service (at the time of deposit).',
+            'Banks do not communicate from one star system to another. Each star system has a separate bank. As a result, you may have many separate accounts in various star systems, as well as different accounts (under different names) in the same star system.',
+            'Money Handling',
+            'In addition to bank accounts, you can also carry money on your person, in your starship (the money, regardless of amount, takes up 1 CU of space), and/or place it in a cache (R229C). Spending or receiving money takes no time, but you must actually hand over cash for any purchase. Signed checks, bank drafts, etc., cannot be used — nobody trusts such things in the Pavonis sector! Of course, whenever making a transaction in an area where you have a bank account, you can make an instant withdrawal from your account for the amount needed and pay that. Banking facilities, if available, presume computer-controlled accounts and instant access “money machines” on virtually every street corner!',
+        ],
+    },
+    {
+        tag: 'r233',
+        title: 'Entry & Contact Table',
+        desc: [
+            'Compare 1d6 roll with area entered, or area where contact try is made.',
+            'Entry Encounter: subtract one (-1) from die roll; for system entry see R207',
+            'Contact Try: add one (+1) per consecutive day of trying in the area',
+        ],
+        note: [
+            '(no event if entering or leaving orbit or asteroids, except when entering a new star system, then see R207)',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['Area Type', '0', '1', '2', '3'],
+                rows: [
+                    ['City', 'e129', 'r337', 'r339', 'e011'],
+                    ['Colony', 'e019', 'e185', 'e137', 'r329'],
+                    ['Craters', 'e070', 'Syst', 'e140', 'e196'],
+                    ['Gambling', 'e006', 'r331', 'r334', 'e014'],
+                    ['Industrial', 'e181', 'r333', 'e010', 'r335'],
+                    ['Military', 'e059', 'e077', 'e003', 'e086'],
+                    ['Mining', 'e181', 'e005', 'e190', 'Syst'],
+                    ['Palace', 'e059', 'e199', 'e012', 'r336'],
+                    ['Prison', 'e417', 'e008', 'e190', 'e087'],
+                    ['Rough Terrain', 'e154', 'e015', 'Syst', 'e168'],
+                    ['Ruins', 'e150', 'Syst', 'e004', 'e070'],
+                    ['Rural', 'r338', 'e016', 'e005', 'Syst'],
+                    ['Scientific', 'e017', 'e009', 'e127', 'e158'],
+                    ['Slums', 'e142', 'r332', 'r337', 'e076'],
+                    ['Spaceport', 'e019', 'e409', 'r330', 'e185'],
+                    ['Space Station', 'e019', 'Syst', 'e002', 'e007'],
+                ],
+            },
+            {
+                type: 'roll-table',
+                cols: ['Area Type', '4', '5', '6+'],
+                rows: [
+                    ['City', 'e185', 'r205a', 'Syst'],
+                    ['Colony', 'e198', 'r205b', 'Syst'],
+                    ['Craters', 'e085', 'r205c', 'e168'],
+                    ['Gambling', 'Syst', 'r205d', 'e071'],
+                    ['Industrial', 'e146', 'r205e', 'Syst'],
+                    ['Military', 'Syst', 'r205f', 'e018'],
+                    ['Mining', 'e072', 'r205g', 'e172'],
+                    ['Palace', 'Syst', 'e131', 'e175'],
+                    ['Prison', 'Syst', 'r205i', 'e073'],
+                    ['Rough Terrain', 'e188', 'e196', 'e178'],
+                    ['Ruins', 'e088', 'r205k', 'e084'],
+                    ['Rural', 'e188', 'r205l', 'e180'],
+                    ['Scientific', 'r205m', 'Syst', 'e075'],
+                    ['Slums', 'e013', 'r205n', 'Syst'],
+                    ['Spaceport', 'Syst', 'e002', 'r205o'],
+                    ['Space Station', 'e125', 'r328', 'r205p'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['1d6', '1-2', '3-5', '6'],
+                rows: [
+                    ['Regari', 'e122', 'e147', 'e192'],
+                    ['Palatek', 'e126', 'e151', 'e139'],
+                    ['Byzantium', 'e131', 'e155', 'e123'],
+                    ['Imperia', 'e136', 'e159', 'e424'],
+                    ['Talitar', 'e141', 'e134', 'e191'],
+                    ['Cubro', 'e145', 'e124', 'e135'],
+                    ['Uruskop', 'e149', 'e128', 'e188'],
+                    ['Nipna', 'e153', 'e133', 'e156'],
+                    ['Mynkuria', 'e157', 'e138', 'e152'],
+                    ['N. Karma', 'e089', 'e143', 'e148'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r234',
+        title: 'Sector System Connections',
+        desc: ['See Star Atlas Player Aids.'],
+    },
+    {
+        tag: 'r235',
+        title: 'Tech Level of Equipment',
+        desc: [
+            'Compare system tech code with 1d6 roll for tech level (see R210 for details)',
+        ],
+        note: [
+            '“*1”: if a weapons tech level is being determined, this result means that instead of normal weapons, the characters have only hand-to-hand items; for any other type of equipment, this is a normal tech level 1 result.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', '10', '15', '20', '25', '30'],
+                rows: [
+                    ['1', '*1', '1', '1', '*1', '1'],
+                    ['2', '1', '1', '*1', '1', '1'],
+                    ['3', '1', '*1', '1', '1', '2'],
+                    ['4', '*1', '1', '1', '2', '3'],
+                    ['5', '1', '1', '2', '3', '4'],
+                    ['6', '1', '2', '3', '4', '5'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['1d6', '40', '50', '60', '70', '100'],
+                rows: [
+                    ['1', '1', '2', '3', '4', '5'],
+                    ['2', '2', '3', '4', '5', '6'],
+                    ['3', '3', '4', '5', '6', '6'],
+                    ['4', '4', '5', '6', '6', '6'],
+                    ['5', '5', '6', '6', '6', '6'],
+                    ['6', '6', '6', '6', '6', '6'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r236',
+        title: 'Equipment Table',
+        desc: [
+            'The following table lists all equipment available in the game, including capacity units (CU) required and notes on function and use. See r210 for details on tech levels.',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['Name', 'CU', 'Notes'],
+                rows: [
+                    [
+                        'FU: fuel unit (r211c)',
+                        '1',
+                        "used in ship's boat and skimmer",
+                    ],
+                    [
+                        'LSU: life support unit (r213)',
+                        '1',
+                        'need if good atmosphere is not present except when in starship or orbital shuttle',
+                    ],
+                    [
+                        'RU: repair unit (r211b)',
+                        '1',
+                        'to repair one item during an RRR day',
+                    ],
+                    [
+                        'Utility Suit (r213)',
+                        '1',
+                        'person in suit occupies 2 CU but may still carry 2 CU',
+                    ],
+                    ['Stasis Unit (r212e)', '1+', 'hold CUs equal to its size'],
+                    [
+                        'Sidearm (r216d)',
+                        '0',
+                        'takes no space, see r230d-e for firing',
+                    ],
+                    [
+                        'Heavy Hand Weapon (r216d)',
+                        '1',
+                        'see r230d-e for firing',
+                    ],
+                    [
+                        'Skimmer Guns (r216d)',
+                        '2',
+                        'on skimmer only, see r230k for firing',
+                    ],
+                    [
+                        'Boat Guns (r216b)',
+                        '5',
+                        "on ship's boat only, see r230k-l for firing",
+                    ],
+                    [
+                        'Starship Guns (r216a)',
+                        '6',
+                        'on starship only, see r230l for firing when installed, there is 2 CU left inside for operator',
+                    ],
+                    ['Skimmer (r215c)', '10', 'internal capacity of 6 CU'],
+                    [
+                        "Ship's Boat (r214)",
+                        '40',
+                        'internal capacity 25 CU min 5 CU pilotage, max 15 CU fuel. Commercial Vehicle (r215b) internal capacity 9 CU',
+                    ],
+                    ['Orbital Shuttle (r215a)', '-', 'internal capacity 50 CU'],
+                    [
+                        'Starship (r212)',
+                        '-',
+                        'internal capacity 128 CU unarmed',
+                    ],
+                    [
+                        'GM Robot (r222a)',
+                        '1',
+                        'general maintenance (preventive)',
+                    ],
+                    ['U Robot (r222b)', '1', 'utility type, carries 3 CU'],
+                    [
+                        'PS Robot (r222c)',
+                        '1',
+                        'personal support (LSU, first aid)',
+                    ],
+                    [
+                        'Hypercharge (r212b)',
+                        '-',
+                        'for starships only, carried in special area',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r237',
+        title: 'Critical Hit Table: Vehicles',
+        desc: [
+            '1. Critical Hits on Starship',
+            '2. Critical Hits on Other Vehicles',
+        ],
+        note: [
+            '*If nothing mentioned in effects is aboard, there is no effect',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'Roll effects*'],
+                rows: [
+                    ['1', 'defensive screens break down until repaired'],
+                    ['2', 'ECM breaks down until repaired'],
+                    ['3', 'life support systems break down until repaired'],
+                    ['4', 'communications gear breaks down until repaired'],
+                    ['5', 'drives break down until repaired'],
+                    [
+                        '6',
+                        'compartment penetrated, all without utility suits killed, those with 1 hit for each CU of cargo, roll 1d6, “6” it is destroyed (roll 1d6 for compartment: 1-pilotage, 2-crew quarters, 3-turret, 4-engineering, 5-hold, 6-boat hold)',
+                    ],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'Roll effects*'],
+                rows: [
+                    ['1-3', 'roll for break-down (see R218) of vehicle itself'],
+                    [
+                        '4',
+                        'roll for break-down (see R218) of equipment on vehicle',
+                    ],
+                    [
+                        '5-6',
+                        'each CU of passengers or cargo on vehicles rolls 1d6, 5-6 means resolve weapon hit on that CU (multiple results possible on 2+ CUs if both hit)',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r238',
+        title: 'Entry Detection Table',
+        desc: [
+            'Determine detection factor from the table below, add or subtract to it depending on the area you are entering, then roll 1d6; entry is not detected if roll is greater than factor; entry is detected if roll is less than or equal to factor; If your entry is detected, see R233 — for complete rules, see R225.',
+        ],
+        note: [
+            'additions and subtractions (to detection factor) for area type:',
+            '+2 entering Prison or Space Station area',
+            '+1 entering Military or Palace area',
+            '-1 entering Rough Terrain or Ruins area',
+            '-2 entering Craters area',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: [
+                    'Entry',
+                    '10, 15, 20',
+                    '25, 30',
+                    '40, 50, 60',
+                    '70, 100',
+                ],
+                rows: [
+                    ['Foot', '1', '1', '2', '3'],
+                    ['Commercial', '1', '1', '3', '4'],
+                    ['Skimmer', '1', '2', '4', '4'],
+                    ['Ship’s Boat', '2', '3', '4', '5'],
+                    ['Orbital Shuttle', '2', '3', '5', '6'],
+                    ['Starship', '3', '4', '5', '6'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r239',
+        title: 'Paragraph',
+        desc: ['Paragraph R239 does not exist.'],
+    },
+    {
+        tag: 'r240',
+        title: 'Recovery from Stasis Table',
+        desc: [
+            'Use this table whenever you are in an activated stasis unit (R212E) unless the event or rules indicate otherwise:',
+        ],
+        note: [
+            '*start in Scientific Area, Spaceport, or Space Station, whichever is closest to the site where the stasis unit would appear. All items except those within the stasis unit are lost, money on your person is affected the result, as well as that in the bank.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'Results'],
+                rows: [
+                    [
+                        '1',
+                        'your stasis unit not found before galaxy dies, you lose the game',
+                    ],
+                    [
+                        '2',
+                        'deactivated by aliens 850,000 years in future, die of culture shock',
+                    ],
+                    [
+                        '3',
+                        'deactivated 1200 years in future, money worthless, see R229 for caches',
+                    ],
+                    [
+                        '4',
+                        'deactivated 230 years in future, money worthless, see R229 for caches',
+                    ],
+                    [
+                        '5',
+                        'deactivated 3 years in future, half your money lost due to inflation, see R229 for caches remaining',
+                    ],
+                    [
+                        '6',
+                        'deactivated 1 year in future, money okay, see R229 for caches',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r241',
+        title: 'Base Price Multiplier Table',
+        desc: [
+            'Compare 1d6 roll with wealth code to determine base price multiplier; multiplier times base price equals true price; see R229A for complete rules.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Wealth Code', '1', '2', '3', '4', '5', '6'],
+                rows: [
+                    ['0', 'x1', 'x1', 'x1', 'x1', 'x1', 'x1'],
+                    ['10', 'x1', 'x1', 'x1', 'x1', 'x1', 'x1.5'],
+                    ['15', 'x1', 'x1', 'x1', 'x1', 'x1.5', 'x2'],
+                    ['20', 'x1', 'x1', 'x1', 'x1', 'x2', 'x3'],
+                    ['25', 'x1', 'x1', 'x1', 'x1.5', 'x2', 'x3'],
+                    ['30', 'x1', 'x1', 'x1', 'x2', 'x3', 'x3'],
+                    ['40', 'x1', 'x1', 'x1.5', 'x2', 'x3', 'x5'],
+                    ['50', 'x1', 'x1', 'x2', 'x3', 'x3', 'x5'],
+                    ['60', 'x1', 'x1.5', 'x2', 'x3', 'x5', 'x10'],
+                    ['70', 'x1', 'x2', 'x3', 'x3', 'x5', 'x10'],
+                    ['100', 'x2', 'x3', 'x5', 'x5', 'x10', 'x20'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r242',
+        title: 'Cache Factor Table',
+        desc: [
+            'Determine cache factor by adding basic factor and all time modifiers; to recover a cache, 1d6 roll must be greater than the cache factor; see r229c.',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['Factor', 'Location'],
+                rows: [
+                    ['0', 'in Asteroids Area'],
+                    ['1', 'in Craters or Ruins Area'],
+                    ['2', 'in Mining, Orbit, Rough, or Rural Area'],
+                    ['3', 'in City, Colony, Industrial or Scientific Area'],
+                    ['4', 'in Military or Slum Area'],
+                    ['5', 'in any other land area, Spaceport, Space Station'],
+                ],
+            },
+            {
+                type: 'roll-table',
+                cols: ['Modifier', 'Time'],
+                rows: [
+                    ['+1', 'recover within 10-39 days of placement'],
+                    ['+2', 'recover within 40-364 days of placement'],
+                    ['+3', 'recover within 1-99 years'],
+                    ['+4', 'recover within 100-999 years'],
+                    ['+5', 'recover in 1,000 years or longer'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r300',
+        title: 'Surprise',
+        desc: [
+            'Your party surprises those encountered, you can fight (r230) or end the encounter with no event at your option.',
+        ],
+    },
+    {
+        tag: 'r301',
+        title: 'Surprise',
+        desc: [
+            'Your party surprises those encountered if a 1d6 roll is less than your Cunning, otherwise normal combat occurs (r230).',
+        ],
+    },
+    {
+        tag: 'r302',
+        title: 'Surprise',
+        desc: [
+            'Your party surprises those encountered if a 1d6 roll is less than or equal to your Cunning, otherwise normal combat occurs (r230).',
+        ],
+    },
+    {
+        tag: 'r303',
+        title: 'Surprise',
+        desc: [
+            'Your party surprises those encountered if a 1d6 roll is greater than the number of characters in your party, otherwise normal combat occurs (r230).',
+        ],
+    },
+    {
+        tag: 'r304',
+        title: 'Surprised',
+        desc: [
+            'If a 1d6 roll is less than or equal to your Cunning, you sense danger and combat occurs normally (r230); otherwise, your party is surprised by those you encounter (r230i).',
+        ],
+    },
+    {
+        tag: 'r305',
+        title: 'Surprised',
+        desc: [
+            'If a 1d6 roll is less than your Cunning, you sense danger and combat occurs normally (r230); otherwise, your party is surprised in combat by those you encounter (r230i).',
+        ],
+    },
+    {
+        tag: 'r306',
+        title: 'Surprised',
+        desc: [
+            'Those you encounter surprise you and your party in combat (r230i).',
+        ],
+    },
+    {
+        tag: 'r307',
+        title: 'Escape',
+        desc: ['Your party escapees combat and the event ends.'],
+    },
+    {
+        tag: 'r308',
+        title: 'Escape',
+        desc: [
+            'If a 1d6 roll is less than your Cunning, you and your party escape the encounter and avoid combat, event ends. Otherwise, combat occurs (r230).',
+        ],
+    },
+    {
+        tag: 'r309',
+        title: 'Escape',
+        desc: [
+            'If your Cunning is higher than a 1d6 roll, you and your party escape and avoid combat, event ends. Otherwise, combat occurs (r230).',
+        ],
+    },
+    {
+        tag: 'r310',
+        title: 'Vehicular Escape',
+        desc: [
+            'If your party has a vehicle that can move, you escape the encounter and the event ends, otherwise combat occurs (r230).',
+        ],
+    },
+    {
+        tag: 'r311',
+        title: 'Vehicular Escape',
+        desc: [
+            "If your party has a ship's boat or starship that can move, you can use it to escape the encounter and the event ends, otherwise combat occurs (r230).",
+        ],
+    },
+    {
+        tag: 'r312',
+        title: 'Vehicular Escape',
+        desc: [
+            'Combat occurs (r230). However, after the first round, if your party still has a vehicle that can move, you can automatically escape and end both the combat and the event.',
+        ],
+    },
+    {
+        tag: 'r313',
+        title: 'Combat',
+        desc: [
+            'Combat begins (r230). However, you are unable to attempt escapes, change zones, or avoid contact on the first round unless a 1d6 roll is less than your Cunning.',
+        ],
+    },
+    {
+        tag: 'r314',
+        title: 'Combat',
+        desc: [
+            'Combat begins (r230). However, you are unable to attempt escapes, change zones, or avoid contact on the first round unless a 1d6 roll is less than your Cunning.',
+        ],
+    },
+    {
+        tag: 'r315',
+        title: 'Combat',
+        desc: [
+            'Combat begins (r230). However, you are unable to use anything except sidearms and heavy hand weapons during the first round, unless your Cunning is greater than a 1d6 die roll.',
+        ],
+    },
+    {
+        tag: 'r316',
+        title: 'Combat',
+        desc: [
+            'Combat begins (r230). If your Cunning is greater than a 1d6 roll, your opponents are unable to fire any weapons except sidearms and heavy hand weapons during the first round.',
+        ],
+    },
+    {
+        tag: 'r317',
+        title: 'Combat',
+        desc: [
+            'Combat begins (r230). If a 1d6 roll is less than your Cunning, your opponents are unable to fire any weapons except sidearms and heavy hand weapons during the first round.',
+        ],
+    },
+    {
+        tag: 'r318',
+        title: 'Bribe to Pass (Base Price 20 S)',
+        desc: [
+            "Base price amount of bribe is given in event, multiply this by factor obtained in r241. If you pay this bribe, encountered characters let you pass and encounter ends. If you don't, they become hostile, see r327 and add one (+1) to your dice roll there.",
+        ],
+    },
+    {
+        tag: 'r319',
+        title: 'Bribe to Pass (Base Price 25 S)',
+        desc: [
+            "Base price amount of bribe is given in event, multiply this by factor obtained in r241. If you pay this bribe, encountered characters let you pass and encounter ends. If you don't, they become hostile, see r327.",
+        ],
+    },
+    {
+        tag: 'r320',
+        title: 'Bribe to Pass (Base Price 30 S)',
+        desc: [
+            "Base price amount of bribe is given in event, multiply this by factor obtained in r241. If you pay this bribe, encountered characters let you pass and encounter ends. If you don't, they might get the jump on you, see r327 and subtract one (-1) from your dice roll there.",
+        ],
+    },
+    {
+        tag: 'r321',
+        title: 'Bribe to Pass (Base Price 40 S)',
+        desc: [
+            "Base price amount of bribe is given in event, multiply this by factor obtained in r241. If you pay this bribe, encountered characters let you pass and encounter ends. If you don't, they will attack you from their advantageous position, combat begins (r230) and they have surprise (r230i).",
+        ],
+    },
+    {
+        tag: 'r322',
+        title: 'Pass',
+        desc: ['Characters lose interest in your party, event ends now.'],
+    },
+    {
+        tag: 'r323',
+        title: 'Pass',
+        desc: [
+            "You try to lull their suspicions. If a 1d6 roll is less than your Cunning, they let your party pass and the event ends. Otherwise, at least you'll have an edge in combat, see r327 and add one (+1) to your dice roll there.",
+        ],
+    },
+    {
+        tag: 'r324',
+        title: 'Pass',
+        desc: [
+            "They look nasty, but not too bright — you'll try to talk your way past. If a 1d6 roll is less than your Cunning, they let your party pass and the event ends. Otherwise, combat will start, see r327.",
+        ],
+    },
+    {
+        tag: 'r325',
+        title: 'Pass',
+        desc: [
+            "They have an unpleasant gleam in their eyes — it's time to do your nice-guy routine. If a 1d6 roll is less than your Cunning, you succeed, your party passes, and the event ends. Otherwise, go to r327 and subtract one (-1) from your dice roll there.",
+        ],
+    },
+    {
+        tag: 'r326',
+        title: 'Pass Unarmed',
+        desc: [
+            'Those encountered insist you give up all sidearms and heavy hand weapons your party is carrying. If you do, your party passes and the event ends. If you refuse, go to r327 and subtract one (-1) from the die roll there.',
+        ],
+    },
+    {
+        tag: 'r327',
+        title: 'Battle Reference',
+        desc: [
+            'You are forced to fight those you encounter. Roll 2d6 and go to the appropriate section:',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2 (or less)', 'r306'],
+                    ['3', 'r304'],
+                    ['4', 'r305'],
+                    ['5', 'r316'],
+                    ['6', 'r317'],
+                    ['7', 'r313'],
+                    ['8', 'r314'],
+                    ['9', 'r315'],
+                    ['10', 'r301'],
+                    ['11', 'r312'],
+                    ['12 (or more)', 'r300'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r328',
+        title: 'Rumors of Entry',
+        desc: [
+            'You hear rumors of how to sneak into someplace. Select any one land area on the planet now, and note this. If you succeed with a Cunning roll (r202) you can determine its truth now, otherwise, determine it when you attempt entry of that area.',
+            'To determine if the rumor is true, roll 1d6. A result of 1-3 means it is not true, 4-6 means it is true.',
+            'If the rumor is true, add one (+1) to your die roll when checking Entry Detection (rule r225, table r238). You can continue to use this advantage until your entry is detected, at which point this advantage is no longer good.',
+        ],
+    },
+    {
+        tag: 'r329',
+        title: 'Map for Entry',
+        desc: [
+            'You come across a map that seems to show a way to get into a land area on planet without detection (select now any one land area on the planet as this area). When you attempt entry of that area, you can use this map route. If you do, roll 1d6:',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    [
+                        '1',
+                        'Excellent information, add three (+3) to detection die roll (r225), and may continue to add it until you are detected entering this area.',
+                    ],
+                    [
+                        '2',
+                        'Good information, add two (+2) to detection die roll (r225), and may continue to add it until you are detected entering this area.',
+                    ],
+                    [
+                        '3',
+                        'Fair information, add one (+1) to detection die roll (r225), and may continue to add it until you are detected entering this area.',
+                    ],
+                    [
+                        '4',
+                        'Route has an unmarked trap, you are not detected, but instead see e059 if on foot, e077 if in a vehicle.',
+                    ],
+                    [
+                        '5, 6',
+                        'Map is wildly inaccurate, makes you look foolish and conspicuous, subtract one (-1) from detection die roll (r226).',
+                    ],
+                ],
+            },
+        ],
+        note: [
+            'Note: Detection procedure (r225) normally references table r238.',
+        ],
+    },
+    {
+        tag: 'r330',
+        title: 'Bribe for Entry (Base Price 25 S)',
+        desc: [
+            'You learn the name of whom to bribe for entering one area (you now select the area) on this planet. When you actually enter that area, determine the precise size of bribe needed by multiplying base price by the factor obtained from table r241. By paying this bribe, you are assured of entering the area without detection (do not roll for detection or an entry encounter as normally required by r225).',
+        ],
+    },
+    {
+        tag: 'r331',
+        title: 'Opportunity to Buy Items (Base Price 50 S)',
+        desc: [
+            'You come across an interesting deal. Roll 1d6 and see list below for the exact type of item available. For each unit listed below, determine actual price by using rule r229a and table r241. You can buy as many of the item as you can afford.',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    ['1', 'Case of fine liquors, 1 CU per case.'],
+                    ['2', 'Case of robot servo motors, 2 CU per case.'],
+                    ['3', 'Case of sidearm ammunition, 1 CU per case.'],
+                    ['4', 'Case of expensive clothing, 2 CU per case.'],
+                    [
+                        '5',
+                        'Cage of rare birds, 1 CU per cage, requires continual life support or the birds die and it becomes totally worthless.',
+                    ],
+                    ['6', 'Pallet of rare woods, 4 CU per pallet.'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r332',
+        title: 'Opportunity to Buy Items (Base Price 100 S)',
+        desc: [
+            'You come across an interesting offer. Roll 1d6 and see the list below for the exact type of item available. For each unit listed below, determine actual price by using rule r229a and table r241. You can buy as many of the item as you can afford.',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    [
+                        '1',
+                        'Container of radioactives, 4 CU per container. If present in any combat, or in compartment that is hit in combat, the radioactives leak and will inflict one hit per hour for each person in the compartment or vehicle. The radioactives themselves are unaffected and still salable at half price. The contaminated area can be cleaned up at any spaceport, space station, or colony for 5 S per container that was present.',
+                    ],
+                    ['2', 'Jar of rare spices, 1 CU per jar.'],
+                    ['3', 'Stolen art works, 1 CU per work.'],
+                    [
+                        '4',
+                        'Cut gems, every 20 or fraction thereof takes up 1 CU.',
+                    ],
+                    [
+                        '5',
+                        'Young slaves, 1 CU each and highly illegal everywhere. Requires continual life support or dies and becomes totally worthless.',
+                    ],
+                    [
+                        '6',
+                        'Antique sidearms, 1 CU each. These will fire, but each time roll 1d6, sidearm explodes on "6" and inflicts 1d6 hits on user. If it fires correctly, consider it a normal Tech level 1 weapon.',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r333',
+        title: 'Opportunity to Buy Items (Base Price 2d6 x 100 S)',
+        desc: [
+            'You have the opportunity to buy the specific item mentioned below. Roll 1d6 to determine which item. You can only buy one. Actual cost is determined by using rule r229a and table r241.',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    [
+                        '1',
+                        'A complete set of papers for a starship and a starship pilot (r228). The papers are a good quality forgery, and take up no CU.',
+                    ],
+                    [
+                        '2',
+                        'A set of blueprints for a new type of robot, not yet available. These prints can be sold for double the base price in any other star system with Tech code 20 to 60 (determine actual selling price, based on doubled base price, using r229a and r241). Blueprints take up 1 CU of space.',
+                    ],
+                    [
+                        '3',
+                        "A vintage land vehicle that no longer functions, but is an interesting collector's item. It may be offered for sale at any palace. When you do, roll 1d6: 1-3 they aren't interested in vintage land vehicles, 4-5 they will pay three times base price (actual price then determined by r229a and r241), 6 an eager collector offers five times base price (actual price determined by r229a and r241). The vintage vehicle takes up 10 CU.",
+                    ],
+                    [
+                        '4',
+                        'Software for the military radar computers of this star system. You can attempt to sell them at any military base in any other star system. When you do, roll 1d6 for the result: 1 not interested, 2 accept them, thank you for your patriotic duty, but pay nothing, 3 take them, and arrest you as a spy, go to e130 immediately, 4 offer you a base price of 1,000 S for them, 5 offer you a base price of 2,000 for them, 6 offer you a base price of 10,000 for them. If you have Nipnan or Mynkurian software, add one (+1) to the above die roll, and if you are also selling to Mynkuria or Nipnan add two (+2) to the die roll. Results higher than "6" are still considered "6." Software takes up 1 CU of space.',
+                    ],
+                    [
+                        '5',
+                        'Magnificent hypno-gem, that reveals incredible beauty to the viewer, but is very additive to use. Where laws against addictive drugs exist, this gem is illegal. You must locate an addict to sell it, but will make a grand profit if you do so. Gem in case takes 1 CU.',
+                    ],
+                    [
+                        '6',
+                        'A Mark III mining mole, complete with spare bearings. This may be sold in any mining area off this planet for a base price of triple the base price for purchase, with actual price determined by r229a and r241. The mole occupies 12 CU. You may reserve the mole for your own use, but this will consume the spare bearings, and halve (1/2) the final selling price. In use, the mole is similar to a skimmer, with an internal capacity of 6 CU. However, it can move underground at the same speed you can walk on foot. If used underground to enter an area, treat as entry on foot with one added (+1) on the Entry Detection die roll (table r238). It requires one FU per day to run, but has a complete life support system inside that runs whenever fuel is being used. Any qualified skimmer driver can drive the mole. Skimmer guns can be mounted on the mole.',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r334',
+        title: 'Sell Items (Base Price 50 S)',
+        desc: [
+            'You have a chance to sell any of the items listed below, for the base price indicated above. Determine actual price using r229a rules and r241.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['You may only sell, not purchase:'],
+                rows: [
+                    ['Case(s) of fine liquor'],
+                    ['Cage(s) of rare birds'],
+                    ['Heavy hand weapons of any tech level'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r335',
+        title: 'Sell Items (Base Price 100 S)',
+        desc: [
+            'You have a chance to sell any of the items listed below, for the base price indicated. Determine actual price using rule r229a and table r241.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['You may only sell, not purchase:'],
+                rows: [
+                    ['Utility suit(s)'],
+                    ['Case(s) of robot servo motors'],
+                    ['Any undamaged robot'],
+                    ['Slaves (but not on Cubro or New Karma)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r336',
+        title: 'Sell Items (Base Price 100 S)',
+        desc: [
+            'You have a chance to sell any of the items listed below, for the base price indicated. Determine actual price using rule r229a and table r241.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['You may only sell, not purchase:'],
+                rows: [
+                    ['Case(s) of expensive clothing'],
+                    ['Work(s) of art'],
+                    ['Jar(s) of rare spices'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r337',
+        title: 'Sell Items (Base Price 100 S)',
+        desc: [
+            'You have a chance to sell any of the items listed below, for the base price indicated. Determine actual price using rule r229a and table r241.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['You may only sell, not purchase:'],
+                rows: [
+                    ['Ampoules of hallucinogenic drugs'],
+                    ['Case(s) of fine liquor'],
+                    ['Sidearm(s) of tech level 5 or 6 only'],
+                    [
+                        'A hypno-gem (will only buy one, but will pay ten times the usual price determined above)',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r338',
+        title: 'Sell Items (Base Price 50 S)',
+        desc: [
+            'You have a chance to sell any of the items listed below, for the base price indicated. Determine actual price using rule r229a and table r241.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['You may only sell, not purchase:'],
+                rows: [
+                    ['Case(s) of sidearm ammunition'],
+                    ['Case(s) of 6 sidearms'],
+                    ['Heavy hand weapon(s)'],
+                    ['Skimmer gun(s)'],
+                    ['Pack(s) of 4 fragmentation grenades'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r339',
+        title: 'Sell Items (Base Price 100 S)',
+        desc: [
+            'You have a chance to sell any of the items listed below, for the base price indicated. Determine actual price using rule r229a and table r241.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['You may only sell, not purchase:'],
+                rows: [
+                    ['Pallet(s) of rare wood'],
+                    ['Cut gem(s)'],
+                    ['Antique sidearm(s)'],
+                    ['Any one alien artifact'],
+                    [
+                        'Slave(s) only if on Palatek, Byzantium, Imperia, Talitar, Mynkuria',
+                    ],
+                ],
+            },
+        ],
+    },
 ]
 
 export default ruleData
