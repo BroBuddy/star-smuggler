@@ -109,6 +109,382 @@ const ruleData: Rule[] = [
             "Using banks to hold some of your money, you can have loan payments made from your account (in case you aren't around a place with banks when the week is up). See r232a for details.",
         ],
     },
+    {
+        tag: 'r203f',
+        title: 'Victory & Defeat',
+        desc: [
+            'An overwhelming victory in this game is paying off your entire spaceship loan of 120,000 S, and have a substantial fortune left for high living (how much left determines the degree of victory you can keep on looking for more endlessly!). However, staying alive and in possession of your spaceship for as long as possible is the real key to success. "Duke" Springer likes the freedom of the spaceways. Losing his ship or his personal freedom is a fate almost worse than death. Of course, even if you are imprisoned, or trapped in a stasis box, you can still hope to keep enough wealth to buy a ship, or otherwise get back into the star faring life again. The only true defeat in the game is death. Actually, the process of playing the game is designed to be sufficient enjoyment unto itself – how well can you survive as a rough-and-tumble free booting captain of the spaceways?',
+        ],
+    },
+    {
+        tag: 'r204',
+        title: 'Maps & Classifications',
+        desc: [
+            'Star Smuggler is set in the Pavonis Sector, a distant star region with ten inhabited star systems. Various classifications and codes are used for each system, and a unique mapping system for the various planets. The standard description of the sector is in r207, but variants and modifications are possible (r208 & r209).',
+        ],
+    },
+    {
+        tag: 'r204a',
+        title: 'System Characteristics',
+        desc: [
+            'Each star system has a wealth code, a technology (tech) code, and one or more planets, perhaps with a separate asteroid belt as well. Planets have varying tile layouts, gravity, atmosphere.',
+        ],
+    },
+    {
+        tag: 'r204b',
+        title: 'Wealth Code',
+        desc: [
+            'This code ranges from 0 to 100, and represents the general level of wealth and economic strength of the system. Generally, in wealthy systems things cost more, while in poorer systems things cost less. However, a high wealth code system could still have numerous slums, with many discontents dwelling in utter poverty. Costs for goods and services will vary with the wealth code; often a cost multiplier is used after consulting the base price table (r241).',
+        ],
+    },
+    {
+        tag: 'r204c',
+        title: 'Tech Code',
+        desc: [
+            'This code ranges from 0 to 100, and represents the sophistication of equipment in use. Although all equipment is futuristic, high tech items work better, and are more powerful, than lower tech, but tend to break down more often. Often high tech items bring good prices on low tech worlds, although it may be illegal to introduce such equipment for sale on certain worlds. Technology has important effects on weaponry (r216) and on breakdown (r218).',
+        ],
+    },
+    {
+        tag: 'r204d',
+        title: 'Planetary Characteristics',
+        desc: [
+            'Within each system, each planet has various characteristics. This includes the two map tiles used to form the planet, its gravity, and atmosphere. All planets within a star system have the same political structure, and are in constant communication. Travel in orbits, or from one planet to another (within the system) is not normally regulated or supervised carefully — planetary governments concentrate their interest on ships arriving from hyperspace, and at the various spaceports and stations.',
+        ],
+    },
+    {
+        tag: 'r204e',
+        title: 'Gravity',
+        desc: [
+            "The gravity factor of a planet varies from 1 to 16, the higher number indicating a stronger pull. A gravity of 10 or more prevents a ship's boat from climbing to orbit (it lacks sufficient fuel and power), although the boat could descend from orbit, or move about on the surface. Asteroids and space stations have a gravity factor of 0, as do ships in orbit, although spin and small accelerations, or the minor mass of the asteroid, provide a light gravity effect on people and items.",
+        ],
+    },
+    {
+        tag: 'r204f',
+        title: 'Atmosphere',
+        desc: [
+            'A planet\'s atmosphere is rated as "good," "bad" or "no" air. Regardless of planet atmosphere, land areas with white letters as their title all have good air (on bad or no air planets, they have domes or force screens). In bad or no air (black labeled areas on planets of that type) you need life support to survive (r213). In bad air, normal skimmers will not function — their air-breathing engines automatically and instantly break down. A skimmer purchased on a bad air world will work on that world (due to special engine modifications), but won\'t work on any other bad air world, nor on a world with good air. No skimmer can function in "no air." No air also prevents starships and ship\'s boat from making a powerless glide landing; instead, a powered landing is needed (which uses fuel).',
+        ],
+    },
+    {
+        tag: 'r204g',
+        title: 'Land Areas',
+        desc: [
+            'Each planet is composed of two map tiles, joined in a circular shape. The planet has various colored symbols on it, each symbol is a "land area." Each symbol has a name indicating its type, and additional codes for special facilities:',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                label: 'Symbol Colors denote entrance restrictions',
+                rows: [
+                    ['White areas can be entered by any type of travel.'],
+                    [
+                        "Yellow areas cannot be entered by a starship or ship's boat, but any other form of travel is allowed.",
+                    ],
+                    [
+                        'Red areas can only be entered on foot or in a commercial vehicle, no other form of travel is allowed.',
+                    ],
+                    [
+                        "Purple areas only by starship, ship's boat, or orbital shuttle.",
+                    ],
+                    [
+                        'Area Names in white denote good air within the area, area names in black denote normal planetary air (which may be good, bad or none).',
+                    ],
+                    [
+                        '[b] after the name indicates banking facilities are present (see r232a).',
+                    ],
+                    [
+                        '[m] after the name indicates medical facilities present (r231c).',
+                    ],
+                ],
+            },
+            {
+                type: 'simple-list',
+                label: 'Area Connectors are lines that indicate travel routes',
+                rows: [
+                    [
+                        'Short triple-line connector indicates one hour of travel time, regardless of the means used, to move to the other area. This symbol really indicates that the areas are touching, and thus if both have good air in them, travel is possible between without life support, even on a bad or no air planet.',
+                    ],
+                    [
+                        'Long single line connectors with a number indicate a larger distance. The number is the distance in "land steps" between areas. See travel rules (r203a) for time needed to traverse a land step.',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205',
+        title: 'Area Types',
+        desc: [
+            'There are sixteen different types of areas on planets, each with a different map tile symbol. Sometimes a contact try (r227) will reference one of the paragraphs below, which simply means you roll 2d6 dice to determine which occurs. When you get this result, you may keep rolling (spending the appropriate number of hours for each roll, as indicated) as long as you like, including to the next day and beyond. Some results indicate "no more rolls" which means a new contract try and the appropriate paragraph reference is needed to start again.',
+            'Once you finish with the roll(s) in the appropriate paragraph below, and do anything else, you cannot return to that paragraph unless a new contact try (r227) again results in that paragraph. This system may seem peculiar, but it represents the difficulty of dealing with local directories, languages, communication problems, and the fact that the items or services you desire may be rare, already "booked up" for a period, etc.',
+        ],
+    },
+    {
+        tag: 'r205a',
+        title: 'City',
+        desc: [
+            'An extensive built-up area with a large population. There are many opportunities to buy and sell items. Banking and medical centers are present. Each roll takes one hour, roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'hire bodyguard (e063)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'sidearms (e045)'],
+                    ['5', 'repair units (e031)'],
+                    ['6', 'hire repairman (e060)'],
+                    ['7', 'fuel units (e026)'],
+                    ['8', 'commercial transport (e074)'],
+                    ['9', 'life support units (e029)'],
+                    ['10', 'skimmer (e032)'],
+                    ['11', 'hire driver (e062)'],
+                    ['12', 'hire medic (e065)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205b',
+        title: 'Colony',
+        desc: [
+            'A residence outpost on a planet, it can supply nearly every need of the colonists that live on planet. It is very difficult for an outsider to pass without notice in a colony. Banks and medical centers are present. Each roll takes one hour, roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'hypercharges (e025)'],
+                    ['3', 'no more rolls'],
+                    [
+                        '4',
+                        'sidearms (e045) or heavy hand weapons (e048) as desired',
+                    ],
+                    ['5', 'utility suits (e043)'],
+                    ['6', 'hire mobile repairman (e061)'],
+                    ['7', 'repair units (e030)'],
+                    ['8', 'fuel units (e026)'],
+                    ['9', 'life support units (e028)'],
+                    [
+                        '10',
+                        'nothing unless tech code 30 or more, then buy GM robot (e038), PS robot (e040), and/or U robot (e042)',
+                    ],
+                    ['11', 'skimmer (e033)'],
+                    ['12', 'skimmer guns (e051)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205c',
+        title: 'Craters',
+        desc: [
+            'A cratered region due to natural causes when the planet was formed, or the result of planet-wide wars in the past or present. It is not possible to purchase goods or services here, but items may be found. Anything found is free (there is no charge to you). Each roll takes six hours, roll one die (1d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    ['1', 'no more rolls'],
+                    ['2', 'special event (e070)'],
+                    [
+                        '3',
+                        'damaged utility suit (r213) that requires one repair unit (r219)',
+                    ],
+                    [
+                        '4',
+                        'damaged robot that requires one repair unit (r219), roll 1d6 again for type of robot: 1-3 PS robot (r222c), 4-6 U robot (r222b)',
+                    ],
+                    [
+                        '5',
+                        "undamaged heavy hand weapon (e049) of system's tech level",
+                    ],
+                    ['6', 'special event (e085)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205d',
+        title: 'Gambling',
+        desc: [
+            'This is an area dedicated to games of chance, sports, and a wide variety of recreational activities. You may win money here (or lose it), make contact with the underworld, or run afoul of the law. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'heavy hand weapon (e048)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'sidearms (e047)'],
+                    ['5', 'hire driver (e062)'],
+                    ['6', 'hire bodyguard (e064)'],
+                    ['7', 'gamble (e071)'],
+                    ['8', 'commercial transport (e074)'],
+                    ['9', 'hire repairman (e060)'],
+                    ['10', 'hire medic (e065)'],
+                    ['11', 'fuel units (e027)'],
+                    ['12', 'hire starship gunner (e069)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205e',
+        title: 'Industrial',
+        desc: [
+            'An area of industrial research and manufacturing. This is a good area to buy equipment. Banking facilities are present. Each roll takes two hours; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'hire starship engineer (e067)'],
+                    ['3', 'skimmer (e033) and/or skimmer guns (e051)'],
+                    ['4', 'PS robot (e060) and/or GM robot (e037)'],
+                    ['5', 'U robot (e041)'],
+                    ['6', 'hire repairman (e060)'],
+                    ['7', 'repair units (e030)'],
+                    ['8', 'fuel units (e026)'],
+                    ['9', 'commercial transport (e074)'],
+                    ['10', 'life support units (e028)'],
+                    ['11', 'utility suits (e043) and/or sidearms (e046)'],
+                    ['12', 'buy/install stasis units (e057)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205f',
+        title: 'Military',
+        desc: [
+            'Military bases and installations have tight security and are generally risky to penetrate. If you can make contact, you may be able to buy military weaponry. Banking facilities are available inside the base, but medical are not (the military send all non-military personnel to civilian hospitals!). Each roll takes four hours; roll one die (1d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    ['1', 'only buy heavy hand weapons (e050)'],
+                    ['2', 'special event (e086)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'only buy boat guns (e054)'],
+                    ['5', 'only buy military utility suits (e044)'],
+                    ['6', 'hire starship gunner (e069)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205g',
+        title: 'Mining',
+        desc: [
+            'Mining facilities tend to be far from civilization, and this area type does not have life support automatically (workers have their own life support if on a world with bad or no air). Each roll takes three hours; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'hire mobile repairman (e061)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'fuel units (e027)'],
+                    ['5', 'hire bodyguard (e063)'],
+                    ['6', 'special event (e072)'],
+                    ['7', 'life support units (e028)'],
+                    ['8', 'repair units (e030)'],
+                    ['9', 'hire driver (e062)'],
+                    ['10', 'utility suits (e044)'],
+                    ['11', 'commercial transport (e074)'],
+                    ['12', 'U robot (e041)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205h',
+        title: 'Palace',
+        desc: [
+            'This is the extensive and elaborate lodging of the royal or political family in power on the planet. There are no items or services regularly for sale, so no dice rolls are given. All contact results in special events. As you might imagine, palaces are normally well guarded.',
+        ],
+    },
+    {
+        tag: 'r205i',
+        title: 'Prison',
+        desc: [
+            'The area for storage of criminals and other enemies of society. A prison is normally easier to enter than to leave. Prisoners with life sentences are normally packed into 1 CU Stasis Units (r212e), to save on food and guard requirements. As a result, stasis units of 1 and 2 CU are in common use, including some buying and selling. Each roll takes two hours, roll one die (1d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['1d6', 'Result'],
+                rows: [
+                    ['1', 'special event (e073)'],
+                    ['2', 'no more rolls'],
+                    ['3', 'hire bodyguard (e064)'],
+                    ['4', 'special event (e087)'],
+                    ['5', 'stasis units in 1 CU or 2 CU sizes only (e057)'],
+                    ['6', 'no more rolls'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205j',
+        title: 'Rough Terrain',
+        desc: [
+            'A rugged area of poor visibility (rocks, caves, thick vegetation if planet has air, etc.). Rough terrain is a good place for fugitives, and tends to have rough inhabitants. There are no goods or services regularly for sale.',
+        ],
+    },
+    {
+        tag: 'r205k',
+        title: 'Ruins',
+        desc: [
+            'The abandoned and decrepit remains of former civilization. Ruins may be searched for usable items, but equipment found here is at technology level 20 points below the normal planetary tech code (with a minimum tech code of 10 or the planetary code, whichever is less); ignore purchase prices, all found equipment is free. Each roll takes five hours; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    [
+                        '2',
+                        "wrecked ship's boat with 1d6 points of damage, roll 1d6 again, on a 5 or 6 result no repair is possible, but you may cannibalize it for two repair units — boat contains no useful cargo or guns, and cannot be moved until fully repaired (r214)",
+                    ],
+                    [
+                        '3',
+                        'find one intact robot, roll 1d6 again for type: 1-4 U robot (r222b), 5 PS robot (r222c), 6 GM robot (r222a)',
+                    ],
+                    ['4', 'find intact skimmer with no fuel'],
+                    [
+                        '5',
+                        'find 1d6 damaged utility suits, each requires one repair unit, after which another 1d6 roll is needed, result of 4-6 means the suit is still unsafe and must be discarded',
+                    ],
+                    ['6', 'special event (e084)'],
+                    [
+                        '7',
+                        'find damaged skimmer, roll 1d6 again, 1-5 requires one repair unit, 6 cannot be repaired but can be cannibalized for one repair unit instead',
+                    ],
+                    ['8', 'special event (e088)'],
+                    [
+                        '9',
+                        'find one damaged robot that requires one repair unit to fix, roll 1d6 for type of robot: 1-4 U robot (r222b), 5 PS robot (r222c), 6 GM robot (r222a)',
+                    ],
+                    ['10', 'find one sidearm'],
+                    ['11', 'find one repair unit'],
+                    [
+                        '12',
+                        'find one intact utility suit in a completely destroyed vehicle',
+                    ],
+                ],
+            },
+        ],
+    },
 ]
 
 export default ruleData

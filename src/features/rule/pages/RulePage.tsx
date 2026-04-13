@@ -7,9 +7,9 @@ function RulePage() {
     const data = getRuleTags()
 
     return (
-        <section className="flex flex-col py-2 w-full">
+        <section className="flex flex-col">
             <Card title="Rules">
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap my-2">
                     {data.map((id, index) => (
                         <Link
                             to={`/rule/${id}`}

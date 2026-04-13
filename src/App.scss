@@ -27,17 +27,12 @@ body {
     min-height: 100vh;
 }
 
-h2 {
+h3 {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     color: var(--green);
-    border: 1px solid var(--white);
-    border-radius: 15px;
-    padding: 4px 10px;
-    display: inline-block;
-    margin-bottom: 1rem;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -54,7 +49,7 @@ strong,
 span,
 table {
     font-size: 14px;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 img {
@@ -63,9 +58,12 @@ img {
 
 table {
     border: 2px solid var(--green);
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 15px;
     margin: 10px 0;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
 
     tr {
         td,

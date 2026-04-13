@@ -1,19 +1,15 @@
-const Card = ({ id, time, title, children }: any) => {
+const Card = ({ time, title, children }: any) => {
     return (
-        <div className="flex flex-col bg-black/50 p-4 text-xs mb-3s">
-            <div className="grid grid-cols-2">
-                {id && <h3 className="text-sm font-mono font-bold text-grey-300 mb-2">{id}</h3>}
-
+        <div className="flex flex-col p-4">
+            <div>
                 {time && (
-                    <h3 className="text-sm text-gray-300 mb-2 text-right">
+                    <strong className="text-grey mb-2 text-right">
                         ({time})
-                    </h3>
+                    </strong>
                 )}
             </div>
 
-            {title && (
-                <h2 className="text-md mb-4 px-4 py-2">{title}</h2>
-            )}
+            {title && <h3>{title}</h3>}
 
             {children}
         </div>
