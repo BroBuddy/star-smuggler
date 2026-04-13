@@ -23,6 +23,10 @@ function RuleDetailPage() {
     return (
         <>
             <Card title={rule.title}>
+                {rule.image && (
+                    <img src={`/images/rules/${tag}.png`} alt={rule.title} />
+                )}
+
                 {rule.desc?.map((p, i) => (
                     <p key={i}>{parseLinks(p)}</p>
                 ))}

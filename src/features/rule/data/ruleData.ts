@@ -223,6 +223,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205a',
         title: 'City',
+        image: true,
         desc: [
             'An extensive built-up area with a large population. There are many opportunities to buy and sell items. Banking and medical centers are present. Each roll takes one hour, roll two dice (2d6):',
         ],
@@ -249,6 +250,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205b',
         title: 'Colony',
+        image: true,
         desc: [
             'A residence outpost on a planet, it can supply nearly every need of the colonists that live on planet. It is very difficult for an outsider to pass without notice in a colony. Banks and medical centers are present. Each roll takes one hour, roll two dice (2d6):',
         ],
@@ -281,6 +283,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205c',
         title: 'Craters',
+        image: true,
         desc: [
             'A cratered region due to natural causes when the planet was formed, or the result of planet-wide wars in the past or present. It is not possible to purchase goods or services here, but items may be found. Anything found is free (there is no charge to you). Each roll takes six hours, roll one die (1d6):',
         ],
@@ -311,6 +314,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205d',
         title: 'Gambling',
+        image: true,
         desc: [
             'This is an area dedicated to games of chance, sports, and a wide variety of recreational activities. You may win money here (or lose it), make contact with the underworld, or run afoul of the law. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):',
         ],
@@ -337,6 +341,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205e',
         title: 'Industrial',
+        image: true,
         desc: [
             'An area of industrial research and manufacturing. This is a good area to buy equipment. Banking facilities are present. Each roll takes two hours; roll two dice (2d6):',
         ],
@@ -363,6 +368,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205f',
         title: 'Military',
+        image: true,
         desc: [
             'Military bases and installations have tight security and are generally risky to penetrate. If you can make contact, you may be able to buy military weaponry. Banking facilities are available inside the base, but medical are not (the military send all non-military personnel to civilian hospitals!). Each roll takes four hours; roll one die (1d6):',
         ],
@@ -384,6 +390,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205g',
         title: 'Mining',
+        image: true,
         desc: [
             'Mining facilities tend to be far from civilization, and this area type does not have life support automatically (workers have their own life support if on a world with bad or no air). Each roll takes three hours; roll two dice (2d6):',
         ],
@@ -410,6 +417,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205h',
         title: 'Palace',
+        image: true,
         desc: [
             'This is the extensive and elaborate lodging of the royal or political family in power on the planet. There are no items or services regularly for sale, so no dice rolls are given. All contact results in special events. As you might imagine, palaces are normally well guarded.',
         ],
@@ -417,6 +425,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205i',
         title: 'Prison',
+        image: true,
         desc: [
             'The area for storage of criminals and other enemies of society. A prison is normally easier to enter than to leave. Prisoners with life sentences are normally packed into 1 CU Stasis Units (r212e), to save on food and guard requirements. As a result, stasis units of 1 and 2 CU are in common use, including some buying and selling. Each roll takes two hours, roll one die (1d6):',
         ],
@@ -438,6 +447,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205j',
         title: 'Rough Terrain',
+        image: true,
         desc: [
             'A rugged area of poor visibility (rocks, caves, thick vegetation if planet has air, etc.). Rough terrain is a good place for fugitives, and tends to have rough inhabitants. There are no goods or services regularly for sale.',
         ],
@@ -445,6 +455,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205k',
         title: 'Ruins',
+        image: true,
         desc: [
             'The abandoned and decrepit remains of former civilization. Ruins may be searched for usable items, but equipment found here is at technology level 20 points below the normal planetary tech code (with a minimum tech code of 10 or the planetary code, whichever is less); ignore purchase prices, all found equipment is free. Each roll takes five hours; roll two dice (2d6):',
         ],
@@ -489,6 +500,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205l',
         title: 'Rural',
+        image: true,
         desc: [
             'An area where food is grown in a life-support environment. Banking facilities are present here. Each roll takes three hours; roll two dice (2d6):',
         ],
@@ -515,6 +527,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205m',
         title: 'Scientific',
+        image: true,
         desc: [
             'An area where scientific research and development is performed. Items purchased here are considered one tech level higher than normal (after tech code and normal die roll determines tech level). If an item from here breaks down, it must be returned to this area on this planet for repair, or repaired by an engineer you hired from here. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):',
         ],
@@ -541,6 +554,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205n',
         title: 'Slum Area',
+        image: true,
         desc: [
             'A region of poverty and high crime. Slums are dangerous for outsiders to enter, but have an opportunity to buy and sell a wide range of items, often at inflated prices. Banking facilities are present. Each roll takes two hours, roll two dice (2d6):',
         ],
@@ -576,6 +590,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205o',
         title: 'Spaceport',
+        image: true,
         desc: [
             "The normal landing port for star ships and orbital shuttles. It is the standard location to purchase star ships and equipment, as well as hiring a ship's crew. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):",
         ],
@@ -614,6 +629,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r205p',
         title: 'Space Station',
+        image: true,
         desc: [
             'Similar but smaller version of a star port, in orbit around the planet or near the asteroid belt. Conditions are cramped and prices higher, with few opportunities for profit unless contraband is gotten through customs. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):',
         ],
@@ -646,6 +662,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r206',
         title: 'Asteroids',
+        image: true,
         desc: [
             'One game tile represents an asteroid belt, rather than half a planetary surface. There are six asteroids shown on the title, plus a space station. Of course, there are many more than six asteroids in the belt, this is a simplification for game purposes. The asteroid belt is an ideal place to store or hide materials, and occasional finds of value do occur.',
             'Asteroids have a gravity factor of 0 (although they actually have a very light pull). Asteroids have no air, nor atmosphere. No goods or services may be bought at the asteroids, but normal activities and contact tries are possible at the space station (see r205p). The dashed line for the orbit represents ships in the asteroid belt neither at an asteroid, nor docked at the space station.',
@@ -655,6 +672,7 @@ const ruleData: Rule[] = [
     {
         tag: 'r207',
         title: 'Guide to the Pavonis Sector',
+        image: true,
         desc: [
             'Ten star systems make up the Pavonis Sector, connected in pattern "one" (see r234). Complete data on each is provided below. Planets and asteroids are listed with the closest one to the star (sun) of the system first, and given the lowest number (i.e.. Planet I is closer than Planet II).',
         ],
