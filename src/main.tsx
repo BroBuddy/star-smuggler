@@ -8,10 +8,14 @@ const Rules = React.lazy(() => import('./features/rule/pages/RulePage.tsx'))
 const RuleDetailPage = React.lazy(
     () => import('./features/rule/pages/RuleDetailPage.tsx')
 )
-const Events = React.lazy(() => import('./pages/Events.tsx'))
-const Tag = React.lazy(() => import('./components/Tag.tsx'))
-const Helper = React.lazy(() => import('./pages/Helper.tsx'))
-const History = React.lazy(() => import('./pages/History.tsx'))
+const Events = React.lazy(() => import('./features/event/pages/EventPage.tsx'))
+const Tag = React.lazy(
+    () => import('./features/event/pages/EventDetailPage.tsx')
+)
+const Helper = React.lazy(() => import('./features/sheet/pages/SheetPage.tsx'))
+const History = React.lazy(
+    () => import('./features/history/pages/HistoryPage.tsx')
+)
 
 const router = createBrowserRouter([
     {

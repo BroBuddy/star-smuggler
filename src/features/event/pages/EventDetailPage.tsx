@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom'
-import { Rules as RulesData } from '@/services/rules'
-import { Events as EventsData } from '@/services/events'
+import { Rules as RulesData } from '@/features/rule/data/rules'
+import { Events as EventsData } from '@/features/event/data/events'
 import { useEffect, useMemo, useState } from 'react'
-import { TagItem } from '@/lib/types'
-import Card from './Card'
-import { useHistory } from '@/hooks/useHistory'
+import { TagItem } from '@/types/TagTypes'
+import { useHistory } from '@/features/history/hooks/useHistory'
 import { parseLinks } from '@/lib/parseLinks'
+import Card from '@/components/Card'
 
-const Tag = () => {
+const EventDetailPage = () => {
     const { tagId } = useParams()
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const [_, setLinkTags] = useState<string[]>([])
@@ -31,7 +31,7 @@ const Tag = () => {
     }, [tagId, dataSet, addToHistory])
 
     return (
-        <section className="flex flex-col py-2 w-full">
+        <>
             {activeTag && (
                 <Card
                     id={activeTag.id}
@@ -52,8 +52,8 @@ const Tag = () => {
                     </div>
                 </Card>
             )}
-        </section>
+        </>
     )
 }
 
-export default Tag
+export default EventDetailPage

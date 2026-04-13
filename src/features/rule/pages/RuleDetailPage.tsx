@@ -1,6 +1,6 @@
 import Card from '@/components/Card'
 import { useParams } from 'react-router-dom'
-import { useHistory } from '@/hooks/useHistory'
+import { useHistory } from '@/features/history/hooks/useHistory'
 import { useEffect } from 'react'
 import { parseLinks } from '@/lib/parseLinks'
 import { useRuleService } from '../services/RuleService'
@@ -21,21 +21,19 @@ function RuleDetailPage() {
     if (!rule) return null
 
     return (
-        <>
-            <Card title={rule.title}>
-                {rule.desc?.map((p, i) => (
-                    <p key={i}>{parseLinks(p)}</p>
-                ))}
+        <Card title={rule.title}>
+            {rule.desc?.map((p, i) => (
+                <p key={i}>{parseLinks(p)}</p>
+            ))}
 
-                {rule.tables?.map((table, index) => (
-                    <TableRenderer key={index} table={table} />
-                ))}
+            {rule.tables?.map((table, index) => (
+                <TableRenderer key={index} table={table} />
+            ))}
 
-                {rule.note?.map((p, i) => (
-                    <p key={i}>{parseLinks(p)}</p>
-                ))}
-            </Card>
-        </>
+            {rule.note?.map((p, i) => (
+                <p key={i}>{parseLinks(p)}</p>
+            ))}
+        </Card>
     )
 }
 

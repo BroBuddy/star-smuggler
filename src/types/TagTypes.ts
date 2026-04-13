@@ -11,7 +11,7 @@ type TagOption = {
 }
 
 type TagSheet = {
-    id: string
+    tag: string
     title: string
 }
 
