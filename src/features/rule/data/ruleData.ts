@@ -775,6 +775,1230 @@ const ruleData: Rule[] = [
             },
         ],
     },
+    {
+        tag: 'r207d',
+        title: 'Imperia',
+        desc: [
+            'The self-declared capital of a modest empire that includes Palatek, Byzantium, and Talitar. This system assumes the trappings of an imperial capital, but without the actual power. Showy buildings and ornate artwork everywhere conceal dire poverty and a mean existence. Imperia tends to waste its wealth on efforts of size and spectacle rather than quality, although some families possess valuable treasures.',
+            'The system also includes asteroid fields.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e092'],
+                    ['2', 'e100'],
+                    ['3', 'e093'],
+                    ['4', 'e114'],
+                    ['5', 'e113'],
+                    ['6', 'e105'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 100'], ['🛠️ tech 25']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout C-G'], ['🧲 gravity 11'], ['☣️ good air']],
+            },
+        ],
+    },
+    {
+        tag: 'r207e',
+        title: 'Talitar',
+        desc: [
+            'Noted for its vicious and repressive government. Talitarians have few freedoms; the army is in firm control, and troopers vigorously patrol both the planets and the space lanes of the system. Careful bribery can be useful here, but it is exceedingly risky.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e120'],
+                    ['2', 'e118'],
+                    ['3', 'e096'],
+                    ['4', 'e106'],
+                    ['5', 'e093'],
+                    ['6', 'e118'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 25'], ['🛠️ tech 30']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout F-I'], ['🧲 gravity 13'], ['☣️ good air']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet II'],
+                rows: [['🪐 layout E-H'], ['🧲 gravity 4'], ['☣️ good air']],
+            },
+        ],
+    },
+    {
+        tag: 'r207f',
+        title: 'Cubro',
+        desc: [
+            'This system has been a rich source of metals, semiconductors, and crystals for centuries. Much of the planetary surface is now mined out, with extensive wastelands, acid drainage, and mine tailings. There are still valuable mineral finds, but they are relatively small, and depend more on luck than prospecting skill.',
+            'Cubro has now become a center of industrial development using non-metallic materials, especially the still experimental “bio-plastic” alloys.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e121'],
+                    ['2', 'e104'],
+                    ['3', 'e117'],
+                    ['4', 'e103'],
+                    ['5', 'e105'],
+                    ['6', 'e092'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 15'], ['🛠️ tech 70']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout K-A'], ['🧲 gravity 7'], ['☣️ good air']],
+            },
+        ],
+    },
+    {
+        tag: 'r207g',
+        title: 'Uruskop',
+        desc: [
+            'Throughout its long history, Uruskop has been very isolationist, having little trade with other systems and developing in its own unique way. It now has a moderately advanced technology, but its machines and devices tend to confuse outsiders.',
+            'Foreigners also tend to make social errors, which offend or anger the residents. For these reasons, this system is avoided by wise travelers.',
+            'The system also includes asteroid fields.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e119'],
+                    ['2', 'e093'],
+                    ['3', 'e119'],
+                    ['4', 'e109'],
+                    ['5', 'e119'],
+                    ['6', 'e119'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 40'], ['🛠️ tech 40']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout G-B'], ['🧲 gravity 6'], ['☣️ bad air']],
+            },
+        ],
+    },
+    {
+        tag: 'r207h',
+        title: 'Nipna',
+        desc: [
+            'This system seems to have a perpetual war with Mynkuria, with a history of battles for at least a thousand years. The system is preoccupied with developing its war machine, and attempts to annihilate life at Mynkuria.',
+            'Nipna uses the long-range strategy of high-technology weapons, especially due to its population losses, and all industrial and scientific efforts are devoted to armaments.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e098'],
+                    ['2', 'e110'],
+                    ['3', 'e094'],
+                    ['4', 'e098'],
+                    ['5', 'e120'],
+                    ['6', 'e112'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 60'], ['🛠️ tech 100']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout J-D'], ['🧲 gravity 12'], ['☣️ good air']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet II'],
+                rows: [['🪐 layout A-I'], ['🧲 gravity 9'], ['☣️ no air']],
+            },
+        ],
+    },
+    {
+        tag: 'r207i',
+        title: 'Mynkuria',
+        desc: [
+            'This system seems to have a perpetual war with Nipna, with a history of battles for at least one thousand years. The system is preoccupied with destroying Nipna, with a long-range strategy centered on the fanatical dedication of its warriors.',
+            'It tends to base weapons and armament designs on captured Nipnan equipment. Mynkurian troopers readily ignore wounds and pain, and are prepared to spend their lives willingly to damage Nipna.',
+            'Mynkuria also trains highly efficient spies and saboteurs, notorious for their resistance to torture (despite the advanced techniques used by both sides).',
+            'The system also includes asteroid fields.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e095'],
+                    ['2', 'e119'],
+                    ['3', 'e113'],
+                    ['4', 'e093'],
+                    ['5', 'e107'],
+                    ['6', 'e110'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 30'], ['🛠️ tech 60']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout H-A'], ['🧲 gravity 5'], ['☣️ no air']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet II'],
+                rows: [['🪐 layout C-K'], ['🧲 gravity 9'], ['☣️ good air']],
+            },
+        ],
+    },
+    {
+        tag: 'r207j',
+        title: 'New Karma',
+        desc: [
+            'This system emphasizes personal spiritual development over technology. There has been an increase in mental powers, including psionic abilities. Many unusual religious cults are centered here, as well as various arts and other creative activities.',
+            'Individuality is encouraged, so often what other systems consider “insane” is tolerated as normal.',
+            'Unfortunately, the wars between Nipna and Mynkuria have affected this system at times, so New Karma maintains a military force with simple equipment, but a combat record of high effectiveness. This is probably because talented psionicists are provided complete freedom and great luxury while in military service.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
+                rows: [
+                    ['1', 'e115'],
+                    ['2', 'e101'],
+                    ['3', 'e096'],
+                    ['4', 'e099'],
+                    ['5', 'e104'],
+                    ['6', 'e111'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 70'], ['🛠️ tech 10']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout K-D'], ['🧲 gravity 9'], ['☣️ good air']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet II'],
+                rows: [['🪐 layout B-J'], ['🧲 gravity 14'], ['☣️ good air']],
+            },
+        ],
+    },
+    {
+        tag: 'r208',
+        title: 'Random Star System Connections',
+        desc: [
+            'The connections between star systems may be varied. Instead of using the standard connection pattern “one”, roll 1d6 and use the resulting pattern, as shown in R234.',
+            'A line between two systems indicates they are one jump apart.',
+        ],
+    },
+    {
+        tag: 'r209',
+        title: 'Random Star System Design',
+        desc: [
+            'You may redesign any or all of the star systems. To create a new system, roll 1d6 to determine the overall composition of the system.',
+            'Next shuffle together all the planetary tiles except asteroids, and randomly draw two for the first planet, and if there is a second, draw two more. This will alter the actual tiles for a planet.',
+            'To determine gravity, roll 3d6 and subtract two (3d6-2).',
+            'To determine atmosphere, roll 2d6.',
+            'The designer recommends that other characteristics for a system remain unchanged, including name, description, wealth, and tech codes. However, if you wish to create new wealth and tech codes, a 2d6 roll can be used.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['1d6', 'System Composition'],
+                rows: [
+                    ['1-2', 'one planet'],
+                    ['3', 'one planet and asteroids'],
+                    ['4-5', 'two planets'],
+                    ['6', 'two planets and asteroids'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['2d6', 'Atmosphere'],
+                rows: [
+                    ['2-3', 'no air'],
+                    ['4-9', 'good air'],
+                    ['10-12', 'bad air'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['2d6', 'Wealth / Tech Code'],
+                rows: [
+                    ['2', '0 (10 if a tech code)'],
+                    ['3', '10'],
+                    ['4', '15'],
+                    ['5', '20'],
+                    ['6', '25'],
+                    ['7', '30'],
+                    ['8', '40'],
+                    ['9', '50'],
+                    ['10', '60'],
+                    ['11', '70'],
+                    ['12', '100'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r210',
+        title: 'Vehicles & Equipment',
+        desc: [
+            'There are various ways to travel, including on foot, and in various vehicles. Vehicles include star ships, ship’s boats, orbital shuttles, commercial vehicles, and skimmers. You also have access to a wide range of equipment, including weapons (sidearms, heavy hand arms, skimmer guns, boat guns, and starship guns), robots, utility suits, and other items.',
+            'Each item of equipment has a tech level ranging from 1 to 6. When you find, purchase, or encounter someone using an item of equipment, refer to the Tech Level of Equipment (R235) table, roll 1d6, and cross-reference the tech code of the system with the roll. The table indicates the item’s actual tech code, from 1 to 6. As a result, the tech code of the system will generally suggest tech levels of items, but the table result can vary the results.',
+            'Some Level of Equipment results show “*1” as the result. If you encounter an individual with this result, they are unarmed, and any fight will be hand-to-hand (R230G); any other found or purchased equipment is considered tech level 1.',
+            'Prices of equipment are noted in event paragraphs, when you have the opportunity to buy or sell. Wealth code can affect prices, see R229A. The special costs associated with crewmen and other hirelings are noted in R220, and the special costs for your starship bank payments in R203E.',
+        ],
+    },
+    {
+        tag: 'r211',
+        title: 'Capacity Units, Repair Units, Fuel Units',
+        desc: [
+            'Describes the standard unit system used for storage, repair, and fuel management across ships and vehicles.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r211a', 'Capacity Units'],
+                    ['r211b', 'Repair Units'],
+                    ['r211c', 'Fuel Units'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r211a',
+        title: 'Capacity Units',
+        desc: [
+            'All available space on a starship and on other vehicles is measured in Capacity Units (CUs). Most people and materials require CUs for storage and transport, given in the description of the item (see R236 for reference). Unless otherwise restricted, any type of space can be used for any type of material. For example, you could have people in the Cargo Hold, weapons in the Engineering space, extra Fuel Units in the Crew Quarters, etc. if you desired. Due to the possibility of searches, theft, and damage it is useful to record what is being carried where.',
+            'Each person uses 1 CU of space, and each utility suit also uses 1 CU. A Person may carry (or drag) 2 CUs, not counting the utility suit he or she wears — this allows a person to take a disabled individual to safety when wearing suits.',
+        ],
+    },
+    {
+        tag: 'r211b',
+        title: 'Repair Units',
+        desc: [
+            'When repairs are made (R219) after damage (R217) or breakdown (R218), you must expend Repair Units (RUs). One Repair Unit occupies one CU of space, and is sufficient for one day of repair on one item of equipment (see RRR activity, R203C). Repair units are purchased in various areas (R205), and are sometimes acquired by events.',
+        ],
+    },
+    {
+        tag: 'r211c',
+        title: 'Fuel Units',
+        desc: [
+            'A ship’s boat (R214) and skimmer (R215C) require Fuel Units (FUs) to operate. One FU occupies one CU of space. A ship’s boat cannot carry over 15 FU, and a skimmer cannot carry over 5 FU.',
+            'Star ships do not need fuel units (see R212), and when hiring the use of orbital shuttles or commercial land vehicles you can ignore FU needs — appropriate fuel is part of the hiring cost. FUs are purchased in various areas (R205), and are sometimes acquired by events.',
+        ],
+    },
+    {
+        tag: 'r213',
+        title: 'Life Support',
+        desc: [
+            'Life support is automatically present inside a starship, on a planet with “good” air, on orbital shuttles, and in certain areas on any planet regardless of air (those with the title of the area in white-colored type, see R204G). In any other situation, including situations with bad or no air, or in space life support is required.',
+            'A utility suit provides life support for one day to the wearer. If the wearer is accompanied by a PS robot (R222C), life support last indefinitely — for as many days as the robot accompanies the wearer. After the robot leaves the suit can still provide life support for one more day alone.',
+            'A life support unit (LSU) carried on a ship’s boat will provide life support to everyone within the boat for one day. LSUs will not function in a skimmer, because a skimmer is not air-tight (the LSU effect will therefore leak away instantly).',
+            'In an emergency, a PS robot (R222C) can provide life support for any character for one hour, even if without a utility suit.',
+            'A character without life support for five minutes will die. Five minutes is enough time to put on a utility suit, get to a PS robot, or get into a starship or ship’s boat (with LSU). If none of these are immediately available, death will result unless the character is carrying a stasis unit and turns it on.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r213a', 'Starship Life Support'],
+                    ['r213b', 'Utility Suit Sealing'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r213a',
+        title: 'Starship Life Support',
+        desc: [
+            'Continues to function until the ship itself is destroyed, or an event causes a compartment of the ship to depressurize, be opened to space, etc. No fuel or hypercharges are used or required for the life support function, and it will never break down.',
+        ],
+    },
+    {
+        tag: 'r213b',
+        title: 'Utility Suit Sealing',
+        desc: [
+            'A character in a utility suit who suffers just one hit from a nonexplosive weapon (R230 for combat, R231 for wound effects) will automatically self-seal and continue life support. If multiple wounds result, or the weapon has explosive rounds, the suit cannot seal and its life-support function fails instantly. Hand-to-hand combat will never damage a utility suit. Utility suits may break down (R218), check at the end of each day, like other equipment.',
+        ],
+    },
+    {
+        tag: 'r214',
+        title: 'Hopper Class Ship’s Boat',
+        desc: [
+            'The standard ship’s boat for merchant ships, including the Antelope class, is the Hopper class. The boat is sealed for operation in space or any atmosphere, but requires life support units if the crew or passengers are without their own. The boat consumes fuel units at a relatively high rate, and this is mainly used for short excursions. It has folding wings, and may be glide-landed without power (and thus without fuel use) on a planet with atmosphere.',
+            'The Hopper class requires one person to operate, who must be a qualified pilot (including starship pilots).',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r214a', 'Storage'],
+                    ['r214b', 'Speed & Engine Operation'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r214a',
+        title: 'Storage',
+        desc: [
+            'The Hopper class overall is 40 CU in size, and thus requires that space inside a starship when being transported by a starship. The internal capacity of the Hopper boat is 25 CU: 5 CU control & passenger compartment, and four other 5 CU compartments.',
+            'The passenger and control area will contain the pilot, any other passengers, items they can carry including PS robots, and/or LSUs. The other compartments may contain fuel, passengers, or other items including boat guns (5 CU), LSUs, etc.',
+            'One LSU per day will provide life support for everyone and everything inside a Hopper class boat.',
+            'No more than 15 CUs of fuel (15 FU) may be on the boat at any one time, since only three of the other compartments have fuel fittings.',
+        ],
+    },
+    {
+        tag: 'r214b',
+        title: 'Speed & Engine Operation',
+        desc: [
+            'A Hopper boat consumes one FU (fuel Unit) per hour for normal travel. This includes moving about from area to area on a planet, dropping from orbit (unless an unpowered glide is used), or moving about in orbit (to or from a space station and/or asteroid). On the planet, the boat can travel up to 10 land steps per hour.',
+            'Climbing from the surface of a planet to orbit consumes fuel units equal to the gravity of the planet. For example, climbing to orbit on a gravity 5 planet takes 5 FUs — all expended in that hour. The engines of the Hopper boat are limited to a power of 9 — they cannot use more than 9 FU at a time, and thus the boat is unable to climb from planets of 10 or higher gravity. The only way to get a boat off such a planet is to carry it within a starship, or use an orbital shuttle.',
+            'A Hopper boat can travel from one planet to another (or from planet to asteroid area, or vice versa). However, it is not as fast as a starship. The type of travel takes an entire day, and consumes 10 F U.',
+            'Loading and unloading a boat from a starship is very easy, and takes no extra time.',
+        ],
+    },
+    {
+        tag: 'r215',
+        title: 'Planetary Vehicles',
+        desc: [
+            'There are three main types of planetary vehicle: orbital shuttle, various commercial land vehicles, and the skimmer.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r215a', 'Orbital Shuttle'],
+                    ['r215b', 'Commercial Land Vehicles'],
+                    ['r215c', 'Skimmers'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r215a',
+        title: 'Orbital Shuttle',
+        desc: [
+            'You may “book passage” for persons and/or cargo on the orbital shuttle at either a spaceport or space station. It will travel to either spaceport, space station, or orbit, as desired. Booking passage is represented by a contact try (R227) at the spaceport or space station that results in a “commercial vehicle” (E074) event.',
+            'The planet has no spaceport on the ground, commercial vehicle contact at a colony allows one to book passage on a shuttle. The shuttle can carry up to 50 CU, but may not carry items prohibited from transport on that planet (if event paragraphs have mentioned such). The shuttle automatically provides its own fuel and life support for all inside at no extra cost. Every 3 CU of space on the shuttle costs 1 Sec.',
+            'The shuttle takes one hour to reach its destination, including loading and unloading times.',
+        ],
+    },
+    {
+        tag: 'r215b',
+        title: 'Commercial Land Vehicles',
+        desc: [
+            'These include trains, buses, planes, helicopters, ground effect vehicles, subways, monorails, and innumerable other methods for local transportation. They are only hired by the hour, at 3 CU space per 1 Sec of cost when event (E074) occurs (often through a contact try, R227, in specific planetary areas).',
+            'A commercial vehicle moves one land step per hour, or one hour to move from one area to an adjacent one. Additional hours increase the cost.',
+            'A commercial vehicle holds 9 CU; you can hire more than one vehicle for larger loads, but no one item can be larger than 9 CU as a result. You may hire the vehicle for a one-way trip.',
+            'A commercial vehicle must be paid in advance, and remains available (once hired) only for the paid-in-advance period. During the period, you can increase the time available by paying more, but as soon as money runs out the vehicle instantly departs and cannot be recalled without a new contact try, etc. Commercial vehicles can travel to areas of bad or no air.',
+        ],
+    },
+    {
+        tag: 'r215c',
+        title: 'Skimmers',
+        desc: [
+            'These are small private vehicles typical to inhabited planets of the sector. They use air-breathing engines, and thus are limited to areas of good or bad air. A skimmer purchased on a planet with bad air (R204F) can only function on that planet, while skimmers from all other planets won’t work. A skimmer travels one land step per hour, and requires a qualified driver to operate.',
+            'Skimmers are 10 CU in size, and can hold up to 6 CUs of passengers, fuel, cargo, etc. A skimmer moves one land step per hour, and uses one FU per day. It has no life support, and is not sealed.',
+            'Skimmers cannot be hired, instead the 3 CU or 6 CU commercial vehicle is the “hired” equivalent (see R215B above).',
+        ],
+    },
+    {
+        tag: 'r216',
+        title: 'Weaponry',
+        desc: [
+            'Weapons, like all other equipment, have a tech level ranging from 1 to 6, with the higher numbers more advanced. Higher tech “ranged weapons” fire before lower level weapons in combat (R230F), and are more likely to hit (R230D). Advanced weapons often do more damage, especially explosive weapons (R230E). Weapons may be purchased through contacts (R227), acquired in events, or taken from an opponent defeat in combat.',
+            'A character needs a marksmanship rating of one (1) or higher (R201A) to fire a weapon. Characters with marksmanship of zero cannot fire weapons. Robots are unable to fire weapons, their programming prohibits it. Certain weapons can only be used by certain types of characters, as described below.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r216a', 'Starship Guns'],
+                    ['r216b', 'Boat Guns'],
+                    ['r216c', 'Skimmer Guns'],
+                    ['r216d', 'Personal Weapons'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r216a',
+        title: 'Starship Guns',
+        desc: [
+            'These powerful energy beam weapons must be mounted in starships, the Antelope class can fit one set of guns in its turret. They can only be fired by a qualified starship gunner in the turret. If starship guns are purchased, they are installed at that time if the starship is present; otherwise a starship engineer (R221B) can install them in one day of RRR (R203C) devoted to the task.',
+            'A hit from starship guns reduces an individual’s Endurance (R231) by ten points, or inflicts one hit on a vehicle (may be a critical hit, see R230L).',
+        ],
+    },
+    {
+        tag: 'r216b',
+        title: 'Boat Guns',
+        desc: [
+            'These large weapons require 5 CU of space and are installed only in a ship’s boat. A qualified starship gunner is needed to fire them, and a boat pilot cannot also fire the guns. When purchased, boat guns are installed at that time if the boat is present; otherwise a starship engineer can install them (R221B) in one day of RRR (R203C) devoted to the task.',
+            'A hit from boat guns may reduce an individual’s Endurance or disable him (R231), or inflict one hit on a vehicle (may be a critical hit, see R230K).',
+        ],
+    },
+    {
+        tag: 'r216c',
+        title: 'Skimmer Guns',
+        desc: [
+            'These medium weapons require 2 CU of space and are installed on a skimmer. Starship gunners and bodyguards with marksmanship of one (1) or higher, or Duke Springer, can fire them, except the driver of the skimmer. When purchased, skimmer guns are installed at that time if the skimmer is present; otherwise a starship engineer or repairman can install them in one day of RRR (R203C) devoted to the task.',
+            'A hit from skimmer guns may reduce an individual’s Endurance or disable him (R231), or may inflict one hit on a vehicle (may be a critical hit, see R230K).',
+        ],
+    },
+    {
+        tag: 'r216d',
+        title: 'Personal Weapons',
+        desc: [
+            'These light weapons are carried by individuals. Heavy hand weapons are 1 CU in size and can only be used by starship gunners, bodyguards, or Duke Springer. Sidearms take up no space, and can be used by anyone. A crate of 10 sidearms, in cargo, takes up 2 CU.',
+            'Marksmanship of 1 or better is required to fire any type of personal weapon. Personal weapons cannot be fired while driving a skimmer, piloting a boat, or fired out of a boat or starship (but may be fired within the vehicle). A hit from personal weapons may reduce an individual’s Endurance or disable him (R231), or may inflict a hit on certain types of vehicles only (see R230K).',
+        ],
+    },
+    {
+        tag: 'r217',
+        title: 'Damage',
+        desc: [
+            'If a shot hits a vehicle (R230), the result is given as a “hit” or a “critical hit.” Each vehicle can absorb a certain number of hits before it is destroyed. The effects of weapons and injury on individuals are described in R231. When a vehicle is destroyed by hits, it cannot function for any purpose, and repair is no longer possible.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r217a', 'Starship Damage'],
+                    ['r217b', 'Ship’s Boat Damage'],
+                    ['r217c', 'Skimmer Damage'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r217a',
+        title: 'Starship Damage',
+        desc: [
+            'Starships (Antelope class) take 10 hits to destroy. Sidearms and heavy hand weapons have no effect on starships unless an event paragraph indicates otherwise. Individual points of damage simply increase the risk factor when hyperjumping.',
+        ],
+    },
+    {
+        tag: 'r217b',
+        title: 'Ship’s Boat Damage',
+        desc: [
+            'Ship’s boat (Hopper class) takes 5 hits to destroy. Sidearms have no effect on ship’s boat unless an event paragraph indicates otherwise. Individual points of damage have no special effect unless critical hits (see R237 for effects). Shuttles are similar to ship’s boat.',
+        ],
+    },
+    {
+        tag: 'r217c',
+        title: 'Skimmer Damage',
+        desc: [
+            'Skimmers (and commercial vehicles) take only 2 hits to destroy. One hit will immobilize the vehicle until repaired. Sidearm hits do not damage unless a critical hit results, in which case normal damage and the critical hit effect (R237) both apply, meaning at least the immobilization of the vehicle.',
+        ],
+    },
+    {
+        tag: 'r218',
+        title: 'Break-down',
+        desc: [
+            'As you use vehicles and other equipment, break-down may occur. If an items breaks down, it cannot be used until it is repaired (R219). Break-down does not add any damage points, and never causes destruction.',
+            'Normally, you must check for break-down after each day for each item, vehicle, etc. that was used that day. You do not need to check vehicles that did not move, items not used (including those simply carried, but not used), nor starships or ship’s boats in orbit, at a space station, or at an asteroid. Break-down for vehicles and weapons are determined separately. Communications and life support equipment on starships or ship’s boat will never break down.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r218a', 'Break-down Check'],
+                    ['r218b', 'Preventive Maintenance'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r218a',
+        title: 'Break-down Check',
+        desc: [
+            'When break-down is checked, roll 2d6 and compare the result to the item’s tech level. If the dice roll is less than or equal to the tech level, the item breaks down. Note that a roll of “1” is not possible with two dice, and thus tech level 1 items never break down.',
+        ],
+    },
+    {
+        tag: 'r218b',
+        title: 'Preventive Maintenance',
+        desc: [
+            'This is performed to reduce the chance of break-down. GM robots (R222A) can perform it on starships and ship’s boat. Starship engineers can do preventive maintenance on any equipment or vehicle.',
+            'Preventive maintenance takes an entire day of work for the man or robot, who cannot do anything else, and will be prevented from doing it by combat or some other interruption. All items and vehicles at that location get the benefit of the maintenance. More than one engineer and/or robot at the location does not increase the benefits in any way.',
+            'If an engineer performed maintenance, all items add two (+2) to breakdown rolls that day, and add one (+1) to break-down rolls for the next two days afterward.',
+            'If a GM robot performed maintenance, all items add one (+1) to breakdown rolls that day and the following day.',
+        ],
+    },
+    {
+        tag: 'r219',
+        title: 'Repair of Vehicles & Equipment',
+        desc: [
+            'When vehicles or equipment break-down, or are damaged, they must be repaired to be fully functional again. Note, however, that some damage has no material effect, and can be ignored (although the vehicle is closer to destruction until the damage is repaired). Repair is done during a day of RRR (R203C) by a qualified person.',
+            'A starship engineer may repair any part of a starship, including the ship itself, a ship’s boat or any part thereof, or a skimmer. This includes repair of starship guns, boat guns, and/or skimmer guns.',
+            'A repairman or mobile repairman can repair anything except a starship or ship’s boat equipment (or the vehicle itself). A skimmer driver can only repair a skimmer.',
+            'Repairs require the item or vehicle to be at the same location as the person repairing it. Normally, equipment must be brought to hired repairmen. Mobile repairmen can travel to the equipment’s location.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r219a', 'Repair Units'],
+                    ['r219b', 'Speed of Repair'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r219a',
+        title: 'Repair Units',
+        desc: [
+            'In any repair, one Repair Unit (R211) is consumed per day of repair on a single item of equipment. Repair Units (RUs) may be purchased in any area where vehicle repair may be obtained. RUs are not needed for preventive maintenance.',
+        ],
+    },
+    {
+        tag: 'r219b',
+        title: 'Speed of Repair',
+        desc: [
+            'A starship engineer repairs 1d6 hits on a starship per day, and one hit per day for other items. A repairman, or mobile repairman in his home area, repairs 1d6 hits per day. A mobile repairman who traveled to another area only fixes one hit per day. A skimmer driver can only repair one hit per day.',
+            'If an item has broken down (R218) any repair with one RU will fix it, in addition to repair hits of damage as noted above. However, even with no hits, a broken-down item still requires repair work and one RU.',
+        ],
+    },
+    {
+        tag: 'r220',
+        title: 'Retinue',
+        desc: [
+            'As the adventure progresses, you may hire or otherwise gain crew-members and followers. When a character joins your “party,” note his or her basic statistics (R201A) and skills. You can voluntarily dismiss or abandon members of your party, although this can cause problems (see below).',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r220a', 'Hirelings'],
+                    ['r220b', 'Abandonment, Insurance & Death Payments'],
+                    ['r220c', 'Isolated Persons'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r220a',
+        title: 'Hirelings',
+        desc: [
+            'A person hired as a starship crewman must be paid “sign-on” money sometimes, at the time of hiring. The daily or weekly salary must be paid at the start of each day or week, and may be modified if the crewman is working in a stasis unit with insurance coverage. All costs are noted in event paragraphs, and are normally modified by the wealth code of. the system.',
+            'See R223A for equipment used by hirelings.',
+            'If a salary is not paid in advance, at the start of each day you can attempt to convince them to keep working anyway with a successful cunning roll (R202). If this fails, the character will leave you as soon as he or she arrives in an area with good air. Until that time, the person does not work, and will automatically side against you in any encounter (join opposition in combat against you, inform customs searches of contraband, etc.).',
+        ],
+    },
+    {
+        tag: 'r220b',
+        title: 'Abandonment, Insurance & Death Payments',
+        desc: [
+            'A member of your party could leave due to an event, normal end of employment, or Is simply left behind with life support or in an area with good air — outside of a combat situation. Here you have no further obligation to the person. If the person is killed, abandoned in combat, or left without life support where it is needed, you must make a death payment on that day or the following day to a bank. If you don’t make the payment on time, you can never again hire anyone from the star system where the person was hired, except those who don’t require any death payment.',
+            'Death payments can be deposited in advance at any bank in the person’s home system for an extra 10% fee. If the person leaves your party and no death payment is needed, you can recover the money the next time you are in an area with banking facilities in that system.',
+            'Stasis insurance is obtained by installing a stasis unit in the work space of the crewman (1 CU for a man alone, 2 CU for a man with suit), and by depositing money sufficient for the next largest size stasis unit plus 10% at any bank. Insurance money is never refunded, regardless of circumstances when the person leaves your employ. See R212E for stasis unit details.',
+        ],
+    },
+    {
+        tag: 'r220c',
+        title: 'Isolated Persons',
+        desc: [
+            'Persons of your party may be left somewhere while you go elsewhere. While isolated from you, the others cannot travel, engage in work, combat, try for contact or other activities. The only exception is that they may perform RRR activities (R203C), such as repair, preventive maintenance, or healing wounds. The normal RRR encounter may occur (see R227A), and if it does, they make no resistance to the event, and will be automatically defeated in any combat.',
+            'Isolated individuals will consume life support and/or repair units as necessary for their existence and tasks.',
+            'Bodyguards (R221D) may not be voluntarily left in isolation from you, but events may force them to become isolated.',
+        ],
+    },
+    {
+        tag: 'r221',
+        title: 'Roles of Hirelings',
+        desc: [
+            'Defines the different roles of hirelings and crew-members available to a party, including their capabilities, limitations, and permitted actions.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r221a', 'Pilot/Navigator'],
+                    ['r221b', 'Starship Engineer'],
+                    ['r221c', 'Starship Gunner'],
+                    ['r221d', 'Bodyguard'],
+                    ['r221e', 'Skimmer Driver'],
+                    ['r221f', 'Medic'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r221a',
+        title: 'Pilot/Navigator',
+        desc: [
+            'A crewman who can operate a starship, using its hyperdrive, sublight drive, and/or make an unpowered landing on a planet with atmosphere. In addition, he can control and pilot a ship’s boat and/or drive a skimmer. He cannot perform operate, perform repairs, or conduct preventive maintenance on any other items, except for an ability to operate sidearms (if he has a marksmanship of 1 or higher). He will defend himself if attacked in hand-to-hand combat, but will not attack. As a starship crewman, the pilot is able to operate starship communications equipment.',
+        ],
+    },
+    {
+        tag: 'r221b',
+        title: 'Starship Engineer',
+        desc: [
+            'A crewman who can perform preventive maintenance or make repairs on any starship or ship’s boat equipment, or on a skimmer. He can drive a skimmer, but cannot pilot a starship or ship’s boat. He cannot use any weapons except sidearms (and then only if he has marksmanship of 1 or more), and only defends himself if attacked in hand-to-hand combat. As a starship crewman he can operate communications equipment.',
+        ],
+    },
+    {
+        tag: 'r221c',
+        title: 'Starship Gunner',
+        desc: [
+            'A crewman who operates the starship’s gun turret. He can also operate boat guns or skimmer guns, and can use personal weapons (heavy hand weapons or sidearms). He can drive a skimmer, but not a starship or ship’s boat. He cannot perform repairs, nor preventive maintenance. He can attack as well as defend in hand-to-hand combat, and as a starship crewman can operate starship communications equipment.',
+        ],
+    },
+    {
+        tag: 'r221d',
+        title: 'Bodyguard',
+        desc: [
+            'A hireling who can use skimmer guns, heavy hand weapons, and/or sidearms, but is unable to fire starship guns or boat guns. He can attack or defend or hand-to-hand combat. A bodyguard only fights if with Duke Springer, he will not fight if isolated. He cannot perform any repair or preventive maintenance, and cannot operate starship communications equipment.',
+        ],
+    },
+    {
+        tag: 'r221e',
+        title: 'Skimmer Driver',
+        desc: [
+            'A hireling who can drive a skimmer or repair it. Skimmer drivers cannot do preventive maintenance, will not use any weapons, nor attack in hand-to-hand combat. Skimmer drivers will never voluntarily leave their system of origin, and will not work for you if “kidnapped” from their home star system.',
+        ],
+    },
+    {
+        tag: 'r221f',
+        title: 'Medic',
+        desc: [
+            'A hireling qualified to perform emergency first aid (R231B), and useful in certain special events. A medic cannot use weapons, will attempt to avoid any hand-to-hand combat, and cannot operate any other equipment, do preventive maintenance, or perform repairs.',
+        ],
+    },
+    {
+        tag: 'r222',
+        title: 'Robots',
+        desc: [
+            'There are three principal types of robots. All robots have fail-safe programming features that prevent them from being used in any type of combat. Each robot has an endurance of 2, takes 1 CU space, and is self-powered with a small battery. There is a small operating cost every 10-day week, representing new batteries and other consumables needed to keep a robot running. If this is not paid, the robot automatically breaks down.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r222a', 'GM Robot'],
+                    ['r222b', 'Utility Robot'],
+                    ['r222c', 'PS Robot'],
+                    ['r222d', 'Robot Use & Break-down'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r222a',
+        title: 'GM (General Maintenance) Robot',
+        desc: [
+            'Can perform preventive maintenance duties on all items within a starship and/or ship’s boat (see R218B) but cannot perform repairs. A GM Robot cannot function on equipment whose tech level is higher than the tech level of the robot. A GM robot can maintain other GM robots, but cannot maintain itself nor other robots. Operating cost is 2 S per 10-day week.',
+        ],
+    },
+    {
+        tag: 'r222b',
+        title: 'U (Utility) Robot',
+        desc: [
+            'Used to carry loads up to 3 CU (in addition to the 1 CU the robot itself occupies). It has no other function. Operating cost is 1 S per 10-day week.',
+        ],
+    },
+    {
+        tag: 'r222c',
+        title: 'PS (Personal Support) Robot',
+        desc: [
+            'Programmed to support a single, specific individual only. When a PS Robot is connected to a person in a utility suit, the result is indefinite life support (R213). If the PS robot is connected to a person without a suit, the person can be kept alive for one hour.',
+            'A PS Robot can perform emergency first aid (R213B) and can call for medical assistance (R231C). It cannot provide healing (unlike a medic). The robot can be used for any ordinary radio-communicator calls on that planet, including to orbit or a space station, but not to another planet or star system. Operating cost is 2 S per 10-day week.',
+        ],
+    },
+    {
+        tag: 'r222d',
+        title: 'Robot Use & Break-down',
+        desc: [
+            'Robots may be used in any environment, including bad air or vacuum, and do not require life support. As with any equipment, you must check for break-down for each day you use each robot (R218).',
+        ],
+    },
+    {
+        tag: 'r223',
+        title: 'Hirelings’ Equipment & Goods',
+        desc: [
+            'Hirelings’ Equipment & Goods defines how equipment assigned to hirelings is owned and transferred, and how equipment and valuables can be acquired outside of direct purchase.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r223a', 'Hirelings’ Equipment'],
+                    ['r223b', 'Acquiring Equipment without Purchase'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r223a',
+        title: 'Hirelings’ Equipment',
+        desc: [
+            'Any equipment used by a hireling, which he personally carries, becomes the personal equipment and property of that person. This includes sidearms, heavy hand weapons, PS robots, etc. Exceptions are U or GM robots, vehicles, equipment mounted in vehicles, etc.',
+            'As a result, you may need to give equipment to a hireling from time to time. You can take back the “given” equipment later, but must succeed with a Cunning roll (R202) to prevent the hireling from quitting. If a hireling is not paid and leaves, he automatically takes personal equipment with him, you are unable to take it back regardless of cunning (although you can try to use your cunning to have him continue working for you without pay for that day, see R220A).',
+        ],
+    },
+    {
+        tag: 'r223b',
+        title: 'Acquiring Equipment without Purchase',
+        desc: [
+            'Certain events may allow you to find intact or damaged equipment without spending money. In addition, if you defeat others in combat, you may take any equipment or valuables they have (indicated in the event), assuming it wasn’t damaged or destroyed in battle. Damaged equipment that you can move can also be taken.',
+            'You take prisoners after combat only if so indicated in the event paragraph. Otherwise, those who are not killed are assumed to escape.',
+            'Each person you encounter will have “pocket change” in Secs equal to a 1d6 cross-indexed with the system’s wealth code on table R241. Ignore any fractional Secs of pocket change. In other words, pocket change is base price of 1 S times multiplier given on that table.',
+        ],
+    },
+    {
+        tag: 'r224',
+        title: 'Encounters',
+        desc: [
+            'There are two main types of encounters: Entry Encounters and Contact Try Encounters. Each type is described in detail below (R225-226-227). All encounters use the same standard resolution procedure:',
+            'If you encounter any people, note the characteristics of each (R201A). Sometimes a characteristic is determined by a die roll, at times with a certain amount added or subtracted. For example, “1d6+1” means one die roll with one added. Minimum characteristic possible is 0, unless other minimums or maximums are given.',
+            'If persons encountered have skills, note this. Generally, any characters encountered with heavy hand weapons automatically have bodyguard skill. If persons have vehicles, assume all of them have sufficient skill to operate it (skimmer driver if in skimmers, pilot/navigators if in ship’s boat or starship). Pocket change is determined after the encounter, if needed.',
+            'If the person have any equipment, such as weapons, robots, etc., refer to the Tech Level table (R235) to determine the level of their equipment. Roll just once — they all have equipment of the same tech level.',
+        ],
+    },
+    {
+        tag: 'r225',
+        title: 'Entry Detection & Entry Encounters',
+        desc: [
+            'Whenever you enter a new area within a star system, there may be an Entry Encounter. When moving to a new star system, see R226 for details.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r225a', 'Detection'],
+                    ['r225b', 'Entry Encounters'],
+                    ['r225c', 'Entry in Stasis'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r225a',
+        title: 'Detection',
+        desc: [
+            'Whenever you enter a new area within a star system, there may be an Entry Encounter. When moving to a new star system, see R226 for details.',
+            'First, determine if you are detected. Refer to the Entry Detection Table (R238) and cross-reference the mode of entry and the tech code of the system and add or subtract a certain amount when entering certain types of areas (see table) to give your detection factor. Then roll one die (1d6). If the result is less than or equal to the detection factor you are detected. If the result is greater than your detection factor, you enter undetected and no entry encounter occurs. Entering undetected often means that nobody paid any attention to you, rather than you sneaking in totally unseen.',
+            'You can enter asteroid and orbit areas undetected at any time — no detection check is necessary, and no encounters occur.',
+        ],
+    },
+    {
+        tag: 'r225b',
+        title: 'Entry Encounters',
+        desc: [
+            'If you are detected (see R225A), you must now roll one die (1d6), subtract one (-1), and cross-reference the result with the type of area entered or the Entry & Contact Table (R233). Most results refer to a specific events paragraph (EOOO). A few refer to a specific rules paragraph with a special listing, and some refer to the “SYST” chart on the Encounter Table, where another 1d6 roll is cross-referenced with the star system you are in now.',
+        ],
+    },
+    {
+        tag: 'r225c',
+        title: 'Entry in Stasis',
+        desc: [
+            'If you arrive anywhere in a stasis unit because of voluntary or automatic activation (R212E), refer to recovery from stasis table (R240) and roll 1d6 for the result before you continue play.',
+        ],
+    },
+    {
+        tag: 'r226',
+        title: 'System Entry Encounters',
+        desc: [
+            'Whenever you hyperjump to a new star system you must check for a system entry encounter immediately upon arrival. To do this, refer to the proper system in R207, and roll 1d6. After this event, you can begin moving in your starship to any planet or the asteroids (see R212G).',
+            'Once you undergo the system entry table in R207, you need not check it again until you hyperjump and arrive at a new star system. System entry results are not required if you move from one planet to another (or to/from asteroids) within a star system.',
+        ],
+    },
+    {
+        tag: 'r227',
+        title: 'Contact Try Encounters',
+        desc: [
+            'Like most enterprising merchants, much of your time will be spent buying and selling items, trying to gain information about the market and general situation, etc. This activity is represented by “contact tries” during a day. The result will be encounters, some of them unpleasant, of course.',
+            'Contact tries are not possible in orbit, or at an asteroid.',
+            'Contact tries during a normal day are entirely voluntary (except in RRR, see R227A below). A contact try is only possible if at least one hour remains in the day. You must leave your vehicle (if any) to make a contact try, but if the resulting event occurs at “dispersed” (long) range, you can return to your vehicle for the start of the event, if desired.',
+            'To make a contact try, cross-reference the area you currently occupy with a 1d6 roll on the Entry & Contact Table R233. The result is either an events paragraph, a reference to a special rules paragraph, or a “SYST” result that refers you to the SYST sector of that same table (R233) where you cross-reference a second 1d6 roll with the star system you are in.',
+            'If you have spent more than one consecutive day in this area, for each consecutive day after the first you add one (+1) to the contact try die roll. Only days in which at least one contact try is attempted may be counted. Should you leave the area, you lose benefit of all days spent there.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [['r227a', 'Contact During RRR']],
+            },
+        ],
+    },
+    {
+        tag: 'r227a',
+        title: 'Contact During RRR',
+        desc: [
+            'If you spend a day in RRR, or isolated characters spend a day in RRR (R203C), there is a possibly of an encounter roll 1d6: if a “6” results, an encounter occurs. Roll 1d6 again and consult R233. In any contact try encounters, the 1d6 rolls are not modified, regardless of how many days are spent in the area. If the contact results in an event that means combat, or causes the persons to go someplace else (even within the same area), all RRR activities for that day are prevented.',
+        ],
+    },
+    {
+        tag: 'r228',
+        title: 'Ship’s Papers, Personal ID, and the Wanted List',
+        desc: [
+            'You begin the game with a set of official papers identifying yourself and your starship. Any hirelings who join you also have official and valid identification unless otherwise indicated. You start the game “not wanted” in any of the ten star systems, and your papers are valid in all systems.',
+            'Some events or rules indicate that you become “wanted” in that star system. When this occurs, record the fact. Once your are “wanted” in the system, you will remain that way (the police have long memories).',
+            'Some events paragraph may permit you to obtain new (forged) papers for yourself, your starship, and/or hirelings. When traveling under a new name, you will become “unwanted” again, until you do something in that name that causes you to become “wanted.” Of course, while traveling under forged papers you may be discovered, and that alone will be enough to make you “wanted” again, if not arrested outright!',
+            'The use of forged papers means you must keep track of each set of papers, and whether that identity is “wanted” anywhere.',
+        ],
+    },
+    {
+        tag: 'r229',
+        title: 'Cargo, Goods, and Services',
+        desc: [
+            'Buying and selling items is an important part of being a Star Smuggler, since it’s the main way to become rich. Normally money (Secs, R232A) is used in any-transaction, unless the event specifies some sort of trade.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r229a', 'Buying, Selling, and Salaries'],
+                    ['r229b', 'Carrying & Hiding Items'],
+                    ['r229c', 'Caches'],
+                    ['r229d', 'Starship Searches'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r229a',
+        title: 'Buying, Selling, and Salaries',
+        desc: [
+            'Most events give specific costs or salaries for goods and services. This price is normally listed as the base price in Secs (S). The base price is modified by the wealth code of the star system, to given the actual price. Wealth codes are listed in R207.',
+            'To determine actual price, roll 1d6 and compare it with the system’s wealth code on the Base Price Multiplier Table (R241). Multiply the result on this table by the base price to get the actual price. For example, a sidearm with a base price of 5 S is available in the Palatek system (wealth 30). With a 1d6 roll of “1”, R241 indicates a multiplier of “x1”, so the price is (5x1=) 5 S. If the 1d6 roll was “6”, the resulting multiplier is “x3”, so the actual cost is (5x3=) 15 S.',
+            'Premium Prices mean that when consulting R241, increase the wealth code one level (move down one row) and add one to the 1d6 roll (move to the right one column) to get the premium price.',
+            'Devaluated Prices mean that when consulting R241, decrease the wealth code one level (move up one row), and subtract one to the 1d6 (move to the left one column) roll to get the devaluated price.',
+            'Any premium or devalued price modifiers that move the result off the table are ignored (i.e., stay within the limits of the table).',
+        ],
+    },
+    {
+        tag: 'r229b',
+        title: 'Carrying & Hiding Items',
+        desc: [
+            'All persons, equipment and cargo occupy space, measured in Capacity Units (CUs, see R211). To carry an item, sufficient CU-carrying ability is required. Any items not carried by party members, in one of your vehicles, or in a cache (R229C) are abandoned and lost. Materials in the starship must have the storage location noted. The starship has six 1 CU hiding places that can be used, as well as normal compartments. There are no “hiding places” in other vehicles, in robots, or anywhere else unless indicated in the event. Of course, an item in an activated stasis unit (R212E) cannot be observed or examined.',
+        ],
+    },
+    {
+        tag: 'r229c',
+        title: 'Caches',
+        desc: [
+            'Some events can cost you much of your current possessions, or cost considerable money. To avoid some of these results, you can cache money or equipment at the end of any day. Caches can only be formed if you did not travel that day.',
+            'When you later return to the area of the cache, you can spend 1d6 hours at the start of the day looking for it. Consult the Cache Table (R242) for the results. As a general rule, asteroids are the best places to cache items.',
+            'Items that require life support will die unless left in a place with life support, or placed within an activated stasis unit (R212E). Items that require a continual operating cost in Secs (such as robots) will automatically break down unless placed within an activated stasis unit (R212E).',
+        ],
+    },
+    {
+        tag: 'r229d',
+        title: 'Starship Searches',
+        desc: [
+            'Some events require a search of the starship (by customs officials, a military patrol, quarantine officers, etc.). When this occurs, roll 2d6 and consult the results below to see which parts of the ship are searched. Anything in those compartments will be found. Items within activated stasis units are normally confiscated by authorities, unless the event indicates otherwise.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['2d6', 'Search Results'],
+                rows: [
+                    ['2', 'false accusation (E058)'],
+                    ['3', 'HL'],
+                    ['4', 'E, G, Q and P'],
+                    ['5', 'E, G and M'],
+                    ['6', 'Q only'],
+                    ['7', 'M only'],
+                    ['8', 'B and M only'],
+                    ['9', 'B only'],
+                    ['10', 'B, Q and P'],
+                    ['11', 'HH'],
+                    ['12', 'searcher is an old acquaintance, no search'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Code', 'Search Effect'],
+                rows: [
+                    ['B', 'boat hold and ship’s boat are searched'],
+                    ['E', 'engineer compartment is searched'],
+                    ['G', 'gun turret is searched'],
+                    [
+                        'HH',
+                        'roll 1d6, that number and all higher-numbered secret compartments are discovered and searched',
+                    ],
+                    [
+                        'HL',
+                        'roll 1d6, that number and all lower-numbered secret compartments are discovered and searched',
+                    ],
+                    ['M', 'main cargo hold is searched'],
+                    ['Q', 'crew’s quarters are searched'],
+                    ['P', 'pilot’s compartment searched'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r230',
+        title: 'Combat',
+        desc: [
+            'When your character and/or party decide to “fight” opponents, or are forced to fight, the combat rules apply.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r230a', 'Combat Procedure'],
+                    ['r230b', 'Combat Zones (Ranges)'],
+                    ['r230c', 'Selecting Opponents'],
+                    ['r230d', 'Ranged Weapon Fire'],
+                    ['r230e', 'Damage from Ranged Weapon Hits'],
+                    ['r230f', 'Sequence of Ranged Weapon Fire'],
+                    ['r230g', 'Hand-to-Hand Combat'],
+                    ['r230h', 'Sequence of Hand-to-Hand Attacks'],
+                    ['r230i', 'Surprise'],
+                    ['r230j', 'Escape'],
+                    ['r230k', 'Vehicle Combat on Planet'],
+                    ['r230l', 'Space Combat & Starship Guns'],
+                    ['r230m', 'Escaping Space Combat'],
+                    ['r230n', 'Starship Guns Firing on Planet'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r230a',
+        title: 'Combat Procedure',
+        desc: [
+            'Combat is fought in rounds. Each round represents about 5 minutes of action. The rounds continue until one side escapes, is wiped out (or completely disabled), or the conflict is resolved otherwise as described in the event.R230A',
+            'Each round you decide whether you are trying to escape or not. Then you decide which combat zone you wish to fight at (see R230B), you must already be in dispersed zone, and remain there, to attempt escape. Finally, all attacks are resolved, with ranged weapons firing first in order of tech level (higher tech fires first), and then hand-to-hand attacks in order of hand-to-hand combat skill characteristics (higher characteristic attacks first).',
+            'A character may spend a round doing some special action, such as piloting a vehicle, carrying someone to safety, carrying items in or out of a vehicle, etc. Any such special activity prevents changing zones or making any attacks. The character can still be attacked.',
+        ],
+    },
+    {
+        tag: 'r230b',
+        title: 'Combat Zones (Ranges)',
+        desc: [
+            'There are two zones, or ranges, of combat: dispersed and contact. When in the dispersed zone, only ranged weapons can be used. When in contact, only hand-to-hand attacks are allowed.',
+            'Contact is determined person by person. Some persons may be in contact, while others remain dispersed. A person may be contacted by someone, while contacting another himself (or contacting no one). Contact occurs voluntarily.',
+            'Selecting Zones',
+            'You decide which zones your characters prefer, and against which opponents (see selecting opponents, below). You cannot attempt contact with a hireling who refuses to attack hand-to-hand (see R221). Opponents will attempt to make hand-to-hand contact if their hand-to-hand ability exceeds their marksmanship. Otherwise they will try to remain dispersed.',
+            'Avoiding Contact',
+            'A character may avoid contact, and force his enemy to remain at dispersed range, if he has a higher hand-to-hand combat ability, and sacrifices any use of ranged fire weapons that round. The enemy can attempt to get into contact with someone else on the following round.',
+            'Note: it is often helpful to list opposing persons in combat, and use pencil arrows to indicate when a character gets in contact (erase it when he or she decides to leave contact).',
+            'Initial Zone',
+            'All combat begins at dispersed zone unless the event occurs inside a vehicle, or indicates contact zone specifically. During the first round characters in the dispersed zone cannot close to contact. In addition, surprise may further limit actions (see R230I).',
+        ],
+    },
+    {
+        tag: 'r230c',
+        title: 'Selecting Opponents',
+        desc: [
+            'Normally people pair off one-against-one in combat, and engage characters in their own zone as much as possible. That is, dispersed persons will pair off and exchange fire, while contact persons will tend to contact each other one-to-one. If the enemy outnumbers you, they will add a second attacker against each target as evenly as possible, etc. If the enemy has inferior numbers, you can decide which they attack, and which remain unattacked.',
+            'You can always order specific people in your party to engage specific targets, including having a number of people “gang up” to attack a single target, even if the enemy is of equal or superior strength. The only exception is that your characters in contact with an enemy must attack that enemy.',
+            'Remember that robots cannot attack, and are simply victims of attacks.',
+        ],
+    },
+    {
+        tag: 'r230d',
+        title: 'Ranged Weapon Fire',
+        desc: [
+            'Ranged weapons include sidearms, heavy hand weapons, skimmer guns, boat guns, and starship guns. Starship guns use a special firing procedure, see R230L.',
+            'To fire a ranged weapon, add together the weapon’s tech level, and the user’s marksmanship characteristic (R201A). Then roll 2d6, if the result is less than or equal to the total, the weapon hits. Any higher dice roll is a miss. If you hit, and either of the two dice read “6”, it is a critical hit.',
+            'Ranged weapons cannot be fired by a character who contacted another, or who changed zones this round. The only exception is passengers in a vehicle may fire weapons, while the driver controls the vehicle and does the zone-changing for the entire group in that vehicle.',
+            'Ranged weapons fired at a character who was in contact, or contacted by the enemy throughout this round have special problems. When firing into a “continuous contact” situation, if the shot misses its intended target, it will automatically hit the other person instead. As a result, you might hit your friend by accident!',
+        ],
+    },
+    {
+        tag: 'r230e',
+        title: 'Damage from Ranged Weapon Hits',
+        desc: [
+            'An individual who takes a normal hit from a normal weapon suffers just one hit, and his endurance is reduced by one. When endurance reaches zero the character is dead (see R231).',
+            'An individual who receives a critical hit from a normal weapon must roll 1d6 again: “1” or “6” means he is disabled but loses no endurance (see R231), any other result (2-5) means he receives that many hits, and loses that amount from his endurance. These multiple hits will destroy a utility suit (it will not automatically seal).',
+            'If an individual is hit by an explosive weapon, normal and critical results are ignored. Instead, a special 2d6 roll is made. If the result is 2-7 then that many hits occur. If the result is 8-12, he is disabled from concussion but suffers no endurance loss or hits.',
+            'Note that combat in areas without life support can be very dangerous, since any multiple hit will destroy the suit (prevent it from sealing), and cause death in five minutes. A functioning PS robot with the character will avoid this danger, as will getting the wounded person into a new suit or into a life supported area.',
+        ],
+    },
+    {
+        tag: 'r230f',
+        title: 'Sequence of Ranged Weapon Fire',
+        desc: [
+            'In each round, all ranged weapons fire before any hand-to-hand attacks are made. Higher tech ranged weapons always fire before lower tech ones. If opposing characters have weapons of the same tech level, the one with higher marksmanship fires first. If both tech level and marksmanship are equal, both fire at the same time — damage takes effect after both shoot. Note that a character disabled or killed before he has a chance to attack will be unable to attack.',
+        ],
+    },
+    {
+        tag: 'r230g',
+        title: 'Hand-to-Hand Combat',
+        desc: [
+            'A person in contact with an opponent can make a hand-to-hand attack. To determine the result, roll 1d6, add the attacker’s hand-to-hand ability, and from that subtract the target’s hand-to-hand ability.',
+            'If the result is a positive odd number (that is, 1,3,5,7,9 or 11) one hit is scored, and the target’s endurance is reduced by one.',
+            'If the result is “7” exactly, the attacker may disarm the target instead of inflicting one hit. If this occurs, the attacker takes away from the target any weapon he or she has. If the target is carrying an item, disabled person, etc., the attacker can choose to take that instead.',
+            'If the result is “9” or “11” exactly, the target is automatically disabled in addition to suffering a hit.',
+            'If Duke Springer is in hand-to-hand combat, before making his attack, he can make a cunning roll. If he succeeds, he adds 1d6 to his hand-to-hand combat ability. If he fails, his combat ability is unaffected, but his hand-to-hand attack occurs last, regardless of when it would normally occur.',
+        ],
+    },
+    {
+        tag: 'r230h',
+        title: 'Sequence of Hand-to-Hand Attacks',
+        desc: [
+            'Hand-to-hand attacks occur after all ranged weapon fire is finished. A character who fired a ranged weapon cannot make a hand-to-hand attack. However, a character can change zones and still make a hand-to-hand attack.',
+            'When opposing characters are in contact with each other, the character with the higher hand-to-hand ability attacks first. If both have the same ability, they attack at the same time.',
+        ],
+    },
+    {
+        tag: 'r230i',
+        title: 'Surprise',
+        desc: [
+            'If a party has surprise in combat (as indicated in the event), the party is allowed one free round of attacks with ranged weapons. The party can make hand-to-hand attacks if they start in contact. During this round the opponents are unable to do anything (being surprised), but those permitted to attack can undertake all normal activities (including escape, if desired).',
+        ],
+    },
+    {
+        tag: 'r230j',
+        title: 'Escape',
+        desc: [
+            'In a round of combat, you decide to have your party escape. If you decide to escape, none of the characters in your party can make attacks that round, and all must attempt to go to the dispersed zone. At the end of the round, survivors in your party who are neither disabled nor in contact (nor contacted by) any opponent roll 1d6 for escape. If the result is 4 or higher the escape is successful, if the result is 3 or less it fails.',
+            'If the escape is successful, disabled members of your party, or those in contact or contacted by the enemy are lost (captured). If you (Duke Springer) are disabled, in contact, or contacted by the enemy, the escape will fail instead. The escaped characters are assumed to “hide out” in that area for the rest of the day, with no further activities allowed.',
+            'If the escape fails, there is no special effect, the combat continues as if no attempt had been made (although your party did “waste” the round of escape, in that it was unable to fire, etc.).',
+            'Escape inside vehicles is possible by exiting the vehicle (abandoning it). It is impossible to abandon a spaceship in deep space, in orbit, or at an asteroid, as it means certain death (even if one has a utility suit).',
+        ],
+    },
+    {
+        tag: 'r230k',
+        title: 'Vehicle Combat on Planet',
+        desc: [
+            'When the persons in combat are in vehicles, on either side, all combat is at the dispersed zone unless the vehicle owner(s) voluntarily elect contact. Sidearms and heavy hand weapons can be fired from a skimmer (by someone other than the driver), but not from a ship’s boat or starship. Skimmer guns and boat guns can be fired by anyone in the vehicle except the driver or pilot.',
+            'Personal weapons (sidearms and heavy hand weapons) fired from a skimmer must add two (+2) to the dice roll for hits if the skimmer is stationary and permitting contact, otherwise he must add five (+5) to the dice roll. In either case, the result is to make hits much harder.',
+            'Skimmer guns and boat guns must add two (+2) to firing dice rolls unless the vehicle is stationary and permitting contact.',
+            'When firing at a target in a vehicle, the hits are always to the vehicle itself, rather than the crew. Sidearms only affect skimmers on a critical hit, and have no effect on a ship’s boat or starship. Heavy hand weapons have full effect against any target except a starship (on which they have no effect). Skimmer guns have full effect against any target except a starship, on which they have no effect. Boat guns (and equivalent military weapons) have full effect against any target except a starship, where they are treated as starship guns of one tech level lower than normal (i.e., if the boat guns are normally tech 4, when firing at a starship they count as tech 3 instead) (see R230L).',
+            'Vehicle Critical Hits: any critical hit effect on a vehicle is resolved by roll 1d6 and consulting R237. The critical hit is in addition to normal hits.',
+            'Vehicle Damage: skimmers and other commercial vehicles are immobilized by the first hit, and destroyed by the second. A ship’s boat is unaffected (aside from critical hit effects) until the fifth hit, which will destroy it. A starship is destroyed on the tenth hit.',
+            'Vehicle Escapes: a party in vehicles that attempts to escape will automatically succeed if entirely in faster vehicles, and will automatically fail if entirely in slower vehicles. You can abandon slower vehicles to make your escape if desired. If both parties have vehicles of equal speed, the normal escape procedure is used.',
+            'Starships are the fastest vehicles present, then ship’s boats, then orbital shuttles, then skimmers, and finally commercial vehicles. Military and police vehicles have the speed of their civilian counterpart.',
+        ],
+    },
+    {
+        tag: 'r230l',
+        title: 'Space Combat & Starship Guns',
+        desc: [
+            'Only starships or boat guns can fire at other starships or fight in space (i.e., in orbit, arriving, or departing from a star system). Due to the great speeds involved, each combat round is one hour rather than five minutes — it takes that long because weapons are so inaccurate, despite computer control!',
+            'In battle, all space combat is at dispersed zone with ranged weapons. The only exception is that stationary ships (those with engineering area damaged or destroyed, or indicated stationary in an event) may be boarded, in which case individual combat inside the ship can occur instead of space combat.',
+            'Starships are considerably faster than ship’s boats. As a result, any round after the first a starship can elect to “run away” from a ship’s boat, with the result that all boats immediately drop out of combat. If you leave your own boat behind during combat, it is automatically lost.',
+            'Firing Starship Guns in Space: roll 1d6 for each tech level of the starship guns. You roll more or fewer dice in special situations, listed below. If you are reduced to zero dice to roll, a hit is impossible:',
+            '+1d6 roll target is stationary (unwilling or unable to move)',
+            '-1d6 roll firing boat guns',
+            '-1d6 roll target has ECM defenses',
+            '-1d6 roll firing at a target within a planet’s atmosphere',
+            'If the combat is occurring in any planetary land area, it is within atmosphere.',
+            'Hit Effects: if the die roll is “1” or “2” a hit occurs. Note that if more than one die is rolled, more than one hit could occur. If the target has defensive screens (present in some events), only a result of “1” means a hit (2 is a miss). A critical hit occurs if two (or more) “1” results occur, and/or two (or more) “2” results occur (no effect if the target has screens). If 1s and 2s both occur, and the target has no screens, two critical hits occur.',
+            'Each normal hit does one hit of damage on the target. After ten (10) normal hits a starship is destroyed. Each critical hit effect requires an extra 1d6 roll, and R237 consulted for special effects.',
+            'Note: if a starship or boat has both a pilot and gunner, the vehicle can both move and fire at the same time. If it has only one, it can either move or fire, but not both.',
+        ],
+    },
+    {
+        tag: 'r230m',
+        title: 'Escaping Space Combat',
+        desc: [
+            'There are only two ways of escaping starship combat in a spaceship or ship’s boat. First, you can escape with a hyperjump (R212A) — impossible for a boat. Second, you can hide on an asteroid, if you are currently “in orbit” in the asteroid belt (R206). To hide, select one of the asteroids to hide, and move there. Each pursuer then rolls 1d6, and goes to the asteroid with that number. If a pursuer arrives at your asteroid, the battle continues, if none arrives, you have escaped them. You can try to shake off your pursuer again by returning to orbit and then going again among the asteroids. This represents the huge size of the asteroid belt and the many hiding places present.',
+            'You can also escape space combat by landing the starship or boat in any area (including a space station) and leaving it. Unfortunately, this results in the automatic destruction of the starship or boat.',
+        ],
+    },
+    {
+        tag: 'r230n',
+        title: 'Starship Guns Firing on Planet',
+        desc: [
+            'Starship guns can be used on planet in normal battles. Since they are computer controlled, the marksmanship of the firer is not used — instead, they have an automatic marksmanship of six (6) whenever any qualified starship gunner operates them. Hits are determined using the normal combat procedure (R230D), but if they hit, the result is automatically equivalent to 10 hits on an individual, or 1d6 hits and a critical hit on a vehicle. Note that as a result, a hit by starship guns will normally kill a person, and usually knocks out vehicles.',
+        ],
+    },
+    {
+        tag: 'r231',
+        title: 'Wounds & Endurance',
+        desc: [
+            'Every person has a number of Endurance points (R201A). This determines how many hits the person can take. Each hit reduces a person’s endurance by one (-1), if endurance reaches zero (0) the person will die unless he receives immediate emergency first aid (R231B). If endurance drops below 0, the person dies instantly, even if first aid is available.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r231a', 'Medical Centers & Accelerated Healing'],
+                    ['r231b', 'Emergency First Aid'],
+                    ['r231c', 'Calling Medical Aid'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r231a',
+        title: 'Medical Centers & Accelerated Healing',
+        desc: [
+            'A wounded person in an area with a Medical Center can pay for accelerated healing at the center. At a base cost of 15 S per hit in a city medical center, or 25 S per hit in a colony medical center, any number of hits can be healed in one day of RRR. Of course, finances may limit the healing you can purchase! Colony medical centers in star systems with a Tech code of 20 or less cannot heal more than three (3) hits per day, regardless of what you pay, due to limited facilities.',
+        ],
+    },
+    {
+        tag: 'r231b',
+        title: 'Emergency First Aid',
+        desc: [
+            'Emergency first aid is needed to prevent death if a character is at zero (0) endurance exactly. Emergency first aid is received if the person has a PS robot (R222C) attached, or a medic is present and on the round after the emergency occurs spends his/her entire time giving first aid. Emergency first aid must continue uninterrupted until healing allows the person to regain at least one endurance point, or the person will die after all.',
+        ],
+    },
+    {
+        tag: 'r231c',
+        title: 'Calling Medical Aid',
+        desc: [
+            'Using the radio/communicator available in any starship or ship’s boat, on a PS robot, or in any land area with life support, you can call for medical aid. You cannot call if you are “wanted” in the system (R228). Medical aid provides immediately emergency first aid at the scene, and immediate transportation to the nearest medical center in the star system.',
+            'To determine the cost of medical aid, count the number of land areas from your position to the nearest medical center. Ignore land steps, simply count areas. If the center is on another planet, count to any spaceport or colony on this planet, and then count one more area to a spaceport (or colony) on the other planet. For each area of distance, multiply by the base cost by three. Thus one area away costs three times (3x) the base price, two areas away costs nine times (3x3x), three areas away 27 times (3x3x3x), etc. If you cannot pay for emergency aid, you are discharged from the medical center after one hit heals and become “wanted” in that system until the debt is paid at any bank in the system (as a result, you could be arrested, etc., and never have a chance to pay later, even if you have the money!),',
+            'When being transported to a medical center by this method, normal entry encounters are ignored. However, the medical aid group will only transport the person who needs healing, not his friends, vehicles, etc.',
+        ],
+    },
 ]
 
 export default ruleData
