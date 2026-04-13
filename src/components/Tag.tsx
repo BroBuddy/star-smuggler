@@ -1,18 +1,18 @@
 import { useParams } from 'react-router-dom'
 import { Rules as RulesData } from '@/services/rules'
 import { Events as EventsData } from '@/services/events'
-import { useEffect, useState } from 'react'
-import { makeUrlsClickable } from '@/lib/helper'
+import { useEffect, useMemo, useState } from 'react'
 import { TagItem } from '@/lib/types'
 import Card from './Card'
 import { useHistory } from '@/hooks/useHistory'
+import { parseLinks } from '@/lib/parseLinks'
 
 const Tag = () => {
     const { tagId } = useParams()
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const [_, setLinkTags] = useState<string[]>([])
-    const dataSet = RulesData.concat(EventsData)
-    const transformedContent = makeUrlsClickable(activeTag?.content)
+    const dataSet = useMemo(() => RulesData.concat(EventsData), [])
+    const transformedContent = parseLinks(activeTag?.content as string)
     const { addToHistory } = useHistory()
 
     useEffect(() => {
@@ -25,11 +25,10 @@ const Tag = () => {
     useEffect(() => {
         const findTag = dataSet.find((item: TagItem) => item.id === tagId)
         setActiveTag(findTag as TagItem)
-
-         if (findTag) {
+        if (findTag) {
             addToHistory(findTag.id, findTag.title)
         }
-    }, [tagId])
+    }, [tagId, dataSet, addToHistory])
 
     return (
         <section className="flex flex-col py-2 w-full">
@@ -39,11 +38,18 @@ const Tag = () => {
                     time={activeTag.time || null}
                     title={activeTag.title}
                 >
-                    <div
-                        dangerouslySetInnerHTML={{
-                            __html: transformedContent,
-                        }}
-                    />
+                    <div>
+                        {transformedContent.map((node: any, i: number) =>
+                            typeof node === 'string' ? (
+                                <div
+                                    key={i}
+                                    dangerouslySetInnerHTML={{ __html: node }}
+                                />
+                            ) : (
+                                node
+                            )
+                        )}
+                    </div>
                 </Card>
             )}
         </section>

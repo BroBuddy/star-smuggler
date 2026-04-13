@@ -1,31 +1,5 @@
 import { TagSheet } from './types'
 
-const customStyles = {
-    input: (base: any) => ({
-        ...base,
-        color: '#d00',
-    }),
-    control: (base: any) => ({
-        ...base,
-        backgroundColor: '#1e1e1e',
-    }),
-    menu: (base: any) => ({
-        ...base,
-        backgroundColor: '#2a2a2a',
-        color: '#fff',
-    }),
-    option: (base: any, state: any) => ({
-        ...base,
-        backgroundColor: state.isFocused ? '#444' : '#2a2a2a',
-        color: '#fff',
-        cursor: 'pointer',
-    }),
-    singleValue: (base: any) => ({
-        ...base,
-        color: '#fff',
-    }),
-}
-
 const sheetTags: TagSheet[] = [
     {
         id: 'R203',
@@ -167,4 +141,4 @@ const sheetAreas: TagSheet[] = [
     },
 ]
 
-export { customStyles, sheetTags, sheetPlanets, sheetAreas }
+export { sheetTags, sheetPlanets, sheetAreas }

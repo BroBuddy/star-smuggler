@@ -1,21 +1,22 @@
-import { RuleIds } from '@/services/rules'
+import Card from '@/components/Card'
 import { Link } from 'react-router-dom'
-import Card from '../components/Card'
+import { useRuleService } from '../services/RuleService'
 
-function Rules() {
+function RulePage() {
+    const { getRuleTags } = useRuleService()
+    const data = getRuleTags()
+
     return (
         <section className="flex flex-col py-2 w-full">
             <Card title="Rules">
                 <div className="flex flex-wrap">
-                    {RuleIds.map((id, index) => (
+                    {data.map((id, index) => (
                         <Link
-                            to={`/${id}`}
+                            to={`/rule/${id}`}
                             key={index}
                             className="flex flex-col w-1/6 py-2 px-2"
                         >
-                            <span className="font-mono">
-                                {id}
-                            </span>
+                            <span className="font-mono">{id}</span>
                         </Link>
                     ))}
                 </div>
@@ -24,4 +25,4 @@ function Rules() {
     )
 }
 
-export default Rules
+export default RulePage

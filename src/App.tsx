@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
-import MobileNav from './components/MobileNav'
-import './App.css'
+import NavBar from './components/NavBar'
+import './App.scss'
 
 function App() {
     const location = useLocation()
@@ -13,7 +13,7 @@ function App() {
     return (
         <>
             <Outlet />
-            <MobileNav />
+            <NavBar />
         </>
     )
 }

@@ -1,0 +1,19 @@
+.navBar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--green);
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top: 3px solid var(--white);
+
+    > a {
+        color: var(--black);
+        padding: 2px;
+        text-decoration: none;
+    }
+}

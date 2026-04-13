@@ -2,10 +2,12 @@ import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
-import './index.css'
 
 const Game = React.lazy(() => import('./pages/Game.tsx'))
-const Rules = React.lazy(() => import('./pages/Rules.tsx'))
+const Rules = React.lazy(() => import('./features/rule/pages/RulePage.tsx'))
+const RuleDetailPage = React.lazy(
+    () => import('./features/rule/pages/RuleDetailPage.tsx')
+)
 const Events = React.lazy(() => import('./pages/Events.tsx'))
 const Tag = React.lazy(() => import('./components/Tag.tsx'))
 const Helper = React.lazy(() => import('./pages/Helper.tsx'))
@@ -15,29 +17,33 @@ const router = createBrowserRouter([
     {
         element: <App />,
         children: [
-         {
+            {
                 path: '/',
-                element: <Game />
+                element: <Game />,
             },
             {
-                path: '/rules',
-                element: <Rules />
+                path: '/rule',
+                element: <Rules />,
             },
             {
-                path: '/events',
-                element: <Events />
+                path: '/rule/:tag',
+                element: <RuleDetailPage />,
             },
             {
-                path: '/:tagId',
-                element: <Tag />
+                path: '/event',
+                element: <Events />,
+            },
+            {
+                path: '/event/:tagId',
+                element: <Tag />,
             },
             {
                 path: '/helper',
-                element: <Helper />
+                element: <Helper />,
             },
             {
                 path: '/history',
-                element: <History />
+                element: <History />,
             },
         ],
     },
