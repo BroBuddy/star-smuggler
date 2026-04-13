@@ -8,7 +8,7 @@ function EventPage() {
             <div className="flex flex-wrap my-2">
                 {EventIds.map((id, index) => (
                     <Link
-                        to={`/${id}`}
+                        to={`/event/${id}`}
                         key={index}
                         className="flex flex-wrap w-5 p-1"
                     >
