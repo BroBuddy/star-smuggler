@@ -25,7 +25,7 @@ function Instructions() {
                 convenient to read important rules sections first, including{' '}
                 <Link to="/rule/r203">R203</Link>,&nbsp;
                 <Link to="/rule/r212">R212</Link>,&nbsp;
-                <Link to="/rule/R221">R221</Link> and{' '}
+                <Link to="/rule/r221">R221</Link> and{' '}
                 <Link to="/rule/r230">R230</Link>, or if ambitious, read all the
                 rules sections first (<Link to="/rule/r201">R201</Link>-
                 <Link to="/rule/r232">R232</Link>).
