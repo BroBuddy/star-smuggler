@@ -1131,6 +1131,180 @@ const ruleData: Rule[] = [
         ],
     },
     {
+        tag: 'r212',
+        title: 'Antelope Class Starship',
+        desc: [
+            'Duke Springer operates a small merchant starship of the Antelope class. It has a hyper drive to allow “jumps” from one star system to another, as well as a sub light propulsion system for travel within a star system. It is streamlined, and can land on or take off from planets, even those with an atmosphere. It can carry a ship’s boat, and mounts one weapons turret. The ship can be controlled by a single individual (pilot/navigator), but there are advantages to having a larger crew (R221). Below is a reference diagram of the starship, which can be photocopied and used for notes, etc. The diagram shows the CUs (R211A) in each compartment or area of the ship, including:',
+        ],
+        note: [
+            'There are also six concealed areas numbered 1 to 6, each being 1 CU. These are in cable runs, behind access panels, in ventilation ducts, etc See R229B for hiding items.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['CU', 'Section'],
+                rows: [
+                    ['2 CU', 'Pilot’s Compartment'],
+                    ['16 CU', 'Crew Quarters'],
+                    [
+                        '2 CU (or +6 CU if no starship guns installed)',
+                        'Gunnery Turret',
+                    ],
+                    [
+                        '40 CU (if no ship’s boat present; otherwise occupied by boat)',
+                        'Boat Hold',
+                    ],
+                    ['60 CU', 'Main Cargo Hold'],
+                    ['4 CU', 'Engineering Compartment'],
+                ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r212a', 'Starship Hyper drive'],
+                    ['r212b', 'Hyper charges'],
+                    ['r212c', 'Risk Factor in Hyper drive Jumps'],
+                    ['r212d', 'Results of Hyperdrive Jump'],
+                    ['r212e', 'Stasis Units'],
+                    ['r212f', 'Sublight Drives'],
+                    ['r212g', 'Starship Movement within a System'],
+                    ['r212h', 'Starship Communications'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r212a',
+        title: 'Starship Hyper drive',
+        desc: [
+            'Star ships use hyper drive to move from one star system to another. This means transportation is literally instantaneous, but not without risk. There is a chance a ship using hyper drive will “dissipate” on return to normal space, with its atoms scattered through space. This risk is greater if the ship uses hyper drive close to a high gravity source (such as near a planet), or when the ship is damaged. When a starship jumps, pursuit is impossible, since there is no way to tell which way the ship went, or how far it is going. Therefore, once you make a hyper jump, you are safe from all pursuits (assuming you survive the jump). Of course, if you return to the star system, you may now be “wanted” there!',
+        ],
+    },
+    {
+        tag: 'r212b',
+        title: 'Hyper charges',
+        desc: [
+            'A starship uses hyper charges as “fuel” for jumps. The Antelope class can hold up to six (6) hyper charges in special spaces, which cannot be used to carry anything else (no CUs of storage here), nor can regular CU be used for additional hyper charges',
+            'A starship makes hyper drive jumps along standard routes, as illustrated by the connections in R234. Each link between systems is a single jump. A starship can make a “double jump” and pass directly over a system for the next one along the route (it doesn’t stop or appear at the middle system). It is possible to make a triple jump by passing over two systems and arriving at the third. Hyper charge expenditure varies with the type of jump:',
+        ],
+        note: [
+            'For example, using the standard star system connection pattern (R234, pattern one), a jump from Regari to Palatek is a single jump; from Regari to Byzantium or Imperia is a double jump, while from Regari to Talitar is a triple jump. Nothing bigger than a triple jump is possible, so the other systems cannot be reached from Regari in a hyper jump.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Jump Type', 'Hyper Charges'],
+                rows: [
+                    ['Single jump', 'uses one (1) hyper charge'],
+                    ['Double jump', 'uses one (3) hyper charge'],
+                    ['Triple jump', 'uses one (5) hyper charge'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r212c',
+        title: 'Risk Factor in Hyper drive Jumps',
+        desc: [
+            'The Risk Factor is determined before each jump (R212B), and a 1d6 roll made. If the roll is less than or equal to the Risk Factor, the jump was a failure, see R212D for effects. If the die roll is greater than the risk factor, the jump was successful (see R212D). To determine the Risk Factor, add together all the situations below. If no situations apply, the factor is automatically zero and the jump cannot fail (will always be successful):',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Risk Modifier', 'Situation'],
+                rows: [
+                    ['+5', 'Jump from surface of a planet'],
+                    ['+4', 'Jump from orbit / asteroid / space station'],
+                    ['+3', 'Jump from 1 sublight move “out”'],
+                    ['+2', 'Jump from 2 sublight moves “out”'],
+                    ['+1', 'Jump from 3 sublight moves “out”'],
+                    ['+1', 'Each point of damage (hit) on starship'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r212d',
+        title: 'Results of Hyperdrive Jump',
+        desc: [
+            'See R212C to compute results.',
+            'Success:',
+            'The starship arrives at its destination intact, entering the system four sublight moves (hours) “out” from any planet or asteroid belt. The ship must immediately consult the System Entry procedure (R226) and check for a system entry event; even if planning to immediately make another jump. It is impossible to arrive closer than four light-hours “out.”',
+            'Failure',
+            'The starship undergoes hyperspace dissipation in jump. Debris appears four sublight moves “out” in the destination system (instead of the starship!). Everything and everyone on board is totally destroyed. The only exception is items and people within stasis units (R212E). Stasis units appear intact in the “out” space along with the debris. Unless you were in a stasis unit, dissipation means instant death — the game is over.',
+        ],
+    },
+    {
+        tag: 'r212e',
+        title: 'Stasis Units',
+        desc: [
+            'A serendipitous offshoot of hyperdrive development was the stasis phenomenon. Stasis appears to stop time within a very restricted volume. The stasis unit is a device turned out manually, or by an automatic trigger (activated when hyperspace dissipation occurs, for example).',
+            'When a stasis unit is turned on, it stops time inside the unit. As a result, it cannot be turned off from within! To turn if off, one must put the unit inside another stasis unit, and reverse the field. Both stasis units are consumed, and whatever was inside the smaller now returns to normal time.',
+            'A person inside a stasis and then freed will complete the breath he or she was drawing when stasis began, a cup of coffee that was being spilled will continue its motion, the coffee still hot, etc.',
+            'Due to the cost of stasis units and the ability to determine what is inside an active unit, few people can meet the cost of deactivating a unit by using up a larger one — unless they expect large rewards. Accordingly, an insurance network has been formed to guarantee deactivation after the destruction of an insured ship. Of course, anyone who gets to the stasis unit first can risk opening it without insurance, if they believe it contains valuable items, or a person who brings a good ransom.',
+            'Crewmen hire on at lower rates if they can work in stasis units with insurance, since their life has an effective protection.',
+            'If you (Duke Springer) are in an activated stasis unit, unless the event indicates otherwise consult R240 for the result. If you find an activated stasis unit, you may open it by purchasing or having a unit 1 CU larger, and when the larger is activated around the smaller both are lost to recover the contents within the smaller. Stasis units cannot be used to surround and protect a starship: use of hyperdrive jump inside one causes a massive explosion - so much for the Navy’s attempt to use stasis protection for their warships!',
+        ],
+    },
+    {
+        tag: 'r212f',
+        title: 'Sublight Drives',
+        desc: [
+            'Starships use sublight drive to move within a star system. Sublight drive can be used without limit provided the starship has at least one hypercharge on board. Using the drive does not consume the hypercharge. Sublight drives accelerate a ship rapidly to nearly light speed, meaning that combat between ships using sublight drive is long and difficult, unless both wish to meet and engage. See R216A for starship guns, and R230L for combat procedures.',
+        ],
+    },
+    {
+        tag: 'r212g',
+        title: 'Starship Movement within a System',
+        desc: [
+            'A starship uses its sublight drive to move around within a star system. Each “move” takes one hour. The various movement options available include:',
+        ],
+        note: [
+            'Entry Encounters (R225) occur when moving to a space station dock, or to any area on the surface (either descending to it, or moving through the atmosphere to it). There are no entry encounters for moves in space or orbit.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Move Type', 'Description'],
+                rows: [
+                    [
+                        'Move Out',
+                        'Move one hour further “out” to leave the system; hyperdrive can be safely used by undamaged ships from four (4) moves “out,” see R212C.',
+                    ],
+                    [
+                        'Move In',
+                        'Move one hour further “in” toward the system; if one move “out” and moving “in,” the ship arrives in orbit after the hour.',
+                    ],
+                    [
+                        'Orbit to Orbit',
+                        'Move from orbit around one planet to orbit around another; asteroid orbit behaves like planetary orbit.',
+                    ],
+                    [
+                        'Orbit/Docking',
+                        'Move from orbit to docking at a space station or vice versa; from docking must first return to orbit before moving “out”.',
+                    ],
+                    [
+                        'Climb/Descend',
+                        'Move between surface and orbit/space station in either direction; direct transfer possible in one hour.',
+                    ],
+                    [
+                        'Area to Area on Surface',
+                        'Move through atmosphere between planetary areas if entry restrictions allow (see R205).',
+                    ],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r212h',
+        title: 'Starship Communications',
+        desc: [
+            'A starship may use its communications equipment provided the ship is not destroyed. Communications equipment is foolproof, and will never break-down. There is no fuel used, and no Hypercharges are needed. Any qualified starship crewman may operate communications gear.',
+            'Communications travels at the speed of light. A ship using sublight drive in a star system moves at about the speed of communication, making interception up ahead very difficult. Communication at a planet, including to orbit or space station, is virtually instantaneous, as is communication between starships. No communication is possible into or out of an activated stasis unit. There is no normal communication from one star system to another.',
+        ],
+    },
+    {
         tag: 'r213',
         title: 'Life Support',
         desc: [
@@ -1809,8 +1983,6 @@ const ruleData: Rule[] = [
                     ['r230j', 'Escape'],
                     ['r230k', 'Vehicle Combat on Planet'],
                     ['r230l', 'Space Combat & Starship Guns'],
-                    ['r230m', 'Escaping Space Combat'],
-                    ['r230n', 'Starship Guns Firing on Planet'],
                 ],
             },
         ],
@@ -1941,20 +2113,10 @@ const ruleData: Rule[] = [
             'Hit Effects: if the die roll is “1” or “2” a hit occurs. Note that if more than one die is rolled, more than one hit could occur. If the target has defensive screens (present in some events), only a result of “1” means a hit (2 is a miss). A critical hit occurs if two (or more) “1” results occur, and/or two (or more) “2” results occur (no effect if the target has screens). If 1s and 2s both occur, and the target has no screens, two critical hits occur.',
             'Each normal hit does one hit of damage on the target. After ten (10) normal hits a starship is destroyed. Each critical hit effect requires an extra 1d6 roll, and R237 consulted for special effects.',
             'Note: if a starship or boat has both a pilot and gunner, the vehicle can both move and fire at the same time. If it has only one, it can either move or fire, but not both.',
-        ],
-    },
-    {
-        tag: 'r230m',
-        title: 'Escaping Space Combat',
-        desc: [
+            'Escaping Space Combat',
             'There are only two ways of escaping starship combat in a spaceship or ship’s boat. First, you can escape with a hyperjump (R212A) — impossible for a boat. Second, you can hide on an asteroid, if you are currently “in orbit” in the asteroid belt (R206). To hide, select one of the asteroids to hide, and move there. Each pursuer then rolls 1d6, and goes to the asteroid with that number. If a pursuer arrives at your asteroid, the battle continues, if none arrives, you have escaped them. You can try to shake off your pursuer again by returning to orbit and then going again among the asteroids. This represents the huge size of the asteroid belt and the many hiding places present.',
             'You can also escape space combat by landing the starship or boat in any area (including a space station) and leaving it. Unfortunately, this results in the automatic destruction of the starship or boat.',
-        ],
-    },
-    {
-        tag: 'r230n',
-        title: 'Starship Guns Firing on Planet',
-        desc: [
+            'Starship Guns Firing on Planet',
             'Starship guns can be used on planet in normal battles. Since they are computer controlled, the marksmanship of the firer is not used — instead, they have an automatic marksmanship of six (6) whenever any qualified starship gunner operates them. Hits are determined using the normal combat procedure (R230D), but if they hit, the result is automatically equivalent to 10 hits on an individual, or 1d6 hits and a critical hit on a vehicle. Note that as a result, a hit by starship guns will normally kill a person, and usually knocks out vehicles.',
         ],
     },
