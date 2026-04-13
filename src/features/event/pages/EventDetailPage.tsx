@@ -10,7 +10,6 @@ import Card from '@/components/Card'
 const EventDetailPage = () => {
     const { tagId } = useParams()
     const { addToHistory } = useHistory()
-
     const dataSet = useMemo(() => RulesData.concat(EventsData), [])
 
     const activeTag = useMemo(() => {
@@ -19,14 +18,15 @@ const EventDetailPage = () => {
         )
     }, [dataSet, tagId])
 
+    const content = activeTag?.content
     const paragraphs = useMemo(() => {
-        if (!activeTag?.content) return []
+        if (!content) return []
 
-        return activeTag.content
+        return content
             .split(/<\/p>/g)
             .map((p) => p.replace(/<p>/g, '').trim())
             .filter(Boolean)
-    }, [activeTag?.content])
+    }, [content])
 
     useEffect(() => {
         if (activeTag) {
