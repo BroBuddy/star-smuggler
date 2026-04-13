@@ -23,7 +23,9 @@ const EventDetailPage = () => {
     }, [activeTag?.content])
 
     useEffect(() => {
-        const findTag = dataSet.find((item: TagItem) => item.id === tagId)
+        const findTag = dataSet.find(
+            (item: TagItem) => item.id?.toLowerCase() === tagId?.toLowerCase()
+        )
         setActiveTag(findTag as TagItem)
         if (findTag) {
             addToHistory(findTag.id, findTag.title)
@@ -38,18 +40,7 @@ const EventDetailPage = () => {
                     time={activeTag.time || null}
                     title={activeTag.title}
                 >
-                    <div>
-                        {transformedContent.map((node: any, i: number) =>
-                            typeof node === 'string' ? (
-                                <div
-                                    key={i}
-                                    dangerouslySetInnerHTML={{ __html: node }}
-                                />
-                            ) : (
-                                node
-                            )
-                        )}
-                    </div>
+                    <div className="text-md">{transformedContent}</div>
                 </Card>
             )}
         </>
