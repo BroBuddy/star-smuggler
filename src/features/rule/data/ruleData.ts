@@ -50,6 +50,7 @@ const ruleData: Rule[] = [
         tables: [
             {
                 type: 'simple-list',
+                cols: ['Travel Options'],
                 rows: [
                     [
                         'Walk on foot: travel one land step per day, or spend an hour to move to an adjacent (connected by triple line) area',
@@ -174,7 +175,7 @@ const ruleData: Rule[] = [
         tables: [
             {
                 type: 'simple-list',
-                label: 'Symbol Colors denote entrance restrictions',
+                cols: ['Symbol Colors denote entrance restrictions'],
                 rows: [
                     ['White areas can be entered by any type of travel.'],
                     [
@@ -199,7 +200,7 @@ const ruleData: Rule[] = [
             },
             {
                 type: 'simple-list',
-                label: 'Area Connectors are lines that indicate travel routes',
+                cols: ['Area Connectors are lines that indicate travel routes'],
                 rows: [
                     [
                         'Short triple-line connector indicates one hour of travel time, regardless of the means used, to move to the other area. This symbol really indicates that the areas are touching, and thus if both have good air in them, travel is possible between without life support, even on a bad or no air planet.',

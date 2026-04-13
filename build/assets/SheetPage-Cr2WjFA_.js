@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-BLwkpudm.js";import{t}from"./Card-D3l4tErn.js";import{i as n,n as r,t as i}from"./sheetData-DzAZZbJP.js";var a=e(),o=[{title:`Planets`,tags:r},{title:`Area Types`,tags:i}];function s(){return(0,a.jsx)(a.Fragment,{children:o.map(({title:e,tags:r})=>(0,a.jsx)(t,{title:e,children:(0,a.jsx)(n,{tags:r})},e))})}export{s as default};
