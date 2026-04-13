@@ -1,30 +1,23 @@
-import { Link } from 'react-router-dom'
-import Card from '../../../components/Card'
+import Card from '@/components/Card'
+import TagList from '@/features/sheet/components/TagList'
+import { sheetTags } from '@/features/sheet/data/sheetData'
+
+const historyTags = JSON.parse(localStorage.getItem('star-smuggler') || '[]')
+
+const sections = [
+    { title: 'Frequently Used', tags: sheetTags },
+    { title: 'History', tags: historyTags },
+]
 
 function HistoryPage() {
-    const history = JSON.parse(localStorage.getItem('star-smuggler') || '[]')
-
     return (
-        <section className="flex flex-col py-2 w-full">
-            <Card title="History">
-                {history.length === 0 && <p>No history yet.</p>}
-
-                {history.map(
-                    (item: { id: string; title: string }, index: number) => (
-                        <Link
-                            to={`/${item.id}`}
-                            key={index}
-                            className="flex flex-col py-2 px-2"
-                        >
-                            <span className="font-mono">{item.id}</span>
-                            <span className="font-medium font-sans text-gray-400">
-                                {item.title}
-                            </span>
-                        </Link>
-                    )
-                )}
-            </Card>
-        </section>
+        <>
+            {sections.map(({ title, tags }) => (
+                <Card key={title} title={title}>
+                    <TagList tags={tags} />
+                </Card>
+            ))}
+        </>
     )
 }
 

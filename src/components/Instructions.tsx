@@ -17,13 +17,19 @@ function Instructions() {
             </p>
             <p>
                 You can learn this game as you play. Simply start with the first
-                event (<Link to="/E001">E001</Link>) and then read sections as
-                necessary. You may find it convenient to read important rules
-                sections first, including <Link to="/R203">R203</Link>,&nbsp;
-                <Link to="/R212">R212</Link>,&nbsp;<Link to="/R221">R221</Link>
+                event (
+                <Link to="/event/e001" className="text-blue">
+                    E001
+                </Link>
+                ) and then read sections as necessary. You may find it
+                convenient to read important rules sections first, including{' '}
+                <Link to="/rule/r203">R203</Link>,&nbsp;
+                <Link to="/rule/r212">R212</Link>,&nbsp;
+                <Link to="/R221">R221</Link>
                 ,&nbsp;
-                <Link to="/R230">R230</Link> and <Link to="/R232">R232</Link>,
-                or if ambitious, read all the rules sections first (<Link to="/R232">R201</Link>–R232).
+                <Link to="/rule/r230">R230</Link> and{' '}
+                <Link to="/rule/r232">R232</Link>, or if ambitious, read all the
+                rules sections first (<Link to="/rule/r232">R201</Link>–R232).
             </p>
             <p>
                 A pencil and some paper is needed for this game — to keep track

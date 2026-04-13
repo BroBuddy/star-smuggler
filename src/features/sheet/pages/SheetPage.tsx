@@ -1,13 +1,8 @@
 import Card from '@/components/Card'
-import {
-    sheetPlanets,
-    sheetAreas,
-    sheetTags,
-} from '@/features/sheet/data/sheetData'
+import { sheetPlanets, sheetAreas } from '@/features/sheet/data/sheetData'
 import TagList from '../components/TagList'
 
 const sections = [
-    { title: 'Frequently Used', tags: sheetTags },
     { title: 'Planets', tags: sheetPlanets },
     { title: 'Area Types', tags: sheetAreas },
 ]

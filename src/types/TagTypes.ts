@@ -1,5 +1,6 @@
 type TagItem = {
-    id: string
+    id?: string
+    tag?: string
     title: string
     content: string
     time?: string
