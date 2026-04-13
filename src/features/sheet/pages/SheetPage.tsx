@@ -1,20 +1,19 @@
 import Card from '@/components/Card'
 import { sheetPlanets, sheetAreas } from '@/features/sheet/data/sheetData'
 import TagList from '../components/TagList'
+import Tabs from '@/components/Tabs'
 
-const sections = [
-    { title: 'Planets', tags: sheetPlanets },
-    { title: 'Area Types', tags: sheetAreas },
+const tabs = [
+    { label: 'Area Types', content: <TagList tags={sheetAreas} /> },
+    { label: 'Planets', content: <TagList tags={sheetPlanets} /> },
 ]
 
 function SheetPage() {
     return (
         <>
-            {sections.map(({ title, tags }) => (
-                <Card key={title} title={title}>
-                    <TagList tags={tags} />
-                </Card>
-            ))}
+            <Card title="Sheets">
+                <Tabs tabs={tabs} />
+            </Card>
         </>
     )
 }

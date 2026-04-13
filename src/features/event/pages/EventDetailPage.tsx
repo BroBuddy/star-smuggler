@@ -3,7 +3,7 @@ import { Rules as RulesData } from '@/features/rule/data/rules'
 import { Events as EventsData } from '@/features/event/data/events'
 import { useEffect, useMemo } from 'react'
 import { TagItem } from '@/types/TagTypes'
-import { useHistory } from '@/features/history/hooks/useHistory'
+import { useHistory } from '@/features/helper/hooks/useHistory'
 import { parseLinks } from '@/lib/parseLinks'
 import Card from '@/components/Card'
 

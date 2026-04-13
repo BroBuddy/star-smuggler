@@ -1,4 +1,3 @@
-import Card from '@/components/Card'
 import { Link } from 'react-router-dom'
 import { useRuleService } from '../services/RuleService'
 
@@ -7,19 +6,17 @@ function RulePage() {
     const data = getRuleTags()
 
     return (
-        <Card title="Rules">
-            <div className="flex flex-wrap my-2">
-                {data.map((id, index) => (
-                    <Link
-                        to={`/rule/${id}`}
-                        key={index}
-                        className="flex flex-wrap w-5 p-1"
-                    >
-                        <span className="font-mono">{id}</span>
-                    </Link>
-                ))}
-            </div>
-        </Card>
+        <div className="flex flex-wrap my-2">
+            {data.map((id, index) => (
+                <Link
+                    to={`/rule/${id}`}
+                    key={index}
+                    className="flex flex-wrap w-5 p-1"
+                >
+                    <span className="font-mono">{id}</span>
+                </Link>
+            ))}
+        </div>
     )
 }
 

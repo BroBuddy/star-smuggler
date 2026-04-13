@@ -9,9 +9,8 @@ type Links = {
 const links: Links[] = [
     { to: '/', label: 'Game' },
     { to: '/sheet', label: 'Sheets' },
-    { to: '/rule', label: 'Rules' },
-    { to: '/event', label: 'Events' },
-    { to: '/history', label: 'History' },
+    { to: '/booklet', label: 'Booklets' },
+    { to: '/helper', label: 'Helper' },
 ]
 
 const NavBar = () => {
