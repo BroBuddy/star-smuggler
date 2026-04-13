@@ -668,13 +668,25 @@ const ruleData: Rule[] = [
         tables: [
             {
                 type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
                 rows: [
-                    [
-                        'System Entry 1d6 roll: 1- e090, 2- e091, 3- e096, 4- e100, 5- e116, 6- e093',
-                    ],
-                    ['System Codes: 💰 wealth 0, 🛠️ tech 30'],
-                    ['Planet I: layout J-K, 🧲 gravity 3, ☣️ good air'],
+                    ['1', 'e090'],
+                    ['2', 'e091'],
+                    ['3', 'e096'],
+                    ['4', 'e100'],
+                    ['5', 'e116'],
+                    ['6', 'e093'],
                 ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 0'], ['🛠️ tech 30']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout J-K'], ['🧲 gravity 3'], ['☣️ good air']],
             },
         ],
     },
@@ -687,13 +699,25 @@ const ruleData: Rule[] = [
         tables: [
             {
                 type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
                 rows: [
-                    [
-                        'System Entry 1d6 roll: 1- e092, 2- e120, 3- e105, 4- e108, 5- e097, 6- e103',
-                    ],
-                    ['System Codes: 💰 wealth 30, 🛠️ tech 50'],
-                    ['Planet I: layout A-C, 🧲 gravity 7, ☣️ bad air'],
+                    ['1', 'e092'],
+                    ['2', 'e120'],
+                    ['3', 'e105'],
+                    ['4', 'e108'],
+                    ['5', 'e097'],
+                    ['6', 'e103'],
                 ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 30'], ['🛠️ tech 50']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout A-C'], ['🧲 gravity 7'], ['☣️ bad air']],
             },
         ],
     },
@@ -706,14 +730,30 @@ const ruleData: Rule[] = [
         tables: [
             {
                 type: 'simple-list',
+                cols: ['1d6', 'System Entry'],
                 rows: [
-                    [
-                        'System Entry 1d6 roll: 1- e106, 2- e102, 3- e093, 4- e117, 5- e120, 6- e104',
-                    ],
-                    ['System Codes: 💰 wealth 50, 🛠️ tech 15'],
-                    ['Planet I: layout F-C, 🧲 gravity 10, ☣️ good air'],
-                    ['Planet II: layout E-B, 🧲 gravity 8, ☣️ good air'],
+                    ['1', 'e106'],
+                    ['2', 'e102'],
+                    ['3', 'e093'],
+                    ['4', 'e117'],
+                    ['5', 'e120'],
+                    ['6', 'e104'],
                 ],
+            },
+            {
+                type: 'simple-list',
+                cols: ['System Codes'],
+                rows: [['💰 wealth 50'], ['🛠️ tech 15']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet I'],
+                rows: [['🪐 layout F-C'], ['🧲 gravity 10'], ['☣️ good air']],
+            },
+            {
+                type: 'simple-list',
+                cols: ['Planet II'],
+                rows: [['🪐 layout E-B'], ['🧲 gravity 8'], ['☣️ good air']],
             },
         ],
     },
