@@ -1,20 +1,27 @@
 .card {
-    border: 2px solid var(--grey);
+    border: 2px solid var(--black);
     border-radius: 10px;
     margin: 20px 10px;
     min-width: 300px;
 }
 
 .cardHeader {
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--grey);
-    color: var(--black);
-    padding: 5px;
+    padding: 5px 7px;
+
+    > strong {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 }
 
 .cardContent {
-    padding: 5px 10px;
+    background: linear-gradient(135deg, #0b0014 0%, #1a0b2e 40%, #3b1d5e 100%);
+    padding: 10px 15px;
 }

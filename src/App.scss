@@ -18,7 +18,9 @@
 }
 
 body {
-    background-color: var(--black);
+    // background-color: var(--black);
+    // background: linear-gradient(135deg, #0b0014 0%, #1a0b2e 40%, #3b1d5e 100%);
+    background: linear-gradient(135deg, #050816 0%, #0b1b3a 40%, #1a2a6c 100%);
     box-sizing: border-box;
     color: var(--white);
     display: flex;
@@ -54,7 +56,7 @@ img {
 }
 
 table {
-    border: 2px solid var(--grey);
+    border: 2px solid var(--black);
     border-radius: 15px;
     box-sizing: border-box;
     margin: 10px;
@@ -70,18 +72,20 @@ table {
             overflow-wrap: break-word;
         }
         th {
-            background-color: var(--grey);
-            color: var(--black);
+            background-color: var(--black);
+            color: var(--white);
+            font-size: 16px;
             text-align: left;
+            text-transform: uppercase;
         }
 
         td {
-            background-color: var(--dark-grey);
+            background-color: var(--black);
             text-align: left;
         }
     }
 
     tr:nth-child(odd) td {
-        background-color: var(--black);
+        background-color: var(--dark-grey);
     }
 }

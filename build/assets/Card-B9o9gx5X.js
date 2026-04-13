@@ -1,1 +1,0 @@
-import{t as e}from"./jsx-runtime-BLwkpudm.js";var t=e(),n=({time:e,title:n,children:r})=>(0,t.jsxs)(`div`,{className:`flex flex-col p-4`,children:[(0,t.jsx)(`div`,{children:e&&(0,t.jsxs)(`strong`,{className:`text-grey mb-2 text-right`,children:[`(`,e,`)`]})}),n&&(0,t.jsx)(`h3`,{children:n}),r]});export{n as t};

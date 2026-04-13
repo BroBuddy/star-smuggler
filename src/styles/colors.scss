@@ -1,21 +1,21 @@
 :root {
     --black: #000;
-    --dark-grey: #333;
+    --dark-grey: #222;
     --grey: #666;
-    --light-grey: #aaa;
     --white: #fff;
     --green: #7eb87e;
     --blue: #2c7ab6;
+    --purple: #36195a;
 }
 
 $colors: (
     'black': var(--black),
     'dark-grey': var(--dark-grey),
     'grey': var(--grey),
-    'light-grey': var(--light-grey),
     'white': var(--white),
     'green': var(--green),
     'blue': var(--blue),
+    'purple': var(--purple),
 );
 
 @each $name, $hex in $colors {

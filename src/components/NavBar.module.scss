@@ -1,6 +1,5 @@
 .navBar {
-    background-color: var(--green);
-    border-top: 3px solid var(--white);
+    background-color: var(--black);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -10,8 +9,8 @@
     width: 100%;
 
     > a {
-        color: var(--black);
-        padding: 5px;
+        color: var(--white);
+        padding: 8px;
         text-decoration: none;
         white-space: nowrap;
     }
