@@ -28,14 +28,6 @@ body {
     padding-bottom: 40px;
 }
 
-h3 {
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: var(--green);
-    padding: 0;
-    margin: 0;
-}
-
 a {
     color: var(--green);
     font-family: monospace;
@@ -62,13 +54,14 @@ img {
 }
 
 table {
-    border: 2px solid var(--green);
+    border: 2px solid var(--grey);
     border-radius: 15px;
-    padding: 15px;
-    margin: 10px 0;
+    box-sizing: border-box;
+    margin: 10px;
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
+    width: calc(100% - 20px);
 
     tr {
         td,
@@ -77,7 +70,8 @@ table {
             overflow-wrap: break-word;
         }
         th {
-            background-color: var(--dark-grey);
+            background-color: var(--grey);
+            color: var(--black);
             text-align: left;
         }
 

@@ -10,7 +10,7 @@ function EventPage() {
                     <Link
                         to={`/event/${id}`}
                         key={index}
-                        className="flex flex-wrap w-5 p-1"
+                        className="flex flex-wrap w-5 p-1 text-blue"
                     >
                         <span className="font-mono">{id}</span>
                     </Link>

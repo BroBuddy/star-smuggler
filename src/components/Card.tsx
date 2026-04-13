@@ -1,3 +1,5 @@
+import styles from './Card.module.scss'
+
 type CardProps = {
     time?: string
     title?: string
@@ -6,18 +8,13 @@ type CardProps = {
 
 const Card = ({ time, title, children }: CardProps) => {
     return (
-        <div className="flex flex-col p-4">
-            <div>
-                {time && (
-                    <strong className="text-grey mb-2 text-right">
-                        ({time})
-                    </strong>
-                )}
+        <div className={styles.card}>
+            <div className={styles.cardHeader}>
+                {title && <strong>{title}</strong>}
+                {time && <span>time {time}</span>}
             </div>
 
-            {title && <h3>{title}</h3>}
-
-            {children}
+            <div className={styles.cardContent}>{children}</div>
         </div>
     )
 }

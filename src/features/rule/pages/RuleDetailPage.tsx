@@ -21,19 +21,25 @@ function RuleDetailPage() {
     if (!rule) return null
 
     return (
-        <Card title={rule.title}>
-            {rule.desc?.map((p, i) => (
-                <p key={i}>{parseLinks(p)}</p>
-            ))}
+        <>
+            <Card title={rule.title}>
+                {rule.desc?.map((p, i) => (
+                    <p key={i}>{parseLinks(p)}</p>
+                ))}
+            </Card>
 
             {rule.tables?.map((table, index) => (
                 <TableRenderer key={index} table={table} />
             ))}
 
-            {rule.note?.map((p, i) => (
-                <p key={i}>{parseLinks(p)}</p>
-            ))}
-        </Card>
+            {rule.note && (
+                <Card title="Notes">
+                    {rule.note?.map((p, i) => (
+                        <p key={i}>{parseLinks(p)}</p>
+                    ))}
+                </Card>
+            )}
+        </>
     )
 }
 

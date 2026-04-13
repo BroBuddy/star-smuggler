@@ -8,7 +8,7 @@ function SimpleListTable({ table }: { table: SimpleListTableType }) {
                 <thead>
                     <tr>
                         {table.cols.map((col, i) => (
-                            <th key={i} className="text-white p-2">
+                            <th key={i} className="p-2">
                                 {col}
                             </th>
                         ))}
