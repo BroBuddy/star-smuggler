@@ -1,4 +1,10 @@
-const Card = ({ time, title, children }: any) => {
+type CardProps = {
+    time?: string
+    title?: string
+    children: React.ReactNode
+}
+
+const Card = ({ time, title, children }: CardProps) => {
     return (
         <div className="flex flex-col p-4">
             <div>

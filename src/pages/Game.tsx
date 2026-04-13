@@ -11,7 +11,7 @@ const sections = [
 
 const Game = () => {
     return (
-        <section className="flex flex-col py-2 w-full">
+        <section className="flex flex-col">
             {sections.map(({ title, component }) => (
                 <Card key={title} title={title}>
                     {component}
