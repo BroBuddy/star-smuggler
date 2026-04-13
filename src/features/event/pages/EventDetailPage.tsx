@@ -9,11 +9,8 @@ const EventDetailPage = () => {
     const { tag } = useParams()
     const { addToHistory } = useHistory()
     const event = getEventByTag(tag as string)
-
-    console.log(tag)
-    console.log(event)
-
     const content = event?.content
+
     const paragraphs = useMemo(() => {
         if (!content) return []
 

@@ -486,6 +486,237 @@ const ruleData: Rule[] = [
             },
         ],
     },
+    {
+        tag: 'r205l',
+        title: 'Rural',
+        desc: [
+            'An area where food is grown in a life-support environment. Banking facilities are present here. Each roll takes three hours; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'one sidearm (e046)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'hire driver (e062)'],
+                    ['5', 'hire mobile repairman (e061)'],
+                    ['6', 'fuel units (e027)'],
+                    ['7', 'life support units (e028)'],
+                    ['8', 'commercial transport (e074)'],
+                    ['9', 'repair units (e031)'],
+                    ['10', 'one U robot (e041)'],
+                    ['11', 'hire medic (e065)'],
+                    ['12', 'hire bodyguard (e063)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205m',
+        title: 'Scientific',
+        desc: [
+            'An area where scientific research and development is performed. Items purchased here are considered one tech level higher than normal (after tech code and normal die roll determines tech level). If an item from here breaks down, it must be returned to this area on this planet for repair, or repaired by an engineer you hired from here. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'stasis units of any size (e057)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'special event (e075)'],
+                    ['5', 'hire starship engineer (e067)'],
+                    ['6', 'hire repairman (e060)'],
+                    ['7', 'commercial transport (e074)'],
+                    ['8', 'PS robot (e039) or GM robot (e037)'],
+                    ['9', 'U robot (e041) or utility suits (e043)'],
+                    ['10', 'sidearms (e045) or heavy hand weapons (e048)'],
+                    ['11', 'skimmer gun (e051) or boat gun (e053)'],
+                    ['12', 'starship guns (e055)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205n',
+        title: 'Slum Area',
+        desc: [
+            'A region of poverty and high crime. Slums are dangerous for outsiders to enter, but have an opportunity to buy and sell a wide range of items, often at inflated prices. Banking facilities are present. Each roll takes two hours, roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    [
+                        '2',
+                        'hire starship pilot/navigator (e066) or starship engineer (e067) although neither has papers',
+                    ],
+                    [
+                        '3',
+                        'buy U robot (e042), PS robot (e040), and/or GM robot (e038) although serial number plates are removed',
+                    ],
+                    ['4', 'no more rolls'],
+                    [
+                        '5',
+                        'fuel units (e027), life support units (e029) and/or repair units (e031)',
+                    ],
+                    ['6', 'hire driver (e062) or buy/sell skimmer (e033)'],
+                    ['7', 'special event (e076)'],
+                    ['8', 'hire bodyguard (e064)'],
+                    ['9', 'sidearms (e047) or heavy hand weapons (e049)'],
+                    ['10', 'commercial transport (e074)'],
+                    ['11', 'skimmer gun (e052) or boat gun (e054)'],
+                    ['12', 'hire medic (e065) without papers'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205o',
+        title: 'Spaceport',
+        desc: [
+            "The normal landing port for star ships and orbital shuttles. It is the standard location to purchase star ships and equipment, as well as hiring a ship's crew. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):",
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'stasis units of any size (e057)'],
+                    ['3', 'no more rolls'],
+                    ['4', 'starship (e036) or starship guns (e055)'],
+                    ['5', "ship's boat (e034) or boat guns (e053)"],
+                    [
+                        '6',
+                        'commercial transport (e074) including orbital shuttles (r215a)',
+                    ],
+                    [
+                        '7',
+                        'hypercharges (e025), fuel units (e026) and/or life support units (e028)',
+                    ],
+                    ['8', 'utility suits (e043) and/or repair units (e030)'],
+                    [
+                        '9',
+                        'GM robots (e037), PS robots (e039), and/or U robots (e041)',
+                    ],
+                    [
+                        '10',
+                        'starship engineer (e067) and/or starship gunner (e068)',
+                    ],
+                    ['11', 'starship pilot/navigator (e066)'],
+                    ['12', 'medic (e065)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r205p',
+        title: 'Space Station',
+        desc: [
+            'Similar but smaller version of a star port, in orbit around the planet or near the asteroid belt. Conditions are cramped and prices higher, with few opportunities for profit unless contraband is gotten through customs. Banking facilities are present. Each roll takes one hour; roll two dice (2d6):',
+        ],
+        tables: [
+            {
+                type: 'roll-table',
+                cols: ['2d6', 'Result'],
+                rows: [
+                    ['2', 'hire repairman (e060)'],
+                    ['3', 'no more rolls'],
+                    ['4', "ship's boat (e035) or boat guns (e056)"],
+                    ['5', 'utility suits (e044)'],
+                    [
+                        '6',
+                        'fuel units (e027), life support units (e029) and/or repair units (e031)',
+                    ],
+                    ['7', 'hypercharges (e025)'],
+                    [
+                        '8',
+                        'orbital shuttle (e074 for rates, r215a for operation)',
+                    ],
+                    ['9', 'buy/install stasis units (e057)'],
+                    ['10', 'hire starship engineer (e067)'],
+                    ['11', 'hire starship pilot/navigator (e066)'],
+                    ['12', 'hire starship gunner (e068)'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r206',
+        title: 'Asteroids',
+        desc: [
+            'One game tile represents an asteroid belt, rather than half a planetary surface. There are six asteroids shown on the title, plus a space station. Of course, there are many more than six asteroids in the belt, this is a simplification for game purposes. The asteroid belt is an ideal place to store or hide materials, and occasional finds of value do occur.',
+            'Asteroids have a gravity factor of 0 (although they actually have a very light pull). Asteroids have no air, nor atmosphere. No goods or services may be bought at the asteroids, but normal activities and contact tries are possible at the space station (see r205p). The dashed line for the orbit represents ships in the asteroid belt neither at an asteroid, nor docked at the space station.',
+            "The connecting lines from asteroids to orbit represent the fact that all asteroids and the station connect to each other through the orbit. It takes one hour to go from any asteroid or the station to orbit, and another hour to go from orbit to any asteroid or the station (regardless of where one started). This is the maximum speed for either a starship or the ship's boat, the only way to go to or from asteroids.",
+        ],
+    },
+    {
+        tag: 'r207',
+        title: 'Guide to the Pavonis Sector',
+        desc: [
+            'Ten star systems make up the Pavonis Sector, connected in pattern "one" (see r234). Complete data on each is provided below. Planets and asteroids are listed with the closest one to the star (sun) of the system first, and given the lowest number (i.e.. Planet I is closer than Planet II).',
+        ],
+    },
+    {
+        tag: 'r207a',
+        title: 'Regari',
+        desc: [
+            'Once a key center of industrial development, Regari is now a hint of its past glory. People live a poorer lifestyle, and the system has suffered a serious economic depression for years. There is little system defense, and breakdown of equipment is now commonplace.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                rows: [
+                    [
+                        'System Entry 1d6 roll: 1- e090, 2- e091, 3- e096, 4- e100, 5- e116, 6- e093',
+                    ],
+                    ['System Codes: 💰 wealth 0, 🛠️ tech 30'],
+                    ['Planet I: layout J-K, 🧲 gravity 3, ☣️ good air'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r207b',
+        title: 'Palatek',
+        desc: [
+            'Palatek attempted to replace the technological preeminence of Regari, but went to such extremes that toxic effluents poisoned the atmosphere. Despite scientific efforts, respiratory diseases remain a common cause of death. System defense is largely under corporate control, and emphasizes protection against industrial espionage.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                rows: [
+                    [
+                        'System Entry 1d6 roll: 1- e092, 2- e120, 3- e105, 4- e108, 5- e097, 6- e103',
+                    ],
+                    ['System Codes: 💰 wealth 30, 🛠️ tech 50'],
+                    ['Planet I: layout A-C, 🧲 gravity 7, ☣️ bad air'],
+                ],
+            },
+        ],
+    },
+    {
+        tag: 'r207c',
+        title: 'Byzantium',
+        desc: [
+            'A very old society exists here, noted for its political intrigue and complexity, its vigilant secret police, and underground dungeons that none are said to leave. It is known as a dangerous system to enter, unless one has the right connections.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                rows: [
+                    [
+                        'System Entry 1d6 roll: 1- e106, 2- e102, 3- e093, 4- e117, 5- e120, 6- e104',
+                    ],
+                    ['System Codes: 💰 wealth 50, 🛠️ tech 15'],
+                    ['Planet I: layout F-C, 🧲 gravity 10, ☣️ good air'],
+                    ['Planet II: layout E-B, 🧲 gravity 8, ☣️ good air'],
+                ],
+            },
+        ],
+    },
 ]
 
 export default ruleData
