@@ -19,7 +19,14 @@ const EventDetailPage = () => {
         )
     }, [dataSet, tagId])
 
-    const transformedContent = parseLinks(activeTag?.content ?? '')
+    const paragraphs = useMemo(() => {
+        if (!activeTag?.content) return []
+
+        return activeTag.content
+            .split(/<\/p>/g)
+            .map((p) => p.replace(/<p>/g, '').trim())
+            .filter(Boolean)
+    }, [activeTag?.content])
 
     useEffect(() => {
         if (activeTag) {
@@ -31,7 +38,9 @@ const EventDetailPage = () => {
         <>
             {activeTag && (
                 <Card title={activeTag.title}>
-                    <div className="text-md">{transformedContent}</div>
+                    {paragraphs.map((text, index) => (
+                        <p key={index}>{parseLinks(text)}</p>
+                    ))}
                 </Card>
             )}
         </>
