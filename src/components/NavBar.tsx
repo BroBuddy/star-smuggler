@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import styles from './NavBar.module.scss'
 
 type Links = {
@@ -22,21 +22,20 @@ const NavBar = () => {
                 const isActive = location.pathname === to
 
                 return (
-                    <Link
+                    <NavLink
                         key={to}
                         to={to}
                         style={{
                             display: 'flex',
                             flexDirection: 'row',
                             alignItems: 'center',
-                            opacity: isActive ? 0.6 : 1,
                             pointerEvents: isActive ? 'none' : 'auto',
                             cursor: isActive ? 'default' : 'pointer',
                         }}
-                        className={` ${isActive ? 'active' : ''}`}
+                        className={isActive ? styles.active : undefined}
                     >
                         <span>{label}</span>
-                    </Link>
+                    </NavLink>
                 )
             })}
         </nav>

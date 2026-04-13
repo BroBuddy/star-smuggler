@@ -9,7 +9,7 @@ export function parseLinks(text: string = '') {
                 <Link
                     key={i}
                     to={`/event/${part.toLowerCase()}`}
-                    className="text-blue"
+                    className="text-light-blue"
                 >
                     {part}
                 </Link>

@@ -18,7 +18,7 @@ function Instructions() {
             <p>
                 You can learn this game as you play. Simply start with the first
                 event (
-                <Link to="/event/e001" className="text-blue">
+                <Link to="/event/e001" className="text-light-blue">
                     E001
                 </Link>
                 ) and then read sections as necessary. You may find it

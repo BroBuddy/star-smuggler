@@ -1,23 +1,11 @@
-import { Link } from 'react-router-dom'
 import { useRuleService } from '../services/RuleService'
+import TagList from '@/features/sheet/components/TagList'
 
 function RulePage() {
-    const { getRuleTags } = useRuleService()
-    const data = getRuleTags()
+    const { getRuleData } = useRuleService()
+    const data = getRuleData()
 
-    return (
-        <div className="flex flex-wrap my-2">
-            {data.map((id, index) => (
-                <Link
-                    to={`/rule/${id}`}
-                    key={index}
-                    className="flex flex-wrap w-5 p-1"
-                >
-                    <span className="font-mono">{id}</span>
-                </Link>
-            ))}
-        </div>
-    )
+    return <TagList tags={data} />
 }
 
 export default RulePage

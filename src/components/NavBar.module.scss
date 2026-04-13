@@ -13,5 +13,9 @@
         padding: 8px;
         text-decoration: none;
         white-space: nowrap;
+
+        &.active {
+            color: var(--pink);
+        }
     }
 }

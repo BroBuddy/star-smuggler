@@ -1,3 +1,5 @@
+import { EventItem } from '../types/EventType'
+
 type Event = {
     tag: string
     title: string
@@ -35,7 +37,7 @@ export const Events: Event[] = [
         image: true,
         content:
             '<p>You are attacked by armored military vehicles, see R311. Determine tech level (R210) with table R235, and then roll 1d6 to determine the exact composition of the force:</p>' +
-            '<ul><li>1-3: One vehicle and three infantrymen</li><li>4-5: Two vehicles and four infantrymen</li><li>6: Three vehicles and six infantrymen</li></ul>' +
+            '<p>1-3: One vehicle and three infantrymen</p><p>4-5: Two vehicles and four infantrymen</p><p>6: Three vehicles and six infantrymen</p>' +
             "<p>Each infantryman is E6, M4, H3. Each vehicle has heavy armor, reducing hit results by two (that is, a single or double hit becomes a miss, a triple hit becomes a single hit, etc.), and is armed with a boat gun (R230K). Each vehicle has a crew of three: a driver, gunner, and commander (each E6, M3 with sidearms), who only leave the tank if it is disabled, and then will attempt to flee.</p><p>If you defeat the tank(s) but don't destroy them, you can capture and repair them. A tank functions like a skimmer (R215C), with the following variations: it takes up 45 CU space, has a capacity of 6 CU for crew and cargo, plus 6 CU of fuel, which it consumes at the rate of 2 FU per day. It moves at half the speed of a skimmer, and therefore is slower than anything other than walking on foot.</p>" +
             "<p>Private use of a tank is illegal in all systems, but having it in cargo (not in use) is allowed if weapons are permitted. If you use the tank as a vehicle to enter any area, and are detected (R238) immediately see E018 if there are any military areas on the planet. Otherwise, see E017 and ignore normal detection events. If you are not detected, proceed normally. If you later get into combat and use the tank, you will become 'wanted' in the system if any of your opponents escape the battle alive.</p>",
     },
@@ -1685,6 +1687,11 @@ export const Events: Event[] = [
 ]
 
 export const getEventTags = Events.map((e) => e.tag)
+
+export const getEventData = (): EventItem[] => {
+    if (!Events) return []
+    return Events.map(({ tag, title }) => ({ tag, title }))
+}
 
 export const getEventByTag = (tag: string): Event | undefined => {
     return Events.find((item: Event) => item.tag === tag) as Event
