@@ -1,10 +1,10 @@
-import { EventIds } from '@/features/event/data/events'
+import { getEventTags } from '@/features/event/data/events'
 import { Link } from 'react-router-dom'
 
 function EventPage() {
     return (
         <div className="flex flex-wrap my-2">
-            {EventIds.map((id, index) => (
+            {getEventTags.map((id, index) => (
                 <Link
                     to={`/event/${id}`}
                     key={index}

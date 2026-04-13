@@ -4,6 +4,7 @@ type TagItem = {
     title: string
     content: string
     time?: string
+    image?: string
 }
 
 type TagOption = {

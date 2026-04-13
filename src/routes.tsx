@@ -8,7 +8,7 @@ const BookletPage = React.lazy(() => import('./pages/BookletPage.tsx'))
 const RuleDetailPage = React.lazy(
     () => import('./features/rule/pages/RuleDetailPage.tsx')
 )
-const Tag = React.lazy(
+const EventDetailPage = React.lazy(
     () => import('./features/event/pages/EventDetailPage.tsx')
 )
 const SheetPage = React.lazy(
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
                 element: <RuleDetailPage />,
             },
             {
-                path: '/event/:tagId',
-                element: <Tag />,
+                path: '/event/:tag',
+                element: <EventDetailPage />,
             },
             {
                 path: '/helper',

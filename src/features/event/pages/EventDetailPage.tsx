@@ -1,24 +1,19 @@
 import { useParams } from 'react-router-dom'
-import { Rules as RulesData } from '@/features/rule/data/rules'
-import { Events as EventsData } from '@/features/event/data/events'
+import { getEventByTag } from '@/features/event/data/events'
 import { useEffect, useMemo } from 'react'
-import { TagItem } from '@/types/TagTypes'
 import { useHistory } from '@/features/helper/hooks/useHistory'
 import { parseLinks } from '@/lib/parseLinks'
 import Card from '@/components/Card'
 
 const EventDetailPage = () => {
-    const { tagId } = useParams()
+    const { tag } = useParams()
     const { addToHistory } = useHistory()
-    const dataSet = useMemo(() => RulesData.concat(EventsData), [])
+    const event = getEventByTag(tag as string)
 
-    const activeTag = useMemo(() => {
-        return dataSet.find(
-            (item: TagItem) => item.id?.toLowerCase() === tagId?.toLowerCase()
-        )
-    }, [dataSet, tagId])
+    console.log(tag)
+    console.log(event)
 
-    const content = activeTag?.content
+    const content = event?.content
     const paragraphs = useMemo(() => {
         if (!content) return []
 
@@ -29,15 +24,22 @@ const EventDetailPage = () => {
     }, [content])
 
     useEffect(() => {
-        if (activeTag) {
-            addToHistory(activeTag.id, activeTag.title)
+        if (event) {
+            addToHistory(event.tag, event.title)
         }
-    }, [activeTag, addToHistory])
+    }, [event, addToHistory])
 
     return (
         <>
-            {activeTag && (
-                <Card title={activeTag.title}>
+            {event && (
+                <Card title={event.title}>
+                    {event.image && (
+                        <img
+                            src={`/images/events/${tag}.png`}
+                            alt={event.title}
+                        />
+                    )}
+
                     {paragraphs.map((text, index) => (
                         <p key={index}>{parseLinks(text)}</p>
                     ))}
