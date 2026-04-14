@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { parseLinks } from '@/lib/parseLinks'
 import { useRuleService } from '../services/RuleService'
 import TableRenderer from '@/components/TableRenderer'
+import SpeechText from '@/components/SpeechText'
 
 function RuleDetailPage() {
     const { tag } = useParams()
@@ -23,6 +24,8 @@ function RuleDetailPage() {
     return (
         <>
             <Card title={rule.title}>
+                <SpeechText desc={rule.desc as string[]} />
+
                 {rule.image && (
                     <img src={`/images/rules/${tag}.png`} alt={rule.title} />
                 )}
