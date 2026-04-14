@@ -4,7 +4,8 @@ export interface Event {
     tag: string
     title: string
     time?: string
-    desc?: string[]
+    image?: boolean
+    desc?: string
     note?: string[]
     tables?: TableType[]
 }

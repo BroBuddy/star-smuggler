@@ -1,24 +1,25 @@
 import { useParams } from 'react-router-dom'
-import { getEventByTag } from '@/features/event/data/events'
 import { useEffect, useMemo } from 'react'
 import { useHistory } from '@/features/helper/hooks/useHistory'
 import { parseLinks } from '@/lib/parseLinks'
 import Card from '@/components/Card'
+import { useEventService } from '../services/EventService'
 
 const EventDetailPage = () => {
     const { tag } = useParams()
     const { addToHistory } = useHistory()
+    const { getEventByTag } = useEventService()
     const event = getEventByTag(tag as string)
-    const content = event?.content
+    const description = event?.desc
 
     const paragraphs = useMemo(() => {
-        if (!content) return []
+        if (!description) return []
 
-        return content
+        return description
             .split(/<\/p>/g)
             .map((p) => p.replace(/<p>/g, '').trim())
             .filter(Boolean)
-    }, [content])
+    }, [description])
 
     useEffect(() => {
         if (event) {

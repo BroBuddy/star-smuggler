@@ -1,7 +1,8 @@
-import { getEventData } from '@/features/event/data/events'
 import TagList from '@/features/sheet/components/TagList'
+import { useEventService } from '../services/EventService'
 
 function EventPage() {
+    const { getEventData } = useEventService()
     const data = getEventData()
 
     return <TagList tags={data} />
