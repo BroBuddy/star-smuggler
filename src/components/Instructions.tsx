@@ -26,7 +26,7 @@ function Instructions() {
             </p>
             <ul>
                 <li>
-                    <Link to="/rule/r203">Daily Actions</Link>
+                    <Link to="/rule/r203">Daily Cycle</Link>
                 </li>
                 <li>
                     <Link to="/rule/r212">Antelope Class Starship</Link>
