@@ -2,8 +2,7 @@
     border: 2px solid var(--black);
     background-color: rgba($color: #000, $alpha: 0.7);
     border-radius: 5px;
-    margin: 20px 10px;
-    min-width: 300px;
+    margin: 15px 10px;
 }
 
 .cardHeader {
@@ -17,10 +16,10 @@
     > strong {
         font-size: 16px;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 }
 
 .cardContent {
-    padding: 10px 15px;
+    padding: 5px 15px;
 }

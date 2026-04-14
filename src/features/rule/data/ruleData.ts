@@ -48,12 +48,13 @@ const ruleData: Rule[] = [
         tag: 'r203',
         title: 'Daily Actions',
         desc: [
-            'At the start of each day, you either perform normal travel and contact, or stay in place for RRR (Rest, Recuperation and Repair). At the end of each day, you must check for breakdowns of equipment, and after each 10-day week, make payments on your loan. Each is explained in detail below. Time: each day has ten (10) hours for activity. All events are timed in hours, or sometimes take the rest of the day. If an event goes over the normal limit, you automatically get extra hours that day to finish it (an event will not carry over to the next day). Any other people in your party either travel with you, or stay behind doing little (see r220 for details).',
+            'Each day you choose between normal travel and contact, or staying in place for RRR (Rest, Recuperation & Repair). At the end of every day you must check for equipment breakdowns, and after each 10-day week you make a payment on your loan.',
+            'Each day has 10 hours for activity. Events never carry over to the next day — if needed, extra hours are added automatically to finish them. Companions either travel with you or wait behind (See r220).',
         ],
         tables: [
             {
                 type: 'simple-list',
-                cols: ['Ref', 'Rule'],
+                cols: ['Ref', 'Action'],
                 rows: [
                     ['r203a', 'Travel'],
                     ['r203b', 'Contact'],
@@ -255,13 +256,13 @@ const ruleData: Rule[] = [
         tag: 'r205',
         title: 'Area Types',
         desc: [
-            'There are sixteen different types of areas on planets, each with a different map tile symbol. Sometimes a contact try (r227) will reference one of the paragraphs below, which simply means you roll 2d6 dice to determine which occurs. When you get this result, you may keep rolling (spending the appropriate number of hours for each roll, as indicated) as long as you like, including to the next day and beyond. Some results indicate "no more rolls" which means a new contract try and the appropriate paragraph reference is needed to start again.',
-            'Once you finish with the roll(s) in the appropriate paragraph below, and do anything else, you cannot return to that paragraph unless a new contact try (r227) again results in that paragraph. This system may seem peculiar, but it represents the difficulty of dealing with local directories, languages, communication problems, and the fact that the items or services you desire may be rare, already "booked up" for a period, etc.',
+            'There are sixteen area types on planets, each with its own map tile symbol. A contact try (r227) may refer you to one of the paragraphs below, where you roll 2d6 to determine the outcome. You may keep rolling as long as you like — even across multiple days — spending the appropriate hours per roll, unless a result states "no more rolls", in which case a new contact try is needed to continue.',
+            'Once you leave a paragraph, you cannot return to it without a new contact try (r227) that references it again. This reflects real-world difficulties like language barriers, local directories, communication issues, and the possibility that desired items or services are rare or already unavailable.',
         ],
         tables: [
             {
                 type: 'simple-list',
-                cols: ['Ref', 'Rule'],
+                cols: ['Ref', 'Area'],
                 rows: [
                     ['r205a', 'City'],
                     ['r205b', 'Colony'],
@@ -735,14 +736,13 @@ const ruleData: Rule[] = [
     {
         tag: 'r207',
         title: 'Guide to the Pavonis Sector',
-        image: true,
         desc: [
             'Ten star systems make up the Pavonis Sector, connected in pattern "one" (see r234). Complete data on each is provided below. Planets and asteroids are listed with the closest one to the star (sun) of the system first, and given the lowest number (i.e.. Planet I is closer than Planet II).',
         ],
         tables: [
             {
                 type: 'simple-list',
-                cols: ['Ref', 'Rule'],
+                cols: ['Ref', 'Planet'],
                 rows: [
                     ['r207a', 'Regari'],
                     ['r207b', 'Palatek'],
