@@ -14,7 +14,9 @@ const GamePage = () => {
     return (
         <>
             <Card title="Star Smuggler">
-                <Tabs tabs={tabs} />
+                <div className="mt-2">
+                    <Tabs tabs={tabs} />
+                </div>
             </Card>
         </>
     )
