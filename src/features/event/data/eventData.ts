@@ -429,7 +429,7 @@ const eventData: Event[] = [
     {
         tag: 'e058',
         title: 'False Accusation of Contraband',
-        time: '1 hour',
+        time: 'takes 1 hour',
         image: true,
         desc: '<p>After a cursory examination at a customs post, four agents accuse you of carrying contraband, regardless of whether you are or not. They demand an immediate payment of 500 S as a “fine.” If you pay the fine, they leave, ignoring any actual contraband. If you refuse the fine but don’t resist, you are sent to jail (E023) for ten days. Meanwhile, your crew lands the ship at the nearest space port or space station (or colony, if neither of the above), and waits for you, doing RRR for that period. Those whose salaries become unpaid will leave. If you decide to fight, see E080.</p>',
     },
@@ -443,70 +443,70 @@ const eventData: Event[] = [
     {
         tag: 'e060',
         title: 'Hire Repairman',
-        time: '1 hour',
+        time: 'takes 1 hour',
         image: true,
         desc: '<p>You may hire a repairman who will work in this land area only. He will repair any vehicles or equipment (R219) for a base price (R229A) of 5 S per day. Repair units will cost an additional 5 S each unless you provide them to the repairman to use.</p>',
     },
     {
         tag: 'e061',
         title: 'Hire Mobile Repairman',
-        time: '1 hour',
+        time: 'takes 1 hour',
         image: true,
         desc: '<p>You hire a repairman who will work in whatever area you choose. He will repair any vehicles or equipment (R219) for a base price (R229A) of 5 S per day. If he must travel outside of his home area, for each area he must travel to the repair site the salary doubles (moving to a neighboring area will cost you 10 S per day, two areas away 20 S per day, etc.). He will not leave the planet, but will go up to a space station (but not to orbit). If he leaves his home area you must provide repair units for the work; if he works in his home area, you can provide them, or have him use his own, which cost you an extra 5 S each. Mobile repairmen will arrange for their own transportation, you need not provide it.</p>',
     },
     // {
     //     tag: 'e062-E069',
     //     title: 'Hirelings Available',
-    //     time: '1 hour',
+    //     time: 'takes 1 hour',
     //     desc:
     //         '<p>One or more hirelings for your party are available. Consult the specific paragraph below for the type of hireling, his base price (R229A) weekly salary, and his death payment (R220B) if he dies in your service. Hirelings found in Slum areas have no death payments. Hirelings from slums will lack papers. All hirelings must be paid at the start of each 10-day week of work.</p>',
     // },
     {
         tag: 'e062',
         title: 'Skimmer Driver',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>With E 1d6+1, M0, H2. Base salary is 4 S per week, death payment 30 S unless from slums. He will refuse to leave this star system, and if shanghied will refuse to work.</p>',
     },
     {
         tag: 'e063',
         title: 'Bodyguard',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>With E 1d6+1, M 1d6, H 1d6-1 (minimum of 1). Base salary is 5 S per week, death payment 40 S unless from slums.</p>',
     },
     {
         tag: 'e064',
         title: 'Bodyguards',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>One or two available, each E 1d6+2, M 1d6+1 (maximum of 6), H 1d6. Each already has a sidearm (see R210 for tech level). Base salary is 10 S per week, death payment 40 S unless from slums, for each bodyguard you decide to hire.</p>',
     },
     {
         tag: 'e065',
         title: 'Medic',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>With E 1d6, M0, H1. Base salary is 10 S per week, death payment 80 S unless from slums.</p>',
     },
     {
         tag: 'e066',
         title: 'Pilot/Navigator',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: 'With E 1d6, M 1d6-1, M 1d6-2 (minimum of 1). Base salary is 20 S per week unless piloting within stasis unit (R212E) which reduces base price to 15 S per week. He requires a 20 S bonus “sign on” payment to join, death payment is 200 S unless from the slums.',
     },
     {
         tag: 'e067',
         title: 'Starship Engineer',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: 'With E 1d6+1, M 1d6-1, H 1d6. Base salary is 15 S per week unless a 2 CU stasis unit is in the engineering compartment for him (R212) which reduces base salary to 10 S per week. He requires a 15 S bonus “sign on” payment to join, death payment is 120 S unless he is from the slums.',
     },
     {
         tag: 'e068',
         title: 'Starship Gunner',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>With E 1d6+1, M 1d6, H 1d6-1 (minimum of 1). Base salary is 15 S per week unless turret has a 2 CU stasis unit (R212E) which reduces it to 10 S per week. In addition, he requires a 10 S bonus “sign-on” payment to join. Death payment is 100 S unless he is from the slums.</p>',
     },
     {
         tag: 'e069',
         title: 'Starship Gunner',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>With E 1d6+1, M 1d6+1 (maximum of 6), H 1d6. Base salary is 15 S per week unless turret has a 2 CU stasis unit (R212E) which reduces it to 10 S per week. He has his own sidearm (determine tech level per R210). He requires a 20 S bonus “sign on” payment to join. Death payment is 100 S unless he is from the slums.</p>',
     },
     {
@@ -524,31 +524,31 @@ const eventData: Event[] = [
     {
         tag: 'e072',
         title: 'Empty Mine',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You find an empty mine and may explore it. If you do, it takes the rest of the day, roll 1d6 for what you find:</p><p>1: absolutely nothing</p><p>2: 1d6 crystals worth 30 S each</p><p>3: cave in! roll 1d6 for each person in the party: 4-6 means they are buried, you can avoid this result with a successful Cunning roll (R202), each survivor can dig out one buried person, who will have 1d6 hits when recovered, any others are lost</p><p>4: acid drainage causes equipment corrosion, roll for breakdown (R218) of each item taken into the mine</p><p>5: attacked by 2d6 strange life forms, each with E3, M0, H6 which start in contact and fight to the death, see R304</p><p>6: workable deposits found, may extract 5 CU of ore per day for each person working in the mine. Each CU of ore may be sold at any industrial area for a base price (R229A) of 20 S. Hirelings working in a mine require double normal salary due to dangers and difficulty of the work, and will need a successful Cunning roll (R202) by you each subsequent week (can make one roll for all, or deal with them individually, as you desire). U Robots can also work it if directed by yourself or a controller (available only through events) which was reprogrammed for the job (requires repair work R219 to reprogram). Robots in the mine must roll twice after each day for break-down (R218).</p>',
     },
     {
         tag: 'e073',
         title: '“Wanted” Person Recognized',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Ignore this event if nobody is “wanted” in your party. Anyone (including you) in your party who is “wanted” (R228) in this system is recognized. Instantly 1d6+1 guards appear demanding surrender of all wanted persons. Each guard is E 1d6+1, M 1d6, H 1d6 with a heavy hand weapon (R216D). You can surrender the wanted person(s), who goes to jail (E023); or you can fight. If you fight, see R327 and subtract one (-1) from your dice roll there.</p>',
     },
     {
         tag: 'e074',
         title: 'Commercial Transport Available',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You may hire commercial transport (R215B). This may be a commercial vehicle, or an orbital shuttle if at a space station, space port, or colony on a planet without a spaceport. Every 3 CU capacity hired costs 1 S per hour, regardless of whether it is moving or waiting, and comes with fuel and driver. Entire rental time must be paid in advance, vehicle disappears after that. Travel speeds are given in R203A. If hiring a commercial vehicle, each comes in one of three sizes, either a 3 CU, 6 CU or 9 CU vehicle. You can hire more than one, but larger vehicles do not exist. Any size orbital shuttle is available.</p>',
     },
     {
         tag: 'e075',
         title: 'Open Laboratory',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You find an open door to a laboratory area in the scientific complex. You may enter and spend another 1d6 hours looking around. If you do, then roll a 1d6 for the results of your searches:</p><p>1: find nothing of obvious value</p><p>2: knock over a shelf of chemicals that explode, you clumsy oaf! roll 2d6, 2-7 is that many hits, 8-12 is disablement, with an additional roll for each additional person in your party — you then recover and escape</p><p>3: find valuable scientific plans, can be sold for 1,000 S base price (R229A) in any scientific area of any other star system</p><p>4: set off alarms, immediately roll for an entry encounter (R225A) complex with normal minus, one (-1) to die roll for this area</p><p>5: find a file cabinet with useful information, may take file for any one piece of equipment — information allows a starship engineer to spend a day in RRR tinkering with that item to improve it by one tech level</p><p>6: accidentally activate a quantum discombobulator, immediately roll for breakdown (R218) of each item of equipment with your party, must escape immediately and thus abandon anything you cannot carry out immediately</p>',
     },
     {
         tag: 'e076',
         title: 'Street Dealer',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>A rather seedy looking individual approaches and says he has just the deal for you, if you will come alone with him. If you do, event takes the rest of the day, and roll 1d6 for the result:</p><p>1: you are offered four cases of stolen hand computers, each is 5 S base price and is 4 CU in size</p><p>2: you are offered pure dylaweed extract at 25 S per CU</p><p>3: you are offered one night of absolute delight for 3 S</p><p>4: you are offered a stolen collection of rare illustrated books for 10 S, they take up 2 CU of space</p><p>5: you are jumped by three men, each E6, M4, H5 with side-arms (see R210 for tech level), one will begin in contact, attacking, see R305</p><p>6: you are offered counterfeit money up to 5,000 S face value, each 100 S of fake money will cost you 10 S of your real money</p><p>For details on base price in purchase and resale, see R229A. If you buy any of the above items, you can attempt resale by spending an hour in any city area and making a successful cunning roll (R202). Base price at resale is 1d6+6 times the purchase price. However, if you fail the cunning roll when trying to resell the first item, it means they are really worthless — you’ve been ripped off for the entire value of the item.</p><p>Fake money can be used at face value as long as you make successful cunning rolls (R202). The first time you fail, though, you instantly become “wanted” in that system. Fake money cannot be given to any bank, they will instantly recognize that its fake, regardless of your cunning.</p>',
     },
     {
@@ -590,31 +590,31 @@ const eventData: Event[] = [
     {
         tag: 'e083',
         title: 'Alien Weapon',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Designate one person to try to operate the alien weapon, and roll 1d6:</p><p>1: item turns out to be an alien musical instrument, not a weapon, which you can sell in any scientific area for 30 S base price (R229A)</p><p>2: item turns out not to be an alien artifact, but a modern sculpture produced at a local art school</p><p>3: item turns out not to be an alien artifact, but a prop from a science fiction holo-movie (albeit a very realistic one!)</p><p>4: it explodes, destroying itself and inflicts 2d6 hits on the person who tried it</p><p>5: it is an alien weapon, a pigment disruptor, fires like a tech 6 sidearm, and any hit turns the victim’s skin color to green or purple and disables by causing blindness that can only be cured at a Medical Center (R231), but no other damage - it has no effect on vehicles, if it ever breaks down (R218) it cannot be fixed</p><p>6: the alien weapon immediately attunes itself to the brain of the person trying it; the user need merely think of a target in sight, and the weapon will hit that target automatically (one hit only), for break-down purposes consider it a tech 4 weapon (R218), if a break-down occurs roll 1d6, on a 5-6 the user becomes insane and the weapon useless, on a 1-4 it can be repaired normally and the user is unaffected.</p>',
     },
     {
         tag: 'e084',
         title: 'Building Collapses',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>As you move through the ruins, an old building collapses on you, unless you successfully make a Cunning roll (R202) to avoid it. If you are caught in a collapse and in a vehicle, the vehicle suffers one hit and is immobilized. It will take two people the rest of today or one person through the end of tomorrow to clear it from the rubble, including repairs if anyone in the party is capable of it (R219). If caught in a collapse on foot, each person in the party suffers 1d6 hits. However, the hits are received one by one, slowly, and thus utility suits will self-seal after each (although the wearer still loses the endurance!) (R231).</p>',
     },
     {
         tag: 'e085',
         title: 'Attack by Mutants',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>A group of 1d6+10 mutants charge out to attack your party, starting at dispersed range. See R327 and subtract one (-1) from your dice roll there. The leader has E12, M3, H4 and a tech 2 heavy hand weapon, the others are unarmed and are each E9, M0, H3.</p>',
     },
     {
         tag: 'e086',
         title: 'Unguarded Office on Military Base',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You can slip into an office unseen and search it. If you do so, take 1 more hour and roll 1d6:</p><p>1: you find nothing of value</p><p>2: you find two sidearms and one heavy hand weapon (see R210 for tech level, but add one when rolling to determine result on table R235)</p><p>3: you are surprised by an overwhelming force of military police who arrest you and your party unless you succeed with a Cunning roll (R202), if arrested they take all your possessions and imprison you for 20 days, after which you may attempt to leave once at the start of each 10-day week with a 1d6 result of 4-6, when you leave they will not return what was confiscated, and imprisoned hirelings will leave unless immediately paid any back-salaries due</p><p>4: you find secret defense plans for the base, which you can sell for a base price of 500 S at a military area in another star system (or a base price of 5,000 S if the other star system is at war with this one)</p><p>5: alarms go off! immediately roll for an entry encounter (R225A) for a military land area, including the standard subtracting one (-1) from the die roll on the table (R239)</p><p>6: two guards, each E8, M6, H4 with heavy hand weapons (see R210 for tech level) challenge you, see R323 unless on Imperia or Talitar, then see R319 (20 S).</p>',
     },
     {
         tag: 'e087',
         title: 'Prisoner Pleads for Escape',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>If you are with one or more people as a party, ignore this event. If you are alone, a prisoner approaches the bars and wall to address you. He says that if you get him out and take him to any Rural, Rough, or Slum area on Byzantium or Imperia he can pay you 8,000 S. He is telling the truth on a result of 1-5 with a 1d6 roll. You can determine that now if you make a successful Cunning roll (R202), otherwise you don’t find out the truth until you deliver him. If he is lying, you’ll get nothing for your pains.</p><p>To get him out takes the rest of the day, and requires that you disable or kill a guard with E7, M 1d6, H5 with a sidearm (see R210 for tech level). See R301 for the attack. You then escape, and will leave this area and enter another as part of the activity (with an appropriate entry encounter). The former prisoner is “wanted” in this star system, and is E 1d6, M 1d6, H 1d6+1 (maximum of 6). He is a willing member of your party until you next reach Byzantium or Imperia.</p>',
     },
     {
@@ -897,13 +897,13 @@ const eventData: Event[] = [
     {
         tag: 'e133',
         title: 'Mynkurian Death Squad',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You are “recognized” as a Nipnan agent by a Mynkurian death squad. They instantly launch a suicide attack against you (R327). They will fight to the death, regardless of odds or tactical situation. Mynkurian Death Squad Troops:</p><p>Two “miners,” each E3, M0, H4, rigged with high explosives — if they contact any vehicle or robot (or failing that, any person), they blow themselves up (see R230E and R230K for explosive hits)</p><p>Two “gold slayers,” E5, M0, H6, who attempt to contact any officer or leader (including yourself) and hit hand-to-hand with poison-tipped spikes that cause one wound and immediate disablement. Furthermore, unless immediately treated with first aid (R231) after each later round of combat, roll 1d6:</p><p>1-4: The victim suffers another hit from poison</p><p>5-6: The poison has no more potency, and there is no further effect</p><p>Finally, the squad has two “spitters,” each E4, M4, H2, armed with heavy hand weapons (see R210 for tech level), who fire at anyone holding a weapon (if none, any opponent).</p>',
     },
     {
         tag: 'e134',
         title: 'Talitarian Troopers',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You have met a patrol of troopers. If you wish to fight at once, refer to R327 and subtract one from the dice roll there. Instead, you can listen to their demand. They order you to put down all your weapons, leave your vehicle (if you have one), and show your papers. If you refuse this, refer to R327 and subtract two from your dice roll there. If you obey, any without proper papers are arrested (E023). Alternatively, although they seem a nasty bunch, you can try to bribe them for 50 S. If you do, roll 1d6:</p><p>1-3: They accept the bribe</p><p>4-6: They refuse and a battle ensues, refer to R327 and subtract two from the dice roll there</p><p>Talitarian Patrol: composed of eight (8) men, each is E6, M4, H4 armed with heavy hand weapons (see R210 for tech level).</p>',
     },
     {
@@ -921,7 +921,7 @@ const eventData: Event[] = [
     {
         tag: 'e137',
         title: 'Sabotage/Theft',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>When you return to the vehicle you used last, you find it has been broken into, with only minor damage (no actual hits). However, every Repair Unit, Fuel Unit, and Life Support Unit is missing. There is no indication as to who did this.</p>',
     },
     {
@@ -933,13 +933,13 @@ const eventData: Event[] = [
     {
         tag: 'e139',
         title: 'You are Bugged',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Your vehicle(s) and equipment have bugs and surveillance devices on them. Hereafter, you will always be detected on entry to a new area on this planet (R225). You cannot remove the bugs yourself, professionals are needed. The bugs will not function on any other planet but will resume functioning if you return to this planet.</p>',
     },
     {
         tag: 'e140',
         title: 'Attack by “Zombies”',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Your party is rushed by persons that seem stumbling and awkward, with a lifeless appearance in their eyes. There are 1d6 times ten (x10) of them, each E10, M0, H1. If you are in a ship’s boat or starship they cannot hurt you, but inflict one hit of damage to your vehicle. If you are in any other vehicle, they overturn and wreck it on the first rush, and begin smashing it around you. Therefore, in all other cases, the first round of combat begins (R230) in the normal fashion.</p>',
     },
     {
@@ -969,7 +969,7 @@ const eventData: Event[] = [
     {
         tag: 'e145',
         title: 'Bio-Plastics',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You are offered the opportunity to have a bio-plastic alloy installed in your starship for 20,000 S or ship’s boat for 4,000 S, and/or to buy a bio-plastic utility suit for 500 S. Installation on ship or boat requires that tomorrow be spent in RRR doing that only. All bio-plastics have self-repair ability. The ship or boat repairs itself (R219) one hit per day (even without RRR), while the utility suit will seal any type of wound, not just single hits. If you buy the bio-plastic, make a note to roll 1d6 ten days from now, and on a “6” consult E167.</p>',
     },
     {
@@ -981,7 +981,7 @@ const eventData: Event[] = [
     {
         tag: 'e147',
         title: 'Attack by Beggars',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Your party is engulfed in a crowd of beggars, irate because you are obviously better off than they! Roll 2d6 and multiply by five (x5) for how much money, in Secs (S), you must throw at them to drive them away. If you don’t pay them, 1d6 times four (x4) will attack you, see R230. Each beggar is E2, M1, H2 with the ranged weapons being stones and other hard objects, tech level 1. Their objective is to steal, and a successful hit in hand-to-hand combat means they will carry off one item from that person and disappear, rather than actually inflict any injury. If there is nothing to carry, the beggar will inflict the hit instead (due to rage).</p>',
     },
     {
@@ -993,7 +993,7 @@ const eventData: Event[] = [
     {
         tag: 'e149',
         title: 'Odd Machine',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You have found a 2 CU device of unknown function, carefully hidden away. You can examine it and attempt to use it, if you do, spend another hour and roll 2d6 for the result:</p><p>2 it explodes and inflicts 1d6 hits on each per person, and one hit on each vehicle and robot present (R217)</p><p>3 emits a high tone that shatters the teeth of all present, inflicting one hit — it can be later used as a weapon against others, but will inflict the one hit on anyone who hasn’t yet suffered the result, or who had the result heal</p><p>4 automatic pudding dispenser that will produce two LSUs (R213) per day, but breaks down permanently after dispensing ten units</p><p>5 document shredder that can be sold for 10 S at any military area</p><p>6 small animal repeller that turns away any animal of Endurance 3 or less, costs 1S per day to operate, worth 35 S if sold in a rural area</p><p>7 emits loud burbling sound but has no other effect unless you tried it on Uruskop, then refer to E128</p><p>8 causes an automatic breakdown (R218) on your nearest vehicle, then melts</p><p>9 a tech 5 ECM unit for your starship, that requires a full day of RRR, see R230L for effect</p><p>10 tech 4 starship defensive screen unit, takes a full day of RRR to install, see R230L for effect</p><p>11 trap-that goes off, see E059, if you survive roll again for what the trap protected</p><p>12 personal power armor of tech 6 in a suitcase; armor when powered-up is 1 CU and similar to utility suit, except it has integral life support that lasts for 2 days before it needs a 1 S recharge at a spaceport or space station, or a free recharge at your starship; in combat any one ranged weapon hit or two hand-to-hand hits each round can be ignored, and the tech level of all ranged weapons firing on it are reduced by one; if the armor breaks down, the wearer must get out of it to move (unless carried by others), and the powerless armor now is equivalent to 2 CU in weight and bulk.</p>',
     },
     {
@@ -1011,13 +1011,13 @@ const eventData: Event[] = [
     {
         tag: 'e152',
         title: 'Time Machine',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You are approached by an elderly gentleman who claims to have invented a time machine, and needs a volunteer to test it. You may ignore him and end this encounter, or go with him to test it. If you go with him, you spend the rest of the day there. He puts you in a shiny metal globe packed with equipment, wishes you luck, and starts the machine, roll 1d6:</p><p>1-2 the device fails, you emerge coughing from the acrid smoke and leave, cursing to yourself</p><p>3-5 the device works, but is out of control, you are plunged hopelessly far into the past or future, unable to return, and eventually die — you lose the game</p><p>6 the machine works and you can control it; you are able to jump forward and back at will, giving you the ability to amass limitless wealth and avoid any problems with the authorities, you instantly win the game.</p>',
     },
     {
         tag: 'e153',
         title: 'High Technology Item',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: `
             <p>You have the opportunity to buy one high-technology item. Roll 2d6 to determine which item is available. All items are tech 6, with the base price (R229A) given in brackets [ ].</p>
             <p>1. upgraded sublight drive for your starship. Escape is automatic from any ship of tech 5 or less, normal escape ability against tech 6 ships. Upgrading takes a full day of RRR to install at a spaceport or station [10,000 S]</p>
@@ -1037,13 +1037,13 @@ const eventData: Event[] = [
     {
         tag: 'e155',
         title: 'Secret Police',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>The always efficient Byzantine secret police stop you for questioning. If you have committed any crime on Byzantium since you have been here, including bringing in contraband materials, buying or selling any stolen or illegal goods, entered any Palace or Military area (illegal to the unauthorized, such as you), or engaged in any bribery or theft, the secret police have discovered this already and arrest you. If you haven’t, they let you proceed.</p><p>If arrested, you can go peacefully, see E023. Alternately, you can resist arrest by fighting, see R230. There are twelve officers present, each E6, M3, H5, half with heavy hand weapons, half with sidearms (see R210 for tech).</p>',
     },
     {
         tag: 'e156',
         title: 'Clone Bank',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You are offered the services of a clone bank. If you accept, the procedure will take the rest of the day. In a clone bank, a mental scan recording of your mind and body are made for a base price (R229A) of 1,000 S, paid in advance. Unless a message is received within 40 days, the bank will assume you have died, and will activate the clone, which has all of your memories, abilities, etc. up to this date (including location of any caches, R229C). Normally you send a “do not activate” message every month to prevent this, paying 100 S if in another star system for a special message-jump relay. You can also visit the bank in this area in the future, and for 50 S update the memories of your clone.</p><p>The advantage of a clone is that you are protected from true death, in that should you die (and thus fail to send the “hold” message) the clone is activated. The clone thinks, acts, looks, and for all practical purposes IS you, although without your possessions or papers. If the original “you” is killed, you can immediately jump forward in time to the end of the next 40-day period and continue play in the persona of the clone, effectively “erasing” all knowledge, information, and events that occurred after the date of the last memory update.</p><p>Setting up special accounts and identities for your clone is often a good idea. If for some reason your clone is activated while you still live (due to failing to send the “hold” message), you can select whichever persona you prefer at that point, and forget the other. However, after each day you must roll a 2d6, and if “12” results, you meet your double and go into permanent catatonic shock, causing you to lose the game instantly (you and the clone become vegetables).</p>',
     },
     {
@@ -1061,25 +1061,25 @@ const eventData: Event[] = [
     {
         tag: 'e159',
         title: 'Rich Man & Thugs',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You see a party comprised of an obviously rich individual, guarded by 1d6+6 thugs (each E8, M4, H6 armed with a sidearm, see R210 for tech level). You can ignore him, or you can attack him. If you attack, see R302. You must defeat them in five combat rounds, since after that the rich man will escape. If you disable or kill the rich man, you find he has a base value wealth of 1d6 times 100 (R229A). If you attacked the rich man, you automatically become “wanted” here.</p>',
     },
     {
         tag: 'e160',
         title: 'Royal Guards',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Five men dressed in uniforms of the palace guard appear. Each is E8, M3, H6 and armed with ceremonial halberds (inflict double damage if they hit in hand-to-hand combat) and sidearms (see R210 for tech level). They move to arrest you— if they do, see E023. You can chose to resist, see R327, but if you do, they have no scruples about killing you in combat. After five rounds of combat, another four royal guardsmen will appear.</p>',
     },
     {
         tag: 'e161',
         title: 'Attack the Ship’s Boat',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Your gunner fires on the boat — determine the effects of the shot (R230L). If you score a critical hit of any type, the boat explodes. Otherwise, three psionicists on the boat respond with a psionic attack (E022) against your gunner. Each psionicist has E10 and psionic power 12, and will make a size 4 attack each round until they or the gunner are dead. You may end the encounter by leaving the area with sublight drive or hyperdrive, they cannot pursue.</p>',
     },
     {
         tag: 'e162',
         title: 'Attack the Alien',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>When your party enters the crew’s quarters to make the attack, any weapons of tech 4 or higher immediately detonate, inflicting 2 hits on the person carrying it. The alien then extends its tentacles and grasps one attacker (selected at random) and draws the person into its glowing mass.</p><p>If you have anyone with a weapon of tech level 3 or less, you now kill the alien, but your crewman is gone. If you do not have such a weapon, you are helpless against it and must withdraw. When you withdraw, roll 1d6, on a 5 or 6 one more person at random is seized and destroyed before you can withdraw.</p><p>After you withdraw, scanners inform you that the alien has left the ship.</p>',
     },
     {
@@ -1097,31 +1097,31 @@ const eventData: Event[] = [
     {
         tag: 'e165',
         title: 'Wait for One-Man Ships',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Each of the small ships collides with your starship and explodes. Each inflicts two hits of damage. ECM does not help you, but if defensive screens exist and are energized, roll 1d6 for each attacker:</p><p>1-3 it hits screens</p><p>4-6 it hits ship and penetrates screens to inflict one hit of damage</p>',
     },
     {
         tag: 'e166',
         title: 'Attack Imperial Guards',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Roll 1d6:</p><p>1-3 combat ensues, see R327 and add one (+1) to your dice roll there</p><p>4-6 and they cry out in terror and run away, dropping their weapons. These may be sold for base price (R229A) of 5 S at any city or colony on Palatek, Byzantium, or Talitar. The weapons are virtually useless in combat and occupy 1 CU each.</p>',
     },
     {
         tag: 'e167',
         title: 'Alloy Comes to Life',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>The item you purchased of bio-plastic alloy has actually come to life! It begins digesting whatever is inside. If you or any others have been within a bio-plastic vehicle during the past day, suffer 1d6 hits of acid damage before you escape. If you wore a bioplastic utility suit in the past day you are completely digested and dead. Any vehicle or suit that comes to life will creep off by itself and is completely lost and unusable. Any goods inside a vehicle are lost.</p>',
     },
     {
         tag: 'e168',
         title: 'Nothing of Interest',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Terrain is dull and boring, you find nothing of interest.</p>',
     },
     {
         tag: 'e169',
         title: 'Wait for Boat',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: `
             <p>You allow the boat to dock with your starship. Three persons come on board, leaving the pilot/navigator they hired on the boat, which then disengages and departs. The three who boarded are psionicists, each E10, M1, H2 with psionic power (E022) of 12.</p><p>Roll 1d6 to see what they want (below). If you refuse, each immediately launches an attack against you (or your psionicist if a mental shield is raised), continuing until you or they are dead, or you agree to cooperate. If this combat occurs, see R327.</p>
             <p>1. immediate passage to any other star system; they will pay 600 S each for passage.</p>
@@ -1134,38 +1134,38 @@ const eventData: Event[] = [
     {
         tag: 'e170',
         title: 'Attack Life Force Hand-to-Hand',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Each person attacking hand-to-hand is engulfed and consumed by the life force. Each one consumed adds one point to its Endurance. If you were attacking hand-to-hand, you can avoid engulfment and death with a successful Cunning roll (R202).</p><p>Return to E135 and choose another option.</p>',
     },
     {
         tag: 'e171',
         title: 'Attempt Friendly Contact',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>The alien decides to be friendly too, and establishes a permanent mind-meld with the person who made contact. This causes an immediate and permanent reduction in Endurance of 1d6-1 (to a minimum of one). The alien will always remain near his friend, occupying 2 CU.</p><p>The alien will happily suffer concealment in a 2 CU box, provided he is freed at the end of each day. If not concealed, he will frighten anyone the person encounters, causing them to attack the alien (see E162 for results, the weapon destruction applies to everyone, including your party, except the mind-melded person).</p><p>The alien provides these advantages to his friend: (a) anyone firing on the friend with ranged weapons has three added (+3) to the “to hit” dice roll, and (b) the friend automatically has life support provided (no need for utility suit or LSUs). The alien always remains with the friend; if the friend leaves your party, so will the alien.</p>',
     },
     {
         tag: 'e172',
         title: 'Mine Guards',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You attract the attention of mine guards, who think you intend to jump a claim, or steal valuable minerals. See R324. There are eight (8) guards, each is E5, M3, H4 and armed with heavy hand weapons (see R210 for tech level).</p>',
     },
     {
         tag: 'e173',
         title: 'Try for Contact',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You make contact, and discover this is a ship of the Byzantine secret police. If you had any encounter with them before, or succeed with a Cunning roll (R202), they wish to deal with you. Otherwise, if you are “wanted” by Byzantium, they demand to board you for a search.</p><p>Dealing with the Byzantine Secret Police Ship: roll 1d6</p><p>1-2 - they wish you to smuggle a 4 CU stasis unit to the nearest planet for them, you will be paid 300 S after you land it on the planet; you can de-energize it yourself (R212E), but if you do, see E425 when it is opened, and you become “wanted” on Byzantium.</p><p>3-4 - conceal one of their men on your ship and take him to the nearest planet, you will be paid 550 S when he arrives undetected, and nothing otherwise (the man will dexterously disappear if found earlier).</p><p>5-6 - conceal one of their men and take him to the palace on Imperia, you will be paid 3,000 S when you return to Byzantium after a successful delivery, again their man must be undetected — if detected he disappears and you will not be paid anything.</p><p>Boarding for Search by Byzantine Secret Police: If you resist boarding, see E189. If you allow boarding, two men come on board, each E6, M2, H3 with tech-2 sidearms who search (R229D) the ship for items worth more than 100 S per CU. If they find any, roll 1d6:</p><p>1-2 - they make notes and ask for a 1 CU duty per CU of such goods.</p><p>3-6 - they will take 1 CU of one such item (the most valuable) and then let you pass.</p><p>If you attempt to stop them, or refuse to pay the duty, a fight breaks out on board, see R327. If you win the fight on board, you will then have to fight the Byzantine ship, see E189.</p>',
     },
 
     {
         tag: 'e174',
         title: 'Approach Battle',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You have wandered into a battle between Nipna and Mynkuria, and inadvertently get involved. Roll 1d6:</p><p>1-3 - see E098</p><p>4-6 - see E107</p>',
     },
     {
         tag: 'e175',
         title: 'Palace Sentry',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You are approached by a palace sentry, who informs you that this part of the palace is out-of-bounds to visitors. He begins to escort you from the palace. If you agree to leave, you must immediately travel to any connecting land area. Alternately, you can try to bribe him to pass you for 75 S base price. If you succeed with a Cunning roll (R202) you are successful. If you fail he sounds an alert and guards appear, see E160.</p>',
     },
     {
@@ -1209,7 +1209,7 @@ const eventData: Event[] = [
     {
         tag: 'e181',
         title: 'Union Roadblock',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>If you are entering in any vehicle other than commercial vehicles, you are stopped by a force of 20 union men, each E12, M2, H6 with sidearms (see R210 for tech level). They have with them an all-terrain mover with a boat gun and gunner (E8, M5, H3). They inform you that you cannot enter the area unless you hire commercial transport (R215B), which they can call for you now. If you do, and pay the appropriate cost, you enter normally. If you refuse, you either cannot enter the area (and must go elsewhere), or you can try to shoot your way past — see R327. Once in battle, any escape from it becomes a successful “running” through the roadblock.</p>',
     },
     {
@@ -1227,13 +1227,13 @@ const eventData: Event[] = [
     {
         tag: 'e184',
         title: 'Cult Turns Hostile',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: "<p>Each cult member pulls a needle-gun and opens fire on your party with surprise, see R230I. Each cultist is E6, M2, H2. If they disable your party, they steal all possessions and leave you, including vehicles (except ship’s boat or starship, which they can't operate).</p><p>Needle Guns: Tech 3 weapons. Any hit causes automatic disablement.</p>",
     },
     {
         tag: 'e185',
         title: 'Holdup Men',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>If you have two or more companions, this result has no effect. Otherwise, you’re held up by two men demanding your money and possessions. You can give them up or fight. If you fight, see R305. Each holdup man is E7, M5, H5. One has a sidearm, the other a heavy hand weapon (see R210 for tech level).</p>',
     },
     {
@@ -1251,7 +1251,7 @@ const eventData: Event[] = [
     {
         tag: 'e188',
         title: 'Anagathic Venom',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You hear rumors of a rare arachnid producing a venom that arrests aging. Your contact has 1d6 doses, each for a base price of 1,000 S (R229A). If genuine and fresh, it can be sold in a City or Palace for 10,000 S per dose.</p><p>You can pay 25 S per dose at a scientific area to analyze it. Otherwise, roll 1d6 at sale time:</p><p>1 – Venom was stale when bought; worthless.</p><p>2–3 – Genuine and fresh.</p><p>4–6 – Fake or has gone stale; worthless.</p><p>Add +1 to the roll for each day owned unless kept in a stasis unit.</p>',
     },
     {
@@ -1263,7 +1263,7 @@ const eventData: Event[] = [
     {
         tag: 'e190',
         title: 'Paid Companionship',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You meet several people offering to pay for intimate companionship with you and your crew. Each day spent in RRR (R203C) earns 10 S per person, but no other activities are possible that day. You may stay as long as desired. Crew will remain even without salary while this continues, but once the arrangement ends, normal pay is required again.</p>',
     },
     {
@@ -1287,19 +1287,19 @@ const eventData: Event[] = [
     {
         tag: 'e194',
         title: 'Feed It Life Support Units',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You may feed it any number of LSUs. It gains 1 Endurance per LSU. Roll 1d6:</p><p>If the result is less than the number of LSUs, it dissipates peacefully into mist</p><p>If the result is a 6, it engulfs one person (random); see E187 for effect</p><p>Then return to E135 and choose another option.</p>',
     },
     {
         tag: 'e195',
         title: 'Attack the Mynkurians',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You may fire twice before the Mynkurian ships reach you (see R230L). They have no ECM or defensive screens. Each hit destroys one ship. Ships that survive and reach you will collide, see E165.</p>',
     },
     {
         tag: 'e196',
         title: 'Minor Eruption',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>A volcanic eruption hits the area. If in a vehicle, it takes one hit of damage (R217). If on foot, each person suffers 1d6–1 hits (roll separately). A successful Cunning roll (R202) avoids injury.</p>',
     },
     {
@@ -1323,13 +1323,13 @@ const eventData: Event[] = [
     {
         tag: 'e400',
         title: 'Space Amoeba',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Upon deactivating the stasis unit, a space amoeba is found fissioning into two 2 CU amoebas. Each rushes to engulf a character (randomly determined). In the first round, they make contact with tendrils—no wounds yet, and no suit offers protection. From round two onward, victims suffer 1 hit/round, and the amoeba gains 1 Endurance per round.</p><p>Amoebas cannot be harmed hand-to-hand. Ranged weapons damage the amoeba <i>and</i> its victim. Dyla-weed or hallucinogenic drugs disable it for 1d6 rounds, allowing placement into stasis (1 CU per 4 Endurance).</p><p>Freshly split amoebas have Endurance 5. At Endurance 10, they fission again. Amoebas in stasis may be sold at any Scientific area for 1,000 S per CU.</p>',
     },
     {
         tag: 'e401',
         title: 'Mental Shield',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>Your mental shield protects you from the psychic attack. You engage sublight drive and escape, but your psionicist collapses, suffering 2d6 hits. No enemy ship was ever seen on scanners.</p>',
     },
     {
@@ -1341,7 +1341,7 @@ const eventData: Event[] = [
     {
         tag: 'e403',
         title: 'Boarding Party',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: "<p>You must pay 80 S in pilot fees, 10 S visa per person, and a 25 S entry fee for the starship. Payment is mandatory due to overwhelming force.</p><p>If someone aboard is “wanted” (R228), authorities don't recognize it. If you refuse or can't pay, your ship is impounded until payment plus 10% daily interest is made—or you must hyperjump out of the system (R212A).</p>",
     },
     {
@@ -1353,7 +1353,7 @@ const eventData: Event[] = [
     {
         tag: 'e405',
         title: 'Four Armed Men',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You surprise four armed men (E6, M4, H1, each with a tech 5 sidearm) as the stasis unit is deactivated. You may attack first with surprise (R230I), or attempt conversation. If you talk, roll 1d6:</p><p>1–2: They put down weapons but refuse to join you. Encounter ends.</p><p>3: They offer to become bodyguards for 5 S/week each.</p><p>4–6: They open fire — see R327.</p>',
     },
     {
@@ -1365,13 +1365,13 @@ const eventData: Event[] = [
     {
         tag: 'e407',
         title: 'Shoot at Object on Hull',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You fire on the object attached to your hull. It reflects intense radiation, dealing 1d6+2 hits (R231) to each person outside the hull, including those in utility suits or a ship’s boat. The object is unaffected. Return to E119 to choose another option.</p>',
     },
     {
         tag: 'e408',
         title: 'Ship Darts Away',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: "<p>As you contact the strange ship's hull, it suddenly withdraws, extends three projections, and darts away at incredible speed. It disappears from scanners and cannot be pursued. The encounter ends.</p>",
     },
     {
@@ -1383,7 +1383,7 @@ const eventData: Event[] = [
     {
         tag: 'e410',
         title: 'Rich Member of Royal Family',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You release a 2 CU-sized fat man named Johann, subprince of the Imperia royal family. He offers 100,000 S if returned to an Imperian land area immediately (shortest route). For each day beyond tomorrow, subtract 10,000 S. After 10 days, if not delivered, you become “wanted” in Imperia.</p>',
     },
     {
@@ -1395,13 +1395,13 @@ const eventData: Event[] = [
     {
         tag: 'e412',
         title: 'Go with Mutineer',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>A mutinous crewman disarms you and escorts you to the ship’s boat, allowing you to bring any non-weapon cargo. He pilots the main ship away toward a planet.</p><p>If you follow to the same planet, you may search for your starship by spending 1 hour per area and rolling 1d6. A 5–6 means you find it stripped of guns, cargo, stasis units, RUs, FUs, and LSUs. Each area can only be checked once. If not found, it is lost forever. The mutineer is never seen again.</p>',
     },
     {
         tag: 'e413',
         title: 'Try to Escape Scout',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>As you flee, the scout ship fires all guns. Each standard gun inflicts one hit on your starship (R217). The nose gun fires a magneto-plasma beam that penetrates the hull and kills everyone in one compartment, determined by a 1d6 roll:</p><p>1: pilot’s compartment</p><p>2: crew quarters</p><p>3: engineering</p><p>4: gun turret</p><p>5: main cargo hold</p><p>6: boat hold and ship’s boat</p><p>Your ship escapes; the scout does not pursue. Encounter ends.</p>',
     },
     {
@@ -1413,7 +1413,7 @@ const eventData: Event[] = [
     {
         tag: 'e415',
         title: 'Wounded Pilot/Navigator',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>You release a wounded starship pilot/navigator (E7, M0, H2, 1d6 wounds). He offers to serve without pay for 40 days. If you decline, he promises to replace the stasis unit you used when you next arrive at a spaceport or station.</p>',
     },
     {
@@ -1425,13 +1425,13 @@ const eventData: Event[] = [
     {
         tag: 'e417',
         title: 'Escapee Seeks Help',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>A desperate escapee from local prison begs for a ride off-planet before the next day ends. Roll 1d6 to determine his home planet:</p><p>1: Palatek</p><p>2: Uruskop</p><p>3: Byzantium</p><p>4: Nipna</p><p>5: Mynkuria</p><p>6: New Karma</p><p>You may ignore him, turn him in for a 10 S reward (if not “wanted” here), or take him. If you take him, refer to E427 upon delivery to a life-supporting area on his planet.</p>',
     },
     {
         tag: 'e418',
         title: 'Sublight Drive Energized',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>When you activate the sublight drive, roll 1d6:</p><p>1–2: The object falls off and is lost in space.</p><p>3–5: The object emits radiation, killing all life in the adjacent compartment. It melts onto the hull and becomes junk.</p><p>6: The object is unaffected — return to E119 or select a new option after deactivating the drive.</p>',
     },
     {
@@ -1479,13 +1479,13 @@ const eventData: Event[] = [
     {
         tag: 'e426',
         title: 'Enter Strange Ship',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: "<p>You discover the ship is made of bio-plastic alloys, with no crewmen alive. Further investigation reveals the ship is alive! The walls close in on you. Roll 1d6:</p><p>1-2: You escape to your own ship; the living ship darts away and is quickly lost on scanners.</p><p>3-4: You are digested by the ship, becoming fuel.</p><p>5-6: You are incorporated into the ship's nervous system. You retain your mind but your body is destroyed. You can't leave, but consider it a victory — crack open your old starship and have your first meal!</p>",
     },
     {
         tag: 'e427',
         title: 'Escapee Delivered to Home World',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: "<p>You discover whether the escapee fulfilled his promise. Roll 1d6:</p><p>1-2: He slips away in a crowd and you never see him again.</p><p>3: He has no wealth but offers 40 S, all he has.</p><p>4: He has no money but offers valuable underworld connections, providing false papers for you and your crew.</p><p>5: He thanks you and pays you 1,500 S.</p><p>6: He’s from a wealthy family and pays you 4,000 S now, with 4,000 S each week for the rest of your life. Payments are to a local bank account, continuing until you're proven dead to the bank.</p>",
     },
     {
@@ -1509,7 +1509,7 @@ const eventData: Event[] = [
     {
         tag: 'e431',
         title: 'Black Ship Astern',
-        time: '1 hour',
+        time: 'takes 1 hour',
         desc: '<p>The black ship fires one last shot and lets you go without pursuit.</p>',
     },
 ]

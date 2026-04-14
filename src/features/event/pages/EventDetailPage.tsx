@@ -30,7 +30,7 @@ const EventDetailPage = () => {
     return (
         <>
             {event && (
-                <Card title={event.title}>
+                <Card time={event.time} title={event.title}>
                     {event.image && (
                         <img
                             src={`/images/events/${tag}.png`}

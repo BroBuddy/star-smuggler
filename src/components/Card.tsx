@@ -11,7 +11,7 @@ const Card = ({ time, title, children }: CardProps) => {
         <div className={styles.card}>
             <div className={styles.cardHeader}>
                 {title && <strong>{title}</strong>}
-                {time && <span>time {time}</span>}
+                {time && <em>({time})</em>}
             </div>
 
             <div className={styles.cardContent}>{children}</div>
