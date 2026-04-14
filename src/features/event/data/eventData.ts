@@ -284,7 +284,8 @@ const eventData: Event[] = [
         tag: 'e034',
         title: 'Ship’s Boat',
         time: 'if not timed, takes 1 hour',
-        desc: '<p>One Hopper class ship’s boat (R214) can be bought for a base price of 900 S or sold for a base price of 600 S.<br />E035 Ship’s Boat: one Hopper class ship’s boat (R214) can be bought for a base price of 1200 S, or sold for a base price of 500 S.</p>',
+        desc: `<p>One Hopper class ship’s boat (R214) can be bought for a base price of 900 S or sold for a base price of 600 S.</p>
+            <p>E035 Ship’s Boat: one Hopper class ship’s boat (R214) can be bought for a base price of 1200 S, or sold for a base price of 500 S.</p>`,
     },
     {
         tag: 'e035',
@@ -357,7 +358,17 @@ const eventData: Event[] = [
         tag: 'e046',
         title: 'Sidearms',
         time: 'if not timed, takes 1 hour',
-        desc: '<p>(R216D) each 5 S to buy base price, cannot sell. If in a Rural area, no more than one may be bought.<br />E047 Sidearms: (R216D) each 4 S to buy, 2 S to sell, base price.<br />E048 Heavy Hand Weapons: (R216D) each 10 S to buy base, cannot sell.<br />E049 Heavy Hand Weapons: (R216D) each 15 S to buy, 10 S to sell, base.<br />E050 Heavy Hand Weapons: (R216D) each 30 S to buy base price, may not sell. Weapons here have explosive effects also.<br />E051 Skimmer Guns: (R216C) each 25 S to buy, 10 S to sell, base price.<br />E052 Skimmer Guns: (R216C) each 40 S to buy, 30 S to sell, base price.<br />E053 Boat Guns: (R216B) each 80 S to buy, 30 S to sell, base price.<br />E054 Boat Guns: (R216B) each 150 S to buy base price, cannot sell. Before purchase, roll 1d6, a “6” indicates they are armor-piercing guns that automatically inflict one critical hit with each normal hit (instead of normal critical hit procedure) against all targets except starships.<br />E055 Starship Guns: (R216A) each 200 S per tech level to buy, cannot sell. You may select guns of a lower tech level to get a lower price.<br />E056 Starship Guns: (R216A) each 300 S per tech level to buy, 100 S per tech level to sell, base price. You can only buy starship guns of the listed tech level here, you cannot buy lower level guns.</p>',
+        desc: `<p>(R216D) each 5 S to buy base price, cannot sell. If in a Rural area, no more than one may be bought.</p>
+            <p>E047 Sidearms: (R216D) each 4 S to buy, 2 S to sell, base price.</p>
+            <p>E048 Heavy Hand Weapons: (R216D) each 10 S to buy base, cannot sell.</p>
+            <p>E049 Heavy Hand Weapons: (R216D) each 15 S to buy, 10 S to sell, base.</p>
+            <p>E050 Heavy Hand Weapons: (R216D) each 30 S to buy base price, may not sell. Weapons here have explosive effects also.</p>
+            <p>E051 Skimmer Guns: (R216C) each 25 S to buy, 10 S to sell, base price.</p>
+            <p>E052 Skimmer Guns: (R216C) each 40 S to buy, 30 S to sell, base price.</p>
+            <p>E053 Boat Guns: (R216B) each 80 S to buy, 30 S to sell, base price.</p>
+            <p>E054 Boat Guns: (R216B) each 150 S to buy base price, cannot sell. Before purchase, roll 1d6, a “6” indicates they are armor-piercing guns that automatically inflict one critical hit with each normal hit (instead of normal critical hit procedure) against all targets except starships.</p>
+            <p>E055 Starship Guns: (R216A) each 200 S per tech level to buy, cannot sell. You may select guns of a lower tech level to get a lower price.</p>
+            <p>E056 Starship Guns: (R216A) each 300 S per tech level to buy, 100 S per tech level to sell, base price. You can only buy starship guns of the listed tech level here, you cannot buy lower level guns.</p>`,
     },
     {
         tag: 'e047',
