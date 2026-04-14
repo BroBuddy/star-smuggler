@@ -4,7 +4,10 @@ import type { Rule, RuleItem } from '../types/RuleType'
 export function useRuleService() {
     const getRuleData = (): RuleItem[] => {
         if (!ruleData) return []
-        return ruleData.map(({ tag, title }) => ({ tag, title }))
+
+        return ruleData
+            .filter(({ tag }) => /^r\d+$/.test(tag))
+            .map(({ tag, title }) => ({ tag, title }))
     }
 
     const getRuleDataByTag = (tag: string): Rule | undefined => {

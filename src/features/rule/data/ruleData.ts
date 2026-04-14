@@ -10,6 +10,16 @@ const ruleData: Rule[] = [
             'When a character joins your party, note his (or her) vital statistics as needed. You can voluntarily dismiss or abandon members of your party if you wish (sometimes expedient when making an escape, or if money or equipment runs short). Dismissal or abandonment may have penalties to you (r220b). Characters encountered who don\'t join your party can be ignored after the event, they simply go on their way, and "disappear" from the game.',
             'To determine your own personal characteristics at the start of the game, see r201b.',
         ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r201a', 'Characteristics and Skills'],
+                    ['r201b', 'Your Character — Duke Springer'],
+                ],
+            },
+        ],
     },
     {
         tag: 'r201a',
@@ -39,6 +49,20 @@ const ruleData: Rule[] = [
         title: 'Daily Actions',
         desc: [
             'At the start of each day, you either perform normal travel and contact, or stay in place for RRR (Rest, Recuperation and Repair). At the end of each day, you must check for breakdowns of equipment, and after each 10-day week, make payments on your loan. Each is explained in detail below. Time: each day has ten (10) hours for activity. All events are timed in hours, or sometimes take the rest of the day. If an event goes over the normal limit, you automatically get extra hours that day to finish it (an event will not carry over to the next day). Any other people in your party either travel with you, or stay behind doing little (see r220 for details).',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r203a', 'Travel'],
+                    ['r203b', 'Contact'],
+                    ['r203c', 'RRR — Rest, Recuperation & Repair'],
+                    ['r203d', 'Breakdown'],
+                    ['r203e', 'Loan Payments'],
+                    ['r203f', 'Victory & Defeat'],
+                ],
+            },
         ],
     },
     {
@@ -122,6 +146,21 @@ const ruleData: Rule[] = [
         title: 'Maps & Classifications',
         desc: [
             'Star Smuggler is set in the Pavonis Sector, a distant star region with ten inhabited star systems. Various classifications and codes are used for each system, and a unique mapping system for the various planets. The standard description of the sector is in r207, but variants and modifications are possible (r208 & r209).',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r204a', 'System Characteristics'],
+                    ['r204b', 'Wealth Code'],
+                    ['r204c', 'Tech Code'],
+                    ['r204d', 'Planetary Characteristics'],
+                    ['r204e', 'Gravity'],
+                    ['r204f', 'Atmosphere'],
+                    ['r204g', 'Land Areas'],
+                ],
+            },
         ],
     },
     {
@@ -218,6 +257,30 @@ const ruleData: Rule[] = [
         desc: [
             'There are sixteen different types of areas on planets, each with a different map tile symbol. Sometimes a contact try (r227) will reference one of the paragraphs below, which simply means you roll 2d6 dice to determine which occurs. When you get this result, you may keep rolling (spending the appropriate number of hours for each roll, as indicated) as long as you like, including to the next day and beyond. Some results indicate "no more rolls" which means a new contract try and the appropriate paragraph reference is needed to start again.',
             'Once you finish with the roll(s) in the appropriate paragraph below, and do anything else, you cannot return to that paragraph unless a new contact try (r227) again results in that paragraph. This system may seem peculiar, but it represents the difficulty of dealing with local directories, languages, communication problems, and the fact that the items or services you desire may be rare, already "booked up" for a period, etc.',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r205a', 'City'],
+                    ['r205b', 'Colony'],
+                    ['r205c', 'Craters'],
+                    ['r205d', 'Gambling'],
+                    ['r205e', 'Industrial'],
+                    ['r205f', 'Military'],
+                    ['r205g', 'Mining'],
+                    ['r205h', 'Palace'],
+                    ['r205i', 'Prison'],
+                    ['r205j', 'Rough Terrain'],
+                    ['r205k', 'Ruins'],
+                    ['r205l', 'Rural'],
+                    ['r205m', 'Scientific'],
+                    ['r205n', 'Slum Area'],
+                    ['r205o', 'Spaceport'],
+                    ['r205p', 'Space Station'],
+                ],
+            },
         ],
     },
     {
@@ -675,6 +738,24 @@ const ruleData: Rule[] = [
         image: true,
         desc: [
             'Ten star systems make up the Pavonis Sector, connected in pattern "one" (see r234). Complete data on each is provided below. Planets and asteroids are listed with the closest one to the star (sun) of the system first, and given the lowest number (i.e.. Planet I is closer than Planet II).',
+        ],
+        tables: [
+            {
+                type: 'simple-list',
+                cols: ['Ref', 'Rule'],
+                rows: [
+                    ['r207a', 'Regari'],
+                    ['r207b', 'Palatek'],
+                    ['r207c', 'Byzantium'],
+                    ['r207d', 'Imperia'],
+                    ['r207e', 'Talitar'],
+                    ['r207f', 'Cubro'],
+                    ['r207g', 'Uruskop'],
+                    ['r207h', 'Nipna'],
+                    ['r207i', 'Mynkuria'],
+                    ['r207j', 'New Karma'],
+                ],
+            },
         ],
     },
     {
