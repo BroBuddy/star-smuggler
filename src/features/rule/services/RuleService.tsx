@@ -14,9 +14,7 @@ export function useRuleService() {
         return ruleData.find((item: Rule) => item.tag === tag) as Rule
     }
 
-    const getRuleTags = () => {
-        return ruleData.map((r) => r.tag)
-    }
+    const getRuleCount = (): number => ruleData.length
 
-    return { getRuleData, getRuleDataByTag, getRuleTags }
+    return { getRuleData, getRuleDataByTag, getRuleCount }
 }

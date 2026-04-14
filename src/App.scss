@@ -55,6 +55,12 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style: square;
+    margin: 5px 20px;
+    padding: 0;
+}
+
 table {
     background-color: rgba($color: #000, $alpha: 0.7);
     border: 2px solid var(--black);

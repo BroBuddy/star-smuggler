@@ -6,18 +6,17 @@ function Equipment() {
             <p>
                 Star Smuggler includes this instruction booklet, a separate
                 events booklet, a sheet of twelve planetary titles (one of which
-                is asteroids) to be assembled in various ways (see{' '}
-                <Link to="/rule/r207">R207</Link>). and two dice. The box corner
-                tabs include cut-out markers of Duke Springer, his spaceship,
-                its boat, and a typical skimmer, which may be useful in the game
-                as markers.
+                is asteroids) to be assembled in various ways. and two dice. The
+                box corner tabs include cut-out markers of Duke Springer, his
+                spaceship, its boat, and a typical skimmer, which may be useful
+                in the game as markers.
             </p>
 
             <p>
                 The planetary tiles each have an identification letter (A
                 through K), and two are placed together to form a circular
-                planet. Which tiles are used for which planets is given in the
-                Guide to the Pavonis Sector (<Link to="/rule/r207">R207</Link>).
+                planet. Which tiles are used for which planets is given in the{' '}
+                <Link to="/rule/r207">Guide to the Pavonis Sector</Link>.
             </p>
 
             <p>

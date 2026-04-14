@@ -11,5 +11,7 @@ export function useEventService() {
         return eventData.find((item: Event) => item.tag === tag) as Event
     }
 
-    return { getEventData, getEventByTag }
+    const getEventCount = (): number => eventData.length
+
+    return { getEventData, getEventByTag, getEventCount }
 }

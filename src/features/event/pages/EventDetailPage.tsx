@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useMemo } from 'react'
-import { useHistory } from '@/features/helper/hooks/useHistory'
+import { useHistory } from '@/hooks/useHistory'
 import { parseLinks } from '@/lib/parseLinks'
 import Card from '@/components/Card'
 import { useEventService } from '../services/EventService'
