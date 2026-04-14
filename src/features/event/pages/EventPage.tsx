@@ -1,4 +1,4 @@
-import TagList from '@/features/sheet/components/TagList'
+import TagList from '@/components/TagList'
 import { useEventService } from '../services/EventService'
 
 function EventPage() {

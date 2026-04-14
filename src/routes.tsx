@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from './App.tsx'
 import Preloader from './components/Preloader.tsx'
+import App from './App.tsx'
 
 const Game = React.lazy(() => import('./pages/GamePage.tsx'))
 const BookletPage = React.lazy(() => import('./pages/BookletPage.tsx'))
@@ -10,9 +10,6 @@ const RuleDetailPage = React.lazy(
 )
 const EventDetailPage = React.lazy(
     () => import('./features/event/pages/EventDetailPage.tsx')
-)
-const SheetPage = React.lazy(
-    () => import('./features/sheet/pages/SheetPage.tsx')
 )
 const HelperPage = React.lazy(
     () => import('./features/helper/pages/HelperPage.tsx')
@@ -25,10 +22,6 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Game />,
-            },
-            {
-                path: '/sheet',
-                element: <SheetPage />,
             },
             {
                 path: '/booklet',

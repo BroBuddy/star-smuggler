@@ -1,12 +1,6 @@
 import { TagSheet } from '@/types/TagTypes'
 
 const sheetTags: TagSheet[] = [
-    { tag: 'r203', title: 'Daily Actions' },
-    { tag: 'r203a', title: 'Travel' },
-    { tag: 'r203b', title: 'Contact' },
-    { tag: 'r203c', title: 'Rest, Recuperation & Repair' },
-    { tag: 'r203d', title: 'Breakdown' },
-    { tag: 'r203e', title: 'Loan Payments' },
     { tag: 'r233', title: 'Entry & Contact Table' },
     { tag: 'r238', title: 'Entry Detection Table' },
 ]
