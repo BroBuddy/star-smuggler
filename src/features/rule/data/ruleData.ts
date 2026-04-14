@@ -2072,7 +2072,7 @@ const ruleData: Rule[] = [
         tag: 'r230a',
         title: 'Combat Procedure',
         desc: [
-            'Combat is fought in rounds. Each round represents about 5 minutes of action. The rounds continue until one side escapes, is wiped out (or completely disabled), or the conflict is resolved otherwise as described in the event.R230A',
+            'Combat is fought in rounds. Each round represents about 5 minutes of action. The rounds continue until one side escapes, is wiped out (or completely disabled), or the conflict is resolved otherwise as described in the event.',
             'Each round you decide whether you are trying to escape or not. Then you decide which combat zone you wish to fight at (see R230B), you must already be in dispersed zone, and remain there, to attempt escape. Finally, all attacks are resolved, with ranged weapons firing first in order of tech level (higher tech fires first), and then hand-to-hand attacks in order of hand-to-hand combat skill characteristics (higher characteristic attacks first).',
             'A character may spend a round doing some special action, such as piloting a vehicle, carrying someone to safety, carrying items in or out of a vehicle, etc. Any such special activity prevents changing zones or making any attacks. The character can still be attacked.',
         ],
