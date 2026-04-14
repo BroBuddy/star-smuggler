@@ -46,32 +46,22 @@ const ruleData: Rule[] = [
     },
     {
         tag: 'r203',
-        title: 'Daily Cycle',
+        title: 'Daily Actions',
         desc: [
-            'Each day represents 10 hours of activity.',
-            'You choose how to spend your day and then resolve the results immediately.',
+            'Each day you choose between normal travel and contact, or staying in place for RRR (Rest, Recuperation & Repair). At the end of every day you must check for equipment breakdowns, and after each 10-day week you make a payment on your loan.',
+            'Each day has 10 hours for activity. Events never carry over to the next day — if needed, extra hours are added automatically to finish them. Companions either travel with you or wait behind (See r220).',
         ],
         tables: [
             {
                 type: 'simple-list',
-                cols: ['ACTION PHASE'],
+                cols: ['Ref', 'Action'],
                 rows: [
-                    ['At the start of the day, choose one:'],
-                    ['r203a — Travel'],
-                    ['r203b — Contact'],
-                    ['r203c — Rest, Recuperation & Repair'],
-                    ['Each option defines how you spend your 10-hour day.'],
-                ],
-            },
-            {
-                type: 'simple-list',
-                cols: ['RESOLUTION PHASE'],
-                rows: [
-                    ['At the end of every day, resolve:'],
-                    ['r203d — Breakdown'],
-                    ['r203e — Loan Payments'],
-                    ['r203f — Victory & Defeat'],
-                    ['These are mandatory and do not require player choice.'],
+                    ['r203a', 'Travel'],
+                    ['r203b', 'Contact'],
+                    ['r203c', 'RRR — Rest, Recuperation & Repair'],
+                    ['r203d', 'Breakdown'],
+                    ['r203e', 'Loan Payments'],
+                    ['r203f', 'Victory & Defeat'],
                 ],
             },
         ],
@@ -121,7 +111,7 @@ const ruleData: Rule[] = [
     },
     {
         tag: 'r203c',
-        title: 'Rest, Recuperation & Repair',
+        title: 'RRR — Rest, Recuperation & Repair',
         desc: [
             'This action is allowed only if you spend a full day (all 10 hours) doing it. No travel and no contact is allowed during an RRR day.',
             'At the start of an RRR day, first determine if an unwanted contact occurs (see r227a). If nothing happens, you can spend the day repairing equipment (r219) or healing (r231). A character cannot heal and repair at the same time, but some in your party could be healing while others are involved in repair work. If a repairman or mobile repairman is needed, you must have already arranged to have him (or it) present during the RRR day — searching for repairmen is not part of RRR.',
