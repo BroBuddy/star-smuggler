@@ -31,7 +31,7 @@ body {
 
 a {
     color: var(--pink);
-    font-family: monospace;
+    font-family: 'Consolas', monospace;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -62,11 +62,11 @@ ul {
 }
 
 table {
-    background-color: rgba($color: #000, $alpha: 0.7);
+    background-color: rgba($color: #000, $alpha: 0.6);
     border: 2px solid var(--black);
     border-radius: 5px;
     box-sizing: border-box;
-    margin: 15px 10px;
+    margin: 25px 10px;
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -80,8 +80,8 @@ table {
         }
         th {
             color: var(--white);
-            font-size: 16px;
-            text-align: left;
+            font-family: 'Consolas', monospace;
+            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }

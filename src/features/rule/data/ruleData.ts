@@ -12,7 +12,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r201a', 'Characteristics and Skills'],
@@ -53,7 +52,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Action'],
                 rows: [
                     ['r203a', 'Travel'],
@@ -74,7 +72,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Travel Options'],
                 rows: [
                     [
@@ -150,7 +147,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r204a', 'System Characteristics'],
@@ -214,7 +210,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Symbol Colors denote entrance restrictions'],
                 rows: [
                     ['White areas can be entered by any type of travel.'],
@@ -239,7 +234,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['Area Connectors are lines that indicate travel routes'],
                 rows: [
                     [
@@ -261,7 +255,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Area'],
                 rows: [
                     ['r205a', 'City'],
@@ -293,7 +286,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'hire bodyguard (e063)'],
@@ -320,7 +312,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'hypercharges (e025)'],
@@ -353,7 +344,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     ['1', 'no more rolls'],
@@ -384,7 +374,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'heavy hand weapon (e048)'],
@@ -411,7 +400,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'hire starship engineer (e067)'],
@@ -438,7 +426,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     ['1', 'only buy heavy hand weapons (e050)'],
@@ -460,7 +447,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'hire mobile repairman (e061)'],
@@ -495,7 +481,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     ['1', 'special event (e073)'],
@@ -525,7 +510,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     [
@@ -570,7 +554,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'one sidearm (e046)'],
@@ -597,7 +580,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'stasis units of any size (e057)'],
@@ -624,7 +606,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     [
@@ -660,7 +641,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'stasis units of any size (e057)'],
@@ -699,7 +679,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2', 'hire repairman (e060)'],
@@ -741,19 +720,18 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
-                cols: ['Ref', 'Planet'],
+                cols: ['Ref', 'Planet', '💰', '🛠️'],
                 rows: [
-                    ['r207a', 'Regari'],
-                    ['r207b', 'Palatek'],
-                    ['r207c', 'Byzantium'],
-                    ['r207d', 'Imperia'],
-                    ['r207e', 'Talitar'],
-                    ['r207f', 'Cubro'],
-                    ['r207g', 'Uruskop'],
-                    ['r207h', 'Nipna'],
-                    ['r207i', 'Mynkuria'],
-                    ['r207j', 'New Karma'],
+                    ['r207a', 'Regari', '0', '30'],
+                    ['r207b', 'Palatek', '30', '50'],
+                    ['r207c', 'Byzantium', '50', '15'],
+                    ['r207d', 'Imperia', '100', '25'],
+                    ['r207e', 'Talitar', '25', '30'],
+                    ['r207f', 'Cubro', '15', '70'],
+                    ['r207g', 'Uruskop', '40', '40'],
+                    ['r207h', 'Nipna', '60', '100'],
+                    ['r207i', 'Mynkuria', '30', '60'],
+                    ['r207j', 'New Karma', '70', '10'],
                 ],
             },
         ],
@@ -766,7 +744,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e090'],
@@ -778,12 +755,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 0'], ['🛠️ tech 30']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout J-K'], ['🧲 gravity 3'], ['☣️ good air']],
             },
@@ -797,7 +772,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e092'],
@@ -809,12 +783,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 30'], ['🛠️ tech 50']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout A-C'], ['🧲 gravity 7'], ['☣️ bad air']],
             },
@@ -828,7 +800,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e106'],
@@ -840,17 +811,14 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 50'], ['🛠️ tech 15']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout F-C'], ['🧲 gravity 10'], ['☣️ good air']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet II'],
                 rows: [['🪐 layout E-B'], ['🧲 gravity 8'], ['☣️ good air']],
             },
@@ -865,7 +833,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e092'],
@@ -877,12 +844,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 100'], ['🛠️ tech 25']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout C-G'], ['🧲 gravity 11'], ['☣️ good air']],
             },
@@ -896,7 +861,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e120'],
@@ -908,17 +872,14 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 25'], ['🛠️ tech 30']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout F-I'], ['🧲 gravity 13'], ['☣️ good air']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet II'],
                 rows: [['🪐 layout E-H'], ['🧲 gravity 4'], ['☣️ good air']],
             },
@@ -933,7 +894,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e121'],
@@ -945,12 +905,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 15'], ['🛠️ tech 70']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout K-A'], ['🧲 gravity 7'], ['☣️ good air']],
             },
@@ -966,7 +924,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e119'],
@@ -978,12 +935,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 40'], ['🛠️ tech 40']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout G-B'], ['🧲 gravity 6'], ['☣️ bad air']],
             },
@@ -998,7 +953,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e098'],
@@ -1010,17 +964,14 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 60'], ['🛠️ tech 100']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout J-D'], ['🧲 gravity 12'], ['☣️ good air']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet II'],
                 rows: [['🪐 layout A-I'], ['🧲 gravity 9'], ['☣️ no air']],
             },
@@ -1037,7 +988,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e095'],
@@ -1049,17 +999,14 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 30'], ['🛠️ tech 60']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout H-A'], ['🧲 gravity 5'], ['☣️ no air']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet II'],
                 rows: [['🪐 layout C-K'], ['🧲 gravity 9'], ['☣️ good air']],
             },
@@ -1075,7 +1022,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Entry'],
                 rows: [
                     ['1', 'e115'],
@@ -1087,17 +1033,14 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['System Codes'],
                 rows: [['💰 wealth 70'], ['🛠️ tech 10']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet I'],
                 rows: [['🪐 layout K-D'], ['🧲 gravity 9'], ['☣️ good air']],
             },
             {
-                type: 'simple-list',
                 cols: ['Planet II'],
                 rows: [['🪐 layout B-J'], ['🧲 gravity 14'], ['☣️ good air']],
             },
@@ -1123,7 +1066,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'System Composition'],
                 rows: [
                     ['1-2', 'one planet'],
@@ -1133,7 +1075,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['2d6', 'Atmosphere'],
                 rows: [
                     ['2-3', 'no air'],
@@ -1142,7 +1083,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['2d6', 'Wealth / Tech Code'],
                 rows: [
                     ['2', '0 (10 if a tech code)'],
@@ -1178,7 +1118,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r211a', 'Capacity Units'],
@@ -1222,7 +1161,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['CU', 'Section'],
                 rows: [
                     ['2 CU', 'Pilot’s Compartment'],
@@ -1240,7 +1178,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r212a', 'Starship Hyper drive'],
@@ -1274,7 +1211,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Jump Type', 'Hyper Charges'],
                 rows: [
                     ['Single jump', 'uses one (1) hyper charge'],
@@ -1292,7 +1228,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Risk Modifier', 'Situation'],
                 rows: [
                     ['+5', 'Jump from surface of a planet'],
@@ -1346,7 +1281,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Move Type', 'Description'],
                 rows: [
                     [
@@ -1397,7 +1331,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r213a', 'Starship Life Support'],
@@ -1429,7 +1362,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r214a', 'Storage'],
@@ -1466,7 +1398,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r215a', 'Orbital Shuttle'],
@@ -1513,7 +1444,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r216a', 'Starship Guns'],
@@ -1564,7 +1494,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r217a', 'Starship Damage'],
@@ -1604,7 +1533,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r218a', 'Break-down Check'],
@@ -1641,7 +1569,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r219a', 'Repair Units'],
@@ -1673,7 +1600,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r220a', 'Hirelings'],
@@ -1718,7 +1644,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r221a', 'Pilot/Navigator'],
@@ -1781,7 +1706,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r222a', 'GM Robot'],
@@ -1829,7 +1753,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r223a', 'Hirelings’ Equipment'],
@@ -1873,7 +1796,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r225a', 'Detection'],
@@ -1926,7 +1848,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [['r227a', 'Contact During RRR']],
             },
@@ -1957,7 +1878,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r229a', 'Buying, Selling, and Salaries'],
@@ -2003,7 +1923,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['2d6', 'Search Results'],
                 rows: [
                     ['2', 'false accusation (E058)'],
@@ -2020,7 +1939,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['Code', 'Search Effect'],
                 rows: [
                     ['B', 'boat hold and ship’s boat are searched'],
@@ -2049,7 +1967,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r230a', 'Combat Procedure'],
@@ -2209,7 +2126,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [
                     ['r231a', 'Medical Centers & Accelerated Healing'],
@@ -2250,7 +2166,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['No.', 'Record'],
                 rows: [
                     [
@@ -2284,7 +2199,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['Ref', 'Rule'],
                 rows: [['r232a', 'Monetary System']],
             },
@@ -2316,7 +2230,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'City', 'Colony'],
                 rows: [
                     ['0', 'e129', 'e019'],
@@ -2329,7 +2242,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Craters', 'Gambling'],
                 rows: [
                     ['0', 'e070', 'e006'],
@@ -2342,7 +2254,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Industrial', 'Military'],
                 rows: [
                     ['0', 'e181', 'e059'],
@@ -2355,7 +2266,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Mining', 'Palace'],
                 rows: [
                     ['0', 'e181', 'e059'],
@@ -2368,7 +2278,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Prison', 'Rough Terrain'],
                 rows: [
                     ['0', 'e417', 'e154'],
@@ -2381,7 +2290,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Ruins', 'Rural'],
                 rows: [
                     ['0', 'e150', 'r338'],
@@ -2394,7 +2302,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Scientific', 'Slums'],
                 rows: [
                     ['0', 'e017', 'e142'],
@@ -2407,7 +2314,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Spaceport', 'Space Station'],
                 rows: [
                     ['0', 'e019', 'e019'],
@@ -2420,7 +2326,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['1d6', '1-2', '3-5', '6'],
                 rows: [
                     ['Regari', 'e122', 'e147', 'e192'],
@@ -2453,7 +2358,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', '10', '15', '20', '25', '30'],
                 rows: [
                     ['1', '*1', '1', '1', '*1', '1'],
@@ -2465,7 +2369,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['1d6', '40', '50', '60', '70', '100'],
                 rows: [
                     ['1', '1', '2', '3', '4', '5'],
@@ -2486,7 +2389,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['Name', 'CU', 'Notes'],
                 rows: [
                     [
@@ -2579,7 +2481,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'Roll effects*'],
                 rows: [
                     ['1', 'defensive screens break down until repaired'],
@@ -2594,7 +2495,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['1d6', 'Roll effects*'],
                 rows: [
                     ['1-3', 'roll for break-down (see R218) of vehicle itself'],
@@ -2625,7 +2525,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: [
                     'Entry',
                     '10, 15, 20',
@@ -2660,7 +2559,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', 'Results'],
                 rows: [
                     [
@@ -2699,7 +2597,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['1d6', '0', '10', '15', '20'],
                 rows: [
                     ['1', 'x1', 'x1', 'x1', 'x1'],
@@ -2711,7 +2608,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['1d6', '25', '30', '40', '50'],
                 rows: [
                     ['1', 'x1', 'x1', 'x1', 'x1'],
@@ -2723,7 +2619,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'simple-list',
                 cols: ['1d6', '60', '70', '100'],
                 rows: [
                     ['1', 'x1', 'x1', 'x2'],
@@ -2744,7 +2639,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['Factor', 'Location'],
                 rows: [
                     ['0', 'in Asteroids Area'],
@@ -2756,7 +2650,6 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                type: 'roll-table',
                 cols: ['Modifier', 'Time'],
                 rows: [
                     ['+1', 'recover within 10-39 days of placement'],
@@ -2961,7 +2854,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['2d6', 'Result'],
                 rows: [
                     ['2 (or less)', 'r306'],
@@ -2996,7 +2888,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     [
@@ -3041,7 +2932,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     ['1', 'Case of fine liquors, 1 CU per case.'],
@@ -3065,7 +2955,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     [
@@ -3098,7 +2987,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'roll-table',
                 cols: ['1d6', 'Result'],
                 rows: [
                     [
@@ -3137,7 +3025,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['You may only sell, not purchase:'],
                 rows: [
                     ['Case(s) of fine liquor'],
@@ -3155,7 +3042,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['You may only sell, not purchase:'],
                 rows: [
                     ['Utility suit(s)'],
@@ -3174,7 +3060,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['You may only sell, not purchase:'],
                 rows: [
                     ['Case(s) of expensive clothing'],
@@ -3192,7 +3077,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['You may only sell, not purchase:'],
                 rows: [
                     ['Ampoules of hallucinogenic drugs'],
@@ -3213,7 +3097,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['You may only sell, not purchase:'],
                 rows: [
                     ['Case(s) of sidearm ammunition'],
@@ -3233,7 +3116,6 @@ const ruleData: Rule[] = [
         ],
         tables: [
             {
-                type: 'simple-list',
                 cols: ['You may only sell, not purchase:'],
                 rows: [
                     ['Pallet(s) of rare wood'],

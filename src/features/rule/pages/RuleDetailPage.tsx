@@ -4,8 +4,8 @@ import { useHistory } from '@/hooks/useHistory'
 import { useEffect } from 'react'
 import { parseLinks } from '@/lib/parseLinks'
 import { useRuleService } from '../services/RuleService'
-import TableRenderer from '@/components/TableRenderer'
 import SpeechText from '@/components/SpeechText'
+import ListTable from '@/components/ListTable'
 
 function RuleDetailPage() {
     const { tag } = useParams()
@@ -36,7 +36,7 @@ function RuleDetailPage() {
             </Card>
 
             {rule.tables?.map((table, index) => (
-                <TableRenderer key={index} table={table} />
+                <ListTable key={index} table={table} />
             ))}
 
             {rule.note && (

@@ -19,25 +19,26 @@ function Instructions() {
                 You can learn this game as you play. Simply start with the first
                 event{' '}
                 <Link to="/event/e001" className="text-light-blue">
-                    The Adventure Begins
+                    e001
                 </Link>{' '}
                 and then read sections as necessary. You may find it convenient
                 to read important rules sections first, including
             </p>
             <ul>
                 <li>
-                    <Link to="/rule/r203">Daily Actions</Link>
+                    <Link to="/rule/r203">r203</Link> — Daily Actions
                 </li>
                 <li>
-                    <Link to="/rule/r212">Antelope Class Starship</Link>
+                    <Link to="/rule/r212">r212</Link> — Antelope Class Starship
                 </li>
                 <li>
-                    <Link to="/rule/r221">Roles of Hirelings</Link>
+                    <Link to="/rule/r221">r221</Link> — Roles of Hirelings
                 </li>
                 <li>
-                    <Link to="/rule/r230">Combat</Link>
+                    <Link to="/rule/r230">r230</Link> — Combat
                 </li>
             </ul>
+
             <p>
                 A pencil and some paper is needed for this game — to keep track
                 of your possessions, current situation, special events, etc. You

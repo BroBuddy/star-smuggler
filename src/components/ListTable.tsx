@@ -1,7 +1,7 @@
 import { parseLinks } from '@/lib/parseLinks'
-import { RollTableType } from '@/features/rule/types/RuleType'
+import { TableType } from '@/features/rule/types/RuleType'
 
-function RollTable({ table }: { table: RollTableType }) {
+function ListTable({ table }: { table: TableType }) {
     return (
         <table className="pb-2">
             <thead>
@@ -28,4 +28,4 @@ function RollTable({ table }: { table: RollTableType }) {
         </table>
     )
 }
-export default RollTable
+export default ListTable
