@@ -4,13 +4,16 @@
     flex-direction: row;
     justify-content: space-evenly;
     position: fixed;
-    left: 0;
     bottom: 0;
+    left: 50%;
+    padding-top: 5px;
+    transform: translateX(-50%);
     width: 100%;
+    max-width: 768px;
 
     > a {
         color: var(--white);
-        padding: 8px;
+        padding: 4px;
         text-decoration: none;
         white-space: nowrap;
 

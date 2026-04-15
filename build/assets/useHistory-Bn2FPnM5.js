@@ -1,0 +1,1 @@
+var e=()=>({addToHistory:(e,t)=>{let n=JSON.parse(localStorage.getItem(`star-smuggler`)||`[]`).filter(t=>t.tag!==e),r=[{tag:e,title:t},...n].slice(0,10);localStorage.setItem(`star-smuggler`,JSON.stringify(r))},getHistory:()=>JSON.parse(localStorage.getItem(`star-smuggler`)||`[]`)});export{e as t};
