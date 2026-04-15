@@ -28,7 +28,7 @@ const router = createBrowserRouter([
                 element: <RuleDetailPage />,
             },
             {
-                path: '/event/e002',
+                path: '/event/e001',
                 element: <StartAdventureEvent />,
             },
             {
