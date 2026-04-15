@@ -15,8 +15,9 @@ function Equipment() {
             <p>
                 The planetary tiles each have an identification letter (A
                 through K), and two are placed together to form a circular
-                planet. Which tiles are used for which planets is given in the{' '}
-                <Link to="/rule/r207">Guide to the Pavonis Sector</Link>.
+                planet. Which tiles are used for which planets is given in the
+                "Guide to the Pavonis Sector" (See{' '}
+                <Link to="/rule/r207">r207</Link>).
             </p>
 
             <p>

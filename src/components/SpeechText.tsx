@@ -16,7 +16,7 @@ function SpeechText({ desc, stable = true }: SpeechType) {
         voiceURI: voices[3]?.voiceURI,
         stableText: stable,
     })
-    const isRunning = speechStatus === 'started'
+    const isReading = speechStatus === 'started'
 
     return (
         <div
@@ -27,14 +27,14 @@ function SpeechText({ desc, stable = true }: SpeechType) {
                 zIndex: 10,
             }}
         >
-            {!isRunning && (
-                <span onClick={start}>
+            {!isReading && (
+                <span className="pointer" onClick={start}>
                     <Play />
                 </span>
             )}
 
-            {isRunning && (
-                <span onClick={pause}>
+            {isReading && (
+                <span className="pointer" onClick={pause}>
                     <Pause />
                 </span>
             )}
