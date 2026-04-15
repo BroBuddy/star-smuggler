@@ -755,12 +755,11 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 0'], ['🛠️ tech 30']],
-            },
-            {
-                cols: ['Planet I'],
-                rows: [['🪐 layout J-K'], ['🧲 gravity 3'], ['☣️ good air']],
+                cols: ['System Codes', 'Planet I'],
+                rows: [
+                    ['💰 wealth 0', '🧲 gravity 3'],
+                    ['🛠️ tech 30', '☣️ good air'],
+                ],
             },
         ],
     },
@@ -783,12 +782,11 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 30'], ['🛠️ tech 50']],
-            },
-            {
-                cols: ['Planet I'],
-                rows: [['🪐 layout A-C'], ['🧲 gravity 7'], ['☣️ bad air']],
+                cols: ['System Codes', 'Planet I'],
+                rows: [
+                    ['💰 wealth 30', '🧲 gravity 7'],
+                    ['🛠️ tech 50', '☣️ bad air'],
+                ],
             },
         ],
     },
@@ -811,15 +809,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 50'], ['🛠️ tech 15']],
-            },
-            {
-                cols: ['Planet I', 'Planet II'],
+                cols: ['System Codes', 'Planet I', 'Planet II'],
                 rows: [
-                    ['🪐 layout F-C', '🪐 layout E-B'],
-                    ['🧲 gravity 10', '🧲 gravity 8'],
-                    ['☣️ good air', '☣️ good air'],
+                    ['💰 wealth 50', '🧲 gravity 10', '🧲 gravity 8'],
+                    ['🛠️ tech 15', '☣️ good air', '☣️ good air'],
                 ],
             },
         ],
@@ -844,12 +837,11 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 100'], ['🛠️ tech 25']],
-            },
-            {
-                cols: ['Planet I'],
-                rows: [['🪐 layout C-G'], ['🧲 gravity 11'], ['☣️ good air']],
+                cols: ['System Codes', 'Planet I'],
+                rows: [
+                    ['💰 wealth 100', '🧲 gravity 11'],
+                    ['🛠️ tech 25', '☣️ good air'],
+                ],
             },
         ],
     },
@@ -872,15 +864,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 25'], ['🛠️ tech 30']],
-            },
-            {
-                cols: ['Planet I', 'Planet II'],
+                cols: ['System Codes', 'Planet I', 'Planet II'],
                 rows: [
-                    ['🪐 layout F-I', '🪐 layout E-H'],
-                    ['🧲 gravity 13', '🧲 gravity 4'],
-                    ['☣️ good air', '☣️ good air'],
+                    ['💰 wealth 25', '🧲 gravity 13', '🧲 gravity 4'],
+                    ['🛠️ tech 30', '☣️ good air', '☣️ good air'],
                 ],
             },
         ],
@@ -905,12 +892,11 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 15'], ['🛠️ tech 70']],
-            },
-            {
-                cols: ['Planet I'],
-                rows: [['🪐 layout K-A'], ['🧲 gravity 7'], ['☣️ good air']],
+                cols: ['System Codes', 'Planet I'],
+                rows: [
+                    ['💰 wealth 15', '🧲 gravity 7'],
+                    ['🛠️ tech 70', '☣️ good air'],
+                ],
             },
         ],
     },
@@ -935,12 +921,11 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 40'], ['🛠️ tech 40']],
-            },
-            {
-                cols: ['Planet I'],
-                rows: [['🪐 layout G-B'], ['🧲 gravity 6'], ['☣️ bad air']],
+                cols: ['System Codes', 'Planet I'],
+                rows: [
+                    ['💰 wealth 40', '🧲 gravity 6'],
+                    ['🛠️ tech 40', '☣️ bad air'],
+                ],
             },
         ],
     },
@@ -964,15 +949,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 60'], ['🛠️ tech 100']],
-            },
-            {
-                cols: ['Planet I', 'Planet II'],
+                cols: ['System Codes', 'Planet I', 'Planet II'],
                 rows: [
-                    ['🪐 layout J-D', '🪐 layout A-I'],
-                    ['🧲 gravity 12', '🧲 gravity 9'],
-                    ['☣️ good air', '☣️ no air'],
+                    ['💰 wealth 60', '🧲 gravity 12', '🧲 gravity 9'],
+                    ['🛠️ tech 100', '☣️ good air', '☣️ no air'],
                 ],
             },
         ],
@@ -999,15 +979,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 30'], ['🛠️ tech 60']],
-            },
-            {
-                cols: ['Planet I', 'Planet II'],
+                cols: ['System Codes', 'Planet I', 'Planet II'],
                 rows: [
-                    ['🪐 layout H-A', '🪐 layout C-K'],
-                    ['🧲 gravity 5', '🧲 gravity 9'],
-                    ['☣️ no air', '☣️ good air'],
+                    ['💰 wealth 30', '🧲 gravity 5', '🧲 gravity 9'],
+                    ['🛠️ tech 60', '☣️ no air', '☣️ good air'],
                 ],
             },
         ],
@@ -1033,15 +1008,10 @@ const ruleData: Rule[] = [
                 ],
             },
             {
-                cols: ['System Codes'],
-                rows: [['💰 wealth 70'], ['🛠️ tech 10']],
-            },
-            {
-                cols: ['Planet I', 'Planet II'],
+                cols: ['System Codes', 'Planet I', 'Planet II'],
                 rows: [
-                    ['🪐 layout K-D', '🪐 layout B-J'],
-                    ['🧲 gravity 9', '🧲 gravity 14'],
-                    ['☣️ good air', '☣️ good air'],
+                    ['💰 wealth 70', '🧲 gravity 9', '🧲 gravity 14'],
+                    ['🛠️ tech 10', '☣️ good air', '☣️ good air'],
                 ],
             },
         ],
