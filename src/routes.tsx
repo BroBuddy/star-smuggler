@@ -11,6 +11,9 @@ const RuleDetailPage = React.lazy(
 const EventDetailPage = React.lazy(
     () => import('./features/event/pages/EventDetailPage.tsx')
 )
+const StartAdventureEvent = React.lazy(
+    () => import('./pages/StartAdventureEvent.tsx')
+)
 
 const router = createBrowserRouter([
     {
@@ -23,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: '/rule/:tag',
                 element: <RuleDetailPage />,
+            },
+            {
+                path: '/event/e002',
+                element: <StartAdventureEvent />,
             },
             {
                 path: '/event/:tag',

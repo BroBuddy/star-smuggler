@@ -3,6 +3,7 @@ import { useEffect, useMemo } from 'react'
 import { useHistory } from '@/hooks/useHistory'
 import { parseLinks } from '@/lib/parseLinks'
 import Card from '@/components/Card'
+import PageHeader from '@/components/PageHeader'
 import { useEventService } from '../services/EventService'
 
 const EventDetailPage = () => {
@@ -10,39 +11,35 @@ const EventDetailPage = () => {
     const { addToHistory } = useHistory()
     const { getEventByTag } = useEventService()
     const event = getEventByTag(tag as string)
-    const description = event?.desc
+    const desc = event?.desc
 
     const paragraphs = useMemo(() => {
-        if (!description) return []
-
-        return description
+        if (!desc) return []
+        return desc
             .split(/<\/p>/g)
             .map((p) => p.replace(/<p>/g, '').trim())
             .filter(Boolean)
-    }, [description])
+    }, [desc])
 
     useEffect(() => {
-        if (event) {
-            addToHistory(event.tag, event.title)
-        }
+        if (event) addToHistory(event.tag, event.title)
     }, [event, addToHistory])
+
+    if (!event) return null
 
     return (
         <>
-            {event && (
-                <Card time={event.time} title={event.title}>
-                    {event.image && (
-                        <img
-                            src={`/images/events/${tag}.png`}
-                            alt={event.title}
-                        />
-                    )}
+            <PageHeader tag={event.tag} title={event.title} time={event.time} />
 
-                    {paragraphs.map((text, index) => (
-                        <p key={index}>{parseLinks(text)}</p>
-                    ))}
-                </Card>
+            {event.image && (
+                <img src={`/images/events/${tag}.png`} alt={event.title} />
             )}
+
+            <Card>
+                {paragraphs.map((text, index) => (
+                    <p key={index}>{parseLinks(text)}</p>
+                ))}
+            </Card>
         </>
     )
 }

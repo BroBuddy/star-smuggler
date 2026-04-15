@@ -18,8 +18,7 @@
 }
 
 body {
-    background: var(--purple);
-    background: linear-gradient(90deg, #4e1153 0%, #18385b 100%);
+    background: var(--bg-base);
     box-sizing: border-box;
     color: var(--white);
     display: flex;
@@ -30,9 +29,8 @@ body {
 }
 
 a {
-    color: var(--pink);
+    color: var(--cyan);
     font-family: 'Consolas', monospace;
-    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -52,8 +50,10 @@ table {
 }
 
 img {
-    border-radius: 5px;
-    max-width: 100%;
+    border-radius: 8px;
+    max-width: calc(100% - 30px);
+    margin: 25px 15px;
+    display: block;
 }
 
 ul {
@@ -66,16 +66,26 @@ ul {
     cursor: pointer;
 }
 
+.note {
+    color: var(--muted);
+    font-family: 'Consolas', monospace;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
 table {
-    background-color: rgba($color: #000, $alpha: 0.6);
-    border: 2px solid var(--black);
-    border-radius: 5px;
+    background-color: var(--bg-card);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
     box-sizing: border-box;
-    margin: 25px 10px;
+    margin: 25px 15px;
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
-    width: calc(100% - 20px);
+    width: calc(100% - 30px);
 
     tr {
         td,
@@ -84,11 +94,13 @@ table {
             overflow-wrap: break-word;
         }
         th {
-            color: var(--white);
+            color: var(--muted);
             font-family: 'Consolas', monospace;
-            font-size: 14px;
+            font-size: 11px;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            text-align: left;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         td {

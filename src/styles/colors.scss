@@ -1,36 +1,47 @@
 :root {
+    // Backgrounds
+    --bg-base: #12112a;
+    --bg-surface: #1a1930;
+    --bg-card: rgba(255, 255, 255, 0.05);
+
+    // Borders
+    --border: rgba(255, 255, 255, 0.1);
+
+    // Text
+    --white: #fff;
+    --light-grey: rgba(255, 255, 255, 0.75);
+    --muted: rgba(255, 255, 255, 0.4);
+
+    // Accents
+    --cyan: #1ab4c7;
+    --pink: #c0397a;
+
+    // Semantic (behalten falls gebraucht)
+    --green: #7eb87e;
+    --red: #c06b7c;
+
+    // Legacy (ausphase wenn nicht mehr genutzt)
     --black: #000;
     --dark-grey: #1a1d2b;
     --grey: #2b2e3d;
-    --light-grey: #aaa;
-    --white: #fff;
-    --green: #7eb87e;
     --blue: #18385b;
     --light-blue: #5ceafd;
     --purple: #4e1153;
-    --pink: #ad31ae;
-    --red: #c06b7c;
 }
 
 $colors: (
+    'white': var(--white),
+    'light-grey': var(--light-grey),
+    'muted': var(--muted),
+    'cyan': var(--cyan),
+    'pink': var(--pink),
+    'green': var(--green),
+    'red': var(--red),
+    // Legacy
     'black': var(--black),
     'dark-grey': var(--dark-grey),
     'grey': var(--grey),
-    'light-grey': var(--light-grey),
-    'white': var(--white),
-    'green': var(--green),
     'blue': var(--blue),
     'light-blue': var(--light-blue),
     'purple': var(--purple),
-    'pink': var(--pink),
-    'red': var(--red),
 );
-
-@each $name, $hex in $colors {
-    .text-#{$name} {
-        color: $hex;
-    }
-    .bg-#{$name} {
-        background-color: $hex;
-    }
-}

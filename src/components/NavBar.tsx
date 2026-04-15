@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom'
 import styles from './NavBar.module.scss'
 import { ReactNode } from 'react'
-import { BookOpenText, Home, Orbit, Sun, Users } from 'lucide-react'
+import { BookOpenText, Globe, Home, Sun, Users } from 'lucide-react'
 
 type Links = {
     to: string
@@ -13,7 +13,7 @@ const links: Links[] = [
     { to: '/', label: 'Game', icon: <Home /> },
     { to: '/rule/r203', label: 'Actions', icon: <Sun /> },
     { to: '/rule/r233', label: 'Entry & Contact Table', icon: <Users /> },
-    { to: '/rule/r207', label: 'Guide to the Pavonis Sector', icon: <Orbit /> },
+    { to: '/rule/r207', label: 'Guide to the Pavonis Sector', icon: <Globe /> },
     { to: '/booklet', label: 'Booklets', icon: <BookOpenText /> },
 ]
 

@@ -22,8 +22,8 @@ function SpeechText({ desc, stable = true }: SpeechType) {
         <div
             style={{
                 position: 'absolute',
-                top: '13px',
-                right: '11px',
+                top: '30px',
+                right: '10px',
                 zIndex: 10,
             }}
         >
